@@ -21,7 +21,7 @@ sections:
     design:
       css_class: dark
       background:
-        color: navy
+        color: '#000080'
         text_color_light: true
         #image:
           # Add your image background to `assets/media/`.
