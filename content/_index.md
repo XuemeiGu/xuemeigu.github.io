@@ -15,13 +15,13 @@ sections:
       username: admin
       text: ""
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
+      #button:
+        #text: Download CV
+        #url: uploads/resume.pdf
     design:
       css_class: dark
       background:
-        color: '#000080'
+        color: '#191970'
         text_color_light: true
         #image:
           # Add your image background to `assets/media/`.
