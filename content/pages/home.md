@@ -58,32 +58,6 @@ description: "Personal website for Xuemei Gu."
   </div>
 </section>
 
-<section id="publications" class="academic-section section-grid">
-  <div class="section-label">
-    <h2>Last publications</h2>
-  </div>
-  <div class="section-body">
-    <div class="publication-list compact-publications">
-      {% assign selected_publications = site.publications | sort: "year" | reverse %}
-      {% for publication in selected_publications limit:6 %}
-        <article class="publication-row">
-          <p>
-            {{ publication.authors }} ({{ publication.year }}).
-            <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>.
-            <em>{{ publication.venue }}</em>.
-          </p>
-          <div class="link-row">
-            {% if publication.paper_url and publication.paper_url != "" %}<a href="{{ publication.paper_url }}">Paper</a>{% endif %}
-            {% if publication.code_url and publication.code_url != "" %}<a href="{{ publication.code_url }}">Code</a>{% endif %}
-            {% if publication.data_url and publication.data_url != "" %}<a href="{{ publication.data_url }}">Data</a>{% endif %}
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-    <p class="more-link"><a href="{{ '/publications/' | relative_url }}">See all publications</a></p>
-  </div>
-</section>
-
 <section id="contact" class="academic-section section-grid">
   <div class="section-label">
     <h2>Contact</h2>
