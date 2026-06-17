@@ -102,10 +102,6 @@ description: "Personal website for Xuemei Gu."
         <strong>Visitor address</strong>
         <span>{{ site.data.profile.institution }}<br>{{ site.data.profile.location }}</span>
       </li>
-      <li>
-        <strong>Research inquiries</strong>
-        <span>Collaborations, seminar invitations, and student project inquiries are welcome.</span>
-      </li>
     </ul>
   </div>
 </section>
