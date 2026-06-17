@@ -6,6 +6,18 @@ description: "PLACEHOLDER: Personal academic website for Mei YourSurname."
 ---
 
 <section class="hero-grid">
+  <aside class="profile-card">
+    <img src="{{ '/assets/img/profile-placeholder.svg' | relative_url }}" alt="PLACEHOLDER profile portrait for {{ site.data.profile.name }}" class="profile-photo">
+    <h2>{{ site.data.profile.name }}</h2>
+    <p>{{ site.data.profile.headline }}</p>
+    <p class="small">{{ site.data.profile.location }}</p>
+    <div class="profile-links">
+      {% for link in site.data.profile.links %}
+        <a href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  </aside>
+
   <div class="hero-copy">
     <p class="eyebrow">{{ site.data.profile.position }} · {{ site.data.profile.institution }}</p>
     <h1>{{ site.data.profile.name }}</h1>
@@ -22,18 +34,6 @@ description: "PLACEHOLDER: Personal academic website for Mei YourSurname."
       {% endfor %}
     </div>
   </div>
-
-  <aside class="profile-card">
-    <img src="{{ '/assets/img/profile-placeholder.svg' | relative_url }}" alt="PLACEHOLDER profile portrait for {{ site.data.profile.name }}" class="profile-photo">
-    <h2>{{ site.data.profile.name }}</h2>
-    <p>{{ site.data.profile.headline }}</p>
-    <p class="small">{{ site.data.profile.location }}</p>
-    <div class="profile-links">
-      {% for link in site.data.profile.links %}
-        <a href="{{ link.url }}">{{ link.label }}</a>
-      {% endfor %}
-    </div>
-  </aside>
 </section>
 
 <section class="content-section split">
