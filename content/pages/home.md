@@ -7,7 +7,7 @@ description: "Personal website for Xuemei Gu."
 
 <section id="home" class="intro-section">
   <aside class="academic-profile">
-    <img src="{{ '/assets/img/profile-placeholder.svg' | relative_url }}" alt="Profile portrait for {{ site.data.profile.name }}" class="profile-photo">
+    <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Profile portrait for {{ site.data.profile.name }}" class="profile-photo">
     <h1>{{ site.data.profile.name }}</h1>
     <p class="profile-title">{{ site.data.profile.position }}</p>
     <p class="profile-affiliation">{{ site.data.profile.institution }}</p>
