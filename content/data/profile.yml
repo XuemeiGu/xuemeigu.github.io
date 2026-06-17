@@ -4,7 +4,7 @@
 name: "Xuemei Gu"
 short_name: "Xuemei"
 pronouns: "she/her"  
-headline: "Researcher in AI/ML for Quantum Science"
+headline: "AI Quantum Lab"
 subheadline: "AI for Science · Quantum Physics · Quantum Optics"
 institution: "Friedrich Schiller University Jena"
 position: "Junior Group Leader"
@@ -12,18 +12,12 @@ location: "Jena, Germany"
 email: "xuemei.gu@uni-jena.de"
 
 summary: >-
-  PLACEHOLDER: I develop machine learning methods for quantum science, with interests spanning
-  quantum optics, quantum many-body physics, scientific foundation models, and autonomous
-  discovery workflows. My long-term goal is to build reliable AI systems that help scientists
-  reason, design experiments, and accelerate theoretical insight.
+  I work at the intersection of artificial intelligence and quantum physics, combining the development of intelligent systems for scientific discovery with research on quantum systems and phenomena. My work includes AI/ML methods for designing physical experiments, generating research ideas, and uncovering possibilities that might otherwise be overlooked, as well as conceptual, theoretical, and experimental research in quantum physics. More broadly, I am interested in how intelligence, computation, and physical principles can be integrated to advance science, from using AI to explore complex quantum systems to adapting ideas from physics to inspire new forms of machine intelligence. Together, I want to advance quantum science and technology, build autonomous systems that expand scientific creativity, and develop new ways to understand our physical world.
 
 research_keywords:
-  - "AI/ML for Quantum Science"
-  - "Quantum Optics"
-  - "Quantum Many-Body Physics"
-  - "Scientific Foundation Models"
-  - "LLM Agents for Research"
-  - "Neural Quantum States"
+  - "AI for Science, Scientific Discovery, and Scientific Creativity"
+  - "Quantum Physics, Quantum Optics, and Quantum Technologies"
+  - "De-novo Design of Physics Experiments"
 
 links:
   - label: "Email"
@@ -41,6 +35,3 @@ links:
   - label: "LinkedIn"
     icon: "linkedin"
     url: "https://www.linkedin.com/in/xuemei-gu-11a51888/"
-  #- label: "CV"
-  #  icon: "cv"
-  #  url: "/assets/files/cv-placeholder.md"

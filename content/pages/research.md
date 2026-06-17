@@ -2,7 +2,7 @@
 title: Research
 permalink: /research/
 eyebrow: Research
-subtitle: "PLACEHOLDER: A concise overview of your research program, methods, and open directions."
+subtitle: "PLACEHOLDER:"
 ---
 
 ## Research overview

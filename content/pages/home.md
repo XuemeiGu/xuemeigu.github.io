@@ -2,7 +2,7 @@
 layout: default
 title: Home
 permalink: /
-description: "Personal academic website for Xuemei Gu."
+description: "Personal website for Xuemei Gu."
 ---
 
 <section id="home" class="intro-section">

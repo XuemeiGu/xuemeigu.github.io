@@ -2,7 +2,7 @@
 title: Publications
 permalink: /publications/
 eyebrow: Publications
-subtitle: "PLACEHOLDER: Replace these sample entries with your real papers, preprints, talks, and code links."
+subtitle: "PLACEHOLDER: "
 ---
 
 <div class="filter-panel">

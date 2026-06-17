@@ -2,7 +2,7 @@
 title: Blog
 permalink: /blog/
 eyebrow: Blog
-subtitle: "PLACEHOLDER: Short research updates, reading notes, announcements, and reflections."
+subtitle: "PLACEHOLDER: "
 ---
 
 <div class="stack">
