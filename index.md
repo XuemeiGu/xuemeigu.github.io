@@ -2,109 +2,157 @@
 layout: default
 title: Home
 permalink: /
-description: "PLACEHOLDER: Personal academic website for Mei YourSurname."
+description: "Personal academic website for Xuemei Gu."
 ---
 
-<section class="hero-grid">
-  <aside class="profile-card">
-    <img src="{{ '/assets/img/profile-placeholder.svg' | relative_url }}" alt="PLACEHOLDER profile portrait for {{ site.data.profile.name }}" class="profile-photo">
-    <h2>{{ site.data.profile.name }}</h2>
-    <p>{{ site.data.profile.headline }}</p>
-    <p class="small">{{ site.data.profile.location }}</p>
-    <div class="profile-links">
+<section id="home" class="intro-section">
+  <aside class="academic-profile">
+    <img src="{{ '/assets/img/profile-placeholder.svg' | relative_url }}" alt="Profile portrait for {{ site.data.profile.name }}" class="profile-photo">
+    <h1>{{ site.data.profile.name }}</h1>
+    <p class="profile-title">{{ site.data.profile.position }}</p>
+    <p class="profile-affiliation">{{ site.data.profile.institution }}</p>
+    <div class="profile-links icon-links">
       {% for link in site.data.profile.links %}
         <a href="{{ link.url }}">{{ link.label }}</a>
       {% endfor %}
     </div>
   </aside>
 
-  <div class="hero-copy">
-    <p class="eyebrow">{{ site.data.profile.position }} · {{ site.data.profile.institution }}</p>
-    <h1>{{ site.data.profile.name }}</h1>
-    <p class="lead">{{ site.data.profile.summary }}</p>
+  <div class="about-panel">
+    <h2>About me</h2>
+    <p>{{ site.data.profile.summary }}</p>
 
-    <div class="hero-actions">
-      <a class="button" href="{{ '/research/' | relative_url }}">Explore research</a>
-      <a class="button secondary" href="{{ '/publications/' | relative_url }}">Publications</a>
+    <h3>Research interests</h3>
+    <ul class="interest-list">
+      {% for keyword in site.data.profile.research_keywords %}
+        <li>{{ keyword }}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Open directions</h3>
+    <p>
+      My work connects machine learning, quantum physics, and AI-assisted scientific workflows,
+      with an emphasis on reliable methods that can support modeling, control, and discovery.
+    </p>
+  </div>
+</section>
+
+<section id="news" class="academic-section section-grid">
+  <div class="section-label">
+    <h2>Last news</h2>
+  </div>
+  <div class="section-body">
+    <div class="filter-tabs" aria-label="News categories">
+      <span class="active">All</span>
+      <span>Research</span>
+      <span>Teaching</span>
+      <span>Personal</span>
     </div>
 
-    <div class="tag-row spacious">
-      {% for keyword in site.data.profile.research_keywords %}
-        <span class="tag">{{ keyword }}</span>
+    <div class="news-list">
+      {% for item in site.data.news %}
+        <article class="news-item">
+          <div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.text }}</p>
+            <time>Posted {{ item.date | date: "%b %-d, %Y" }}</time>
+          </div>
+          <span class="news-mark">{{ item.title | slice: 0 }}</span>
+        </article>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="content-section split">
-  <div>
-    <p class="eyebrow">Research mission</p>
-    <h2>Reliable AI methods for quantum science</h2>
-    <p>
-      PLACEHOLDER: Use this paragraph to explain your central research question. For example:
-      how can machine learning help us represent, control, and understand quantum systems while
-      remaining physically interpretable, reproducible, and scientifically useful?
-    </p>
-    <p>
-      PLACEHOLDER: Add 2–3 sentences about your long-term academic vision, the problems you care
-      about, and the kind of collaborations you are looking for.
-    </p>
+<section id="background" class="academic-section section-grid">
+  <div class="section-label">
+    <h2>Background</h2>
   </div>
-  <div class="visual-card">
-    <img src="{{ '/assets/img/quantum-hero-placeholder.svg' | relative_url }}" alt="Abstract quantum science placeholder illustration">
+  <div class="section-body two-column">
+    <div>
+      <h3>Interests</h3>
+      <ul class="interest-list compact">
+        {% for keyword in site.data.profile.research_keywords limit:5 %}
+          <li>{{ keyword }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h3>Current position</h3>
+      <div class="timeline-list">
+        <article>
+          <h4>{{ site.data.profile.position }}</h4>
+          <p>{{ site.data.profile.institution }}</p>
+          <span>{{ site.data.profile.location }}</span>
+        </article>
+        <article>
+          <h4>Research focus</h4>
+          <p>{{ site.data.profile.subheadline }}</p>
+          <span>AI for Science and Quantum Physics</span>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="content-section">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Selected projects</p>
-      <h2>Current research directions</h2>
-    </div>
-    <a href="{{ '/research/' | relative_url }}">View all projects →</a>
+<section id="experience" class="academic-section section-grid">
+  <div class="section-label">
+    <h2>Experience</h2>
   </div>
-
-  <div class="card-grid three">
-    {% assign selected_projects = site.projects | where: "featured", true | sort: "order" %}
-    {% for project in selected_projects limit:3 %}
-      {% include project-card.html project=project %}
-    {% endfor %}
+  <div class="section-body">
+    <div class="experience-list">
+      {% assign selected_projects = site.projects | sort: "order" %}
+      {% for project in selected_projects limit:4 %}
+        <article class="experience-item">
+          <div class="experience-logo">{{ project.title | slice: 0 }}</div>
+          <div>
+            <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+            {% if project.period %}<p class="item-meta">{{ project.period }}</p>{% endif %}
+            {% if project.short_description %}<p>{{ project.short_description }}</p>{% endif %}
+            {% if project.tags %}
+              <div class="tag-row">
+                {% for tag in project.tags limit:3 %}<span class="tag">{{ tag }}</span>{% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
-<section class="content-section">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Publications</p>
-      <h2>Selected papers and preprints</h2>
-    </div>
-    <a href="{{ '/publications/' | relative_url }}">All publications →</a>
+<section id="publications" class="academic-section section-grid">
+  <div class="section-label">
+    <h2>Last publications</h2>
   </div>
-
-  <div class="stack">
-    {% assign selected_publications = site.publications | where: "featured", true | sort: "year" | reverse %}
-    {% for publication in selected_publications limit:3 %}
-      {% include publication-card.html publication=publication %}
-    {% endfor %}
+  <div class="section-body">
+    <div class="publication-list compact-publications">
+      {% assign selected_publications = site.publications | sort: "year" | reverse %}
+      {% for publication in selected_publications limit:6 %}
+        <article class="publication-row">
+          <p>
+            {{ publication.authors }} ({{ publication.year }}).
+            <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>.
+            <em>{{ publication.venue }}</em>.
+          </p>
+          <div class="link-row">
+            {% if publication.paper_url and publication.paper_url != "" %}<a href="{{ publication.paper_url }}">Paper</a>{% endif %}
+            {% if publication.code_url and publication.code_url != "" %}<a href="{{ publication.code_url }}">Code</a>{% endif %}
+            {% if publication.data_url and publication.data_url != "" %}<a href="{{ publication.data_url }}">Data</a>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+    <p class="more-link"><a href="{{ '/publications/' | relative_url }}">See all publications</a></p>
   </div>
 </section>
 
-<section class="content-section">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">News</p>
-      <h2>Recent updates</h2>
-    </div>
-    <a href="{{ '/notes/' | relative_url }}">Notes →</a>
+<section id="contact" class="academic-section section-grid">
+  <div class="section-label">
+    <h2>Contact</h2>
   </div>
-
-  <div class="timeline">
-    {% for item in site.data.news %}
-      <article>
-        <time>{{ item.date | date: "%b %-d, %Y" }}</time>
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.text }}</p>
-      </article>
-    {% endfor %}
+  <div class="section-body contact-list">
+    <p><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></p>
+    <p>{{ site.data.profile.institution }} · {{ site.data.profile.location }}</p>
   </div>
 </section>
