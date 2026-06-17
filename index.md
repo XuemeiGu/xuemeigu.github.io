@@ -32,7 +32,7 @@ description: "Personal academic website for Xuemei Gu."
     <h3>Open directions</h3>
     <p>
       My work connects machine learning, quantum physics, and AI-assisted scientific workflows,
-      with an emphasis on reliable methods that can support modeling, control, and discovery.
+      with an emphasis on AI methods that can support modeling, control, and discovery.
     </p>
   </div>
 </section>

@@ -1,5 +1,5 @@
 ---
-title: "PLACEHOLDER: Foundation-model workflows for scientific literature reasoning"
+title: "PLACEHOLDER:  "
 authors: "Mei YourSurname, Collaborator F"
 venue: "PLACEHOLDER: Workshop / Preprint"
 year: 2024

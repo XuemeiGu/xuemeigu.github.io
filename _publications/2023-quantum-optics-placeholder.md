@@ -1,5 +1,5 @@
 ---
-title: "PLACEHOLDER: Data-driven modeling of light–matter interactions"
+title: "PLACEHOLDER:  "
 authors: "Mei YourSurname, Collaborator G, Collaborator H"
 venue: "PLACEHOLDER: Journal / Conference / Thesis chapter"
 year: 2023

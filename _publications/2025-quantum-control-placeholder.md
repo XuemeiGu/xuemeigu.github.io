@@ -1,5 +1,5 @@
 ---
-title: "PLACEHOLDER: Learning robust control protocols for quantum optical systems"
+title: "PLACEHOLDER:  "
 authors: "Mei YourSurname, Collaborator D, Collaborator E"
 venue: "PLACEHOLDER: Conference / Workshop / Journal"
 year: 2025

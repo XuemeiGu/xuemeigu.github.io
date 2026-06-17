@@ -1,5 +1,5 @@
 ---
-title: "PLACEHOLDER: Reliable AI methods for quantum science"
+title: "PLACEHOLDER:  "
 authors: "Mei YourSurname, Collaborator A, Collaborator B"
 venue: "PLACEHOLDER: arXiv / Journal / Conference"
 year: 2026
