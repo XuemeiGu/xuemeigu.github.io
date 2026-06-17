@@ -13,6 +13,9 @@ timezone: "Europe/Berlin"
 logo: "/assets/img/profile-placeholder.svg"
 image: "/assets/img/social-preview-placeholder.svg"
 
+data_dir: content/data
+collections_dir: content/collections
+
 collections:
   publications:
     output: true
@@ -64,4 +67,4 @@ exclude:
   - vendor
   - .DS_Store
   - CNAME.example
-  - PLACEHOLDERS.md
+  - docs

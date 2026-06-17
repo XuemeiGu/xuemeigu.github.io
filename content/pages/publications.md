@@ -25,4 +25,4 @@ subtitle: "PLACEHOLDER: Replace these sample entries with your real papers, prep
 
 ## How to edit this page
 
-Each publication lives in the `_publications/` folder as a separate Markdown file. Copy one of the placeholder files, rename it, and edit the front matter fields such as `title`, `authors`, `venue`, `year`, `paper_url`, and `tags`.
+Each publication lives in `content/collections/_publications/` as a separate Markdown file. Copy one of the placeholder files, rename it, and edit the front matter fields such as `title`, `authors`, `venue`, `year`, `paper_url`, and `tags`.

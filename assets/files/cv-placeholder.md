@@ -10,5 +10,5 @@ assets/files/Mei-YourSurname-CV.pdf
 
 Then update:
 
-- `_data/profile.yml`
-- `cv.md`
+- `content/data/profile.yml`
+- `content/pages/cv.md`
