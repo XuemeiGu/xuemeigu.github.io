@@ -48,7 +48,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.65;
   text-rendering: optimizeLegibility;
 }
@@ -407,7 +407,7 @@ ul {
 .article-meta,
 .small {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.96rem;
 }
 
 .news-mark,
@@ -438,12 +438,13 @@ ul {
 .timeline-list h4 {
   margin: 0;
   color: var(--text);
-  font-size: 1.05rem;
+  font-size: 1.14rem;
 }
 
 .timeline-list p {
   margin: 0.2rem 0;
   color: var(--muted-strong);
+  font-size: 1.08rem;
 }
 
 .project-list {
@@ -459,16 +460,18 @@ ul {
 
 .project-list-item h3 {
   margin: 0 0 0.25rem;
-  font-size: 1.25rem;
+  font-size: 1.34rem;
 }
 
 .project-list-item p {
   max-width: 78ch;
+  font-size: 1.08rem;
+  line-height: 1.72;
 }
 
 .project-tags {
   color: var(--accent) !important;
-  font-size: 0.88rem;
+  font-size: 0.96rem;
 }
 
 .experience-item {
@@ -499,7 +502,7 @@ ul {
   border: 1px solid var(--accent-2);
   border-radius: var(--radius);
   color: var(--accent);
-  font-size: 0.78rem;
+  font-size: 0.88rem;
 }
 
 .publication-row {
@@ -507,9 +510,9 @@ ul {
 }
 
 .publication-row p {
-  font-size: 1rem;
+  font-size: 1.08rem;
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.72;
 }
 
 .publication-row a {
@@ -529,7 +532,7 @@ ul {
   border: 1px solid var(--accent-2);
   border-radius: var(--radius);
   color: var(--accent);
-  font-size: 0.82rem;
+  font-size: 0.92rem;
 }
 
 .footer-links .social-link {
@@ -557,7 +560,7 @@ ul {
 
 .contact-list p {
   color: var(--muted-strong);
-  font-size: 1.05rem;
+  font-size: 1.12rem;
 }
 
 .contact-details {
@@ -580,7 +583,7 @@ ul {
   grid-template-columns: 140px minmax(0, 1fr);
   gap: 1rem;
   color: var(--muted-strong);
-  font-size: 1.06rem;
+  font-size: 1.14rem;
   line-height: 1.7;
 }
 
@@ -602,7 +605,7 @@ ul {
 }
 
 .contact-map a {
-  font-size: 0.86rem;
+  font-size: 0.96rem;
 }
 
 .content-section,
@@ -627,7 +630,7 @@ ul {
 .prose .lead {
   max-width: 76ch;
   color: var(--muted);
-  font-size: 1.02rem;
+  font-size: 1.12rem;
 }
 
 .eyebrow {
@@ -659,6 +662,8 @@ ul {
 .prose p,
 .prose li {
   color: var(--muted-strong);
+  font-size: 1.08rem;
+  line-height: 1.72;
 }
 
 .page-content h2,
@@ -666,7 +671,7 @@ ul {
 .section-heading h2 {
   margin: 1.8rem 0 0.75rem;
   color: var(--text);
-  font-size: 1.65rem;
+  font-size: 1.78rem;
   font-weight: 600;
 }
 
@@ -674,7 +679,7 @@ ul {
 .prose h3 {
   margin: 1.25rem 0 0.35rem;
   color: var(--text);
-  font-size: 1.14rem;
+  font-size: 1.24rem;
 }
 
 .prose blockquote {
@@ -758,6 +763,8 @@ ul {
 .profile-card p,
 .card p {
   color: var(--muted-strong);
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 .button,
@@ -771,7 +778,7 @@ ul {
   background: var(--accent-2);
   color: #fff;
   font: inherit;
-  font-size: 0.88rem;
+  font-size: 0.98rem;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
@@ -792,7 +799,7 @@ ul {
 
 .button.small {
   padding: 0.32rem 0.55rem;
-  font-size: 0.82rem;
+  font-size: 0.92rem;
 }
 
 .section-heading {
@@ -828,7 +835,7 @@ ul {
 .card h3 {
   margin: 0.2rem 0 0.45rem;
   color: var(--text);
-  font-size: 1.1rem;
+  font-size: 1.22rem;
   line-height: 1.35;
 }
 
@@ -837,7 +844,7 @@ ul {
   flex-wrap: wrap;
   gap: 0.35rem;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
 }
 
 .timeline {
@@ -852,13 +859,14 @@ ul {
 
 .timeline time {
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.96rem;
   font-weight: 700;
 }
 
 .timeline h3 {
   margin: 0.08rem 0;
   color: var(--text);
+  font-size: 1.22rem;
 }
 
 .authors {
@@ -875,6 +883,7 @@ ul {
 .filter-panel label {
   color: var(--muted-strong);
   font-weight: 700;
+  font-size: 1.02rem;
 }
 
 .filter-panel input {
@@ -885,6 +894,7 @@ ul {
   background: var(--surface-strong);
   color: var(--text);
   font: inherit;
+  font-size: 1rem;
 }
 
 .site-footer {
@@ -965,7 +975,7 @@ ul {
 
 @media (max-width: 620px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .site-main,
