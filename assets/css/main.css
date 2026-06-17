@@ -538,21 +538,44 @@ ul {
 .contact-details {
   display: grid;
   gap: 0.9rem;
-  max-width: 660px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.05fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
 .contact-details li {
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
+  grid-template-columns: 140px minmax(0, 1fr);
   gap: 1rem;
   color: var(--muted-strong);
 }
 
 .contact-details strong {
   color: var(--text);
+}
+
+.contact-map {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.contact-map iframe {
+  width: 100%;
+  min-height: 310px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+}
+
+.contact-map a {
+  font-size: 0.86rem;
 }
 
 .content-section,
@@ -846,6 +869,7 @@ ul {
 
   .intro-section,
   .section-grid,
+  .contact-layout,
   .two-column,
   .hero-grid,
   .card-grid.two,

@@ -10,7 +10,7 @@ baseurl: ""
 lang: "en"
 timezone: "Europe/Berlin"
 
-logo: "/assets/img/profile-placeholder.svg"
+logo: "/assets/img/profile.png"
 image: "/assets/img/social-preview-placeholder.svg"
 
 data_dir: content/data
