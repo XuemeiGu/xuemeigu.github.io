@@ -2,7 +2,7 @@
 title: Publications
 permalink: /publications/
 eyebrow: Publications
-subtitle: "PLACEHOLDER: "
+subtitle: "Publications"
 ---
 
 <div class="filter-panel">
@@ -22,7 +22,3 @@ subtitle: "PLACEHOLDER: "
   {% include publication-card.html publication=publication %}
 {% endfor %}
 </div>
-
-## How to edit this page
-
-Each publication lives in `content/collections/_publications/` as a separate Markdown file. Copy one of the placeholder files, rename it, and edit the front matter fields such as `title`, `authors`, `venue`, `year`, `paper_url`, and `tags`.
