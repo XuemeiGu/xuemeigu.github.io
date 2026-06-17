@@ -1,16 +1,16 @@
 (function () {
   const root = document.documentElement;
   const storedTheme = localStorage.getItem('theme');
-  if (storedTheme) {
-    root.setAttribute('data-theme', storedTheme);
-  }
+  root.setAttribute('data-theme', storedTheme || 'dark');
 
   const themeButton = document.querySelector('.theme-toggle');
   if (themeButton) {
+    themeButton.textContent = root.getAttribute('data-theme') === 'dark' ? '☾' : '☀';
     themeButton.addEventListener('click', () => {
       const current = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', current);
       localStorage.setItem('theme', current);
+      themeButton.textContent = current === 'dark' ? '☾' : '☀';
     });
   }
 
