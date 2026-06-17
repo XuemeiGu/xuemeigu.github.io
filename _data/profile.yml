@@ -1,0 +1,40 @@
+# ------------------------------------------------------------
+# Edit this file first. It controls the main identity/contact text.
+# ------------------------------------------------------------
+name: "Xuemei Gu"
+short_name: "Xuemei"
+pronouns: "she/her"  
+headline: "Researcher in AI/ML for Quantum Science"
+subheadline: "AI for Science · Quantum Physics · Quantum Optics"
+institution: "Friedrich Schiller University Jena"
+position: "Junior Group Leader"
+location: "Jena, Germany"
+email: "xuemei.gu@uni-jena.de"
+
+summary: >-
+  PLACEHOLDER: I develop machine learning methods for quantum science, with interests spanning
+  quantum optics, quantum many-body physics, scientific foundation models, and autonomous
+  discovery workflows. My long-term goal is to build reliable AI systems that help scientists
+  reason, design experiments, and accelerate theoretical insight.
+
+research_keywords:
+  - "AI/ML for Quantum Science"
+  - "Quantum Optics"
+  - "Quantum Many-Body Physics"
+  - "Scientific Foundation Models"
+  - "LLM Agents for Research"
+  - "Neural Quantum States"
+
+links:
+  - label: "Email"
+    url: "mailto:xuemei.gu@uni-jena.de"
+  - label: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=iqzPpJcAAAAJ"
+  - label: "ORCID"
+    url: "https://orcid.org/0000-0002-0734-432X"
+  - label: "GitHub"
+    url: "https://github.com/XuemeiGu"
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/xuemei-gu-11a51888/"
+  #- label: "CV"
+  #  url: "/assets/files/cv-placeholder.md"

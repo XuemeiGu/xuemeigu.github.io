@@ -1,0 +1,67 @@
+# ------------------------------------------------------------
+# Personal academic website configuration
+# Replace PLACEHOLDER values with your own details.
+# ------------------------------------------------------------
+
+title: "Xuemei Gu"
+description: "PLACEHOLDER: Personal academic website of Xuemei Gu — AI/ML for Quantum Science, Quantum Physics, and AI for Science."
+url: "https://xuemeigu.github.io"    
+baseurl: ""                            
+lang: "en"
+timezone: "Europe/Berlin"
+
+logo: "/assets/img/profile-placeholder.svg"
+image: "/assets/img/social-preview-placeholder.svg"
+
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+  projects:
+    output: true
+    permalink: /research/:name/
+  talks:
+    output: true
+    permalink: /talks/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: publication
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: page
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .DS_Store
+  - CNAME.example
+  - PLACEHOLDERS.md

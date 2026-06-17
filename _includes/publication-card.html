@@ -1,0 +1,19 @@
+<article class="card publication-card" data-year="{{ publication.year }}" data-type="{{ publication.type | downcase }}" data-tags="{{ publication.tags | join: ' ' | downcase }}">
+  <div class="card-meta">
+    <span>{{ publication.year }}</span>
+    <span>{{ publication.type }}</span>
+    {% if publication.status %}<span>{{ publication.status }}</span>{% endif %}
+  </div>
+  <h3><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
+  <p class="authors">{{ publication.authors }}</p>
+  <p><em>{{ publication.venue }}</em></p>
+  {% if publication.summary %}<p>{{ publication.summary }}</p>{% endif %}
+  <div class="tag-row">
+    {% for tag in publication.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+  </div>
+  <div class="link-row">
+    {% if publication.paper_url and publication.paper_url != "" %}<a href="{{ publication.paper_url }}">Paper</a>{% endif %}
+    {% if publication.code_url and publication.code_url != "" %}<a href="{{ publication.code_url }}">Code</a>{% endif %}
+    {% if publication.data_url and publication.data_url != "" %}<a href="{{ publication.data_url }}">Data</a>{% endif %}
+  </div>
+</article>

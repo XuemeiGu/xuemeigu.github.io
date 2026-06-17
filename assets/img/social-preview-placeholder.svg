@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f3ec"/>
+  <circle cx="960" cy="120" r="230" fill="#efe7ff"/>
+  <circle cx="180" cy="560" r="260" fill="#d9fff7"/>
+  <text x="80" y="230" font-family="Arial, sans-serif" font-size="78" font-weight="800" fill="#171412">Mei YourSurname</text>
+  <text x="80" y="305" font-family="Arial, sans-serif" font-size="34" fill="#6d6257">AI/ML for Quantum Science · AI for Science</text>
+  <path d="M80 430c160-120 320-120 480 0s320 120 480 0" fill="none" stroke="#7c4dff" stroke-width="12" opacity="0.75"/>
+</svg>

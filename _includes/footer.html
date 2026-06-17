@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div>
+    <strong>{{ site.data.profile.name }}</strong><br>
+    <span>{{ site.data.profile.position }} · {{ site.data.profile.institution }}</span>
+  </div>
+  <div class="footer-links">
+    {% for link in site.data.profile.links %}
+      <a href="{{ link.url }}">{{ link.label }}</a>
+    {% endfor %}
+  </div>
+  <p class="small">© {{ site.time | date: '%Y' }} {{ site.data.profile.name }}. Built with Jekyll, Markdown, and GitHub Pages.</p>
+</footer>

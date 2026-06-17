@@ -1,0 +1,22 @@
+courses:
+  - title: "PLACEHOLDER: Machine Learning for Quantum Physics"
+    role: "Lecturer / Teaching Assistant"
+    institution: "PLACEHOLDER: University"
+    term: "Winter 2026"
+    description: "Replace this with a short course description, topics, or links to materials."
+  - title: "PLACEHOLDER: Introduction to Quantum Optics"
+    role: "Teaching Assistant"
+    institution: "PLACEHOLDER: University"
+    term: "Summer 2025"
+    description: "Replace this with tutorials, exercise sheets, or mentoring responsibilities."
+
+student_projects:
+  - title: "Neural representations for quantum states"
+    level: "Bachelor / Master"
+    description: "PLACEHOLDER: A project on neural-network ansätze for representing quantum states."
+  - title: "LLM agents for scientific literature workflows"
+    level: "Master / PhD rotation"
+    description: "PLACEHOLDER: A project on reliable literature review, citation checking, and scientific reasoning."
+  - title: "Machine learning for quantum control"
+    level: "Master"
+    description: "PLACEHOLDER: A project on optimization and control strategies for quantum optical systems."

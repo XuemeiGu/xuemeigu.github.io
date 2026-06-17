@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Quantum science placeholder illustration</title>
+  <desc id="desc">Abstract waveforms, nodes, and graph lines suggesting AI and quantum science.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7c4dff"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" rx="40" fill="#fffaf2"/>
+  <path d="M60 360c110-190 220-190 330 0s220 190 330 0 80-120 120-120" fill="none" stroke="url(#g)" stroke-width="14" opacity="0.85"/>
+  <path d="M80 250c120 90 230 100 330 30s210-80 360 20" fill="none" stroke="#7c4dff" stroke-width="6" opacity="0.25"/>
+  <path d="M100 460c140-50 255-40 345 30s190 60 335-50" fill="none" stroke="#0f766e" stroke-width="6" opacity="0.25"/>
+  <g stroke="#171412" stroke-width="2" opacity="0.28">
+    <line x1="180" y1="150" x2="330" y2="230"/>
+    <line x1="330" y1="230" x2="460" y2="145"/>
+    <line x1="460" y1="145" x2="610" y2="245"/>
+    <line x1="610" y1="245" x2="720" y2="160"/>
+    <line x1="260" y1="420" x2="430" y2="495"/>
+    <line x1="430" y1="495" x2="610" y2="410"/>
+  </g>
+  <g fill="url(#g)">
+    <circle cx="180" cy="150" r="18"/>
+    <circle cx="330" cy="230" r="14"/>
+    <circle cx="460" cy="145" r="20"/>
+    <circle cx="610" cy="245" r="16"/>
+    <circle cx="720" cy="160" r="18"/>
+    <circle cx="260" cy="420" r="15"/>
+    <circle cx="430" cy="495" r="20"/>
+    <circle cx="610" cy="410" r="17"/>
+  </g>
+  <text x="64" y="88" font-family="Arial, sans-serif" font-size="36" font-weight="800" fill="#171412">AI × Quantum Science</text>
+  <text x="64" y="126" font-family="Arial, sans-serif" font-size="20" fill="#6d6257">PLACEHOLDER illustration — replace with your own figure if desired</text>
+</svg>

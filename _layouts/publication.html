@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="content-section prose article-page">
+  <p class="eyebrow">{{ page.type }} · {{ page.year }}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="authors"><strong>{{ page.authors }}</strong></p>
+  <p><em>{{ page.venue }}</em>{% if page.status %} · {{ page.status }}{% endif %}</p>
+
+  <div class="tag-row spacious">
+    {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+  </div>
+
+  <div class="link-row spacious">
+    {% if page.paper_url and page.paper_url != "" %}<a class="button small" href="{{ page.paper_url }}">Paper</a>{% endif %}
+    {% if page.code_url and page.code_url != "" %}<a class="button small secondary" href="{{ page.code_url }}">Code</a>{% endif %}
+    {% if page.data_url and page.data_url != "" %}<a class="button small secondary" href="{{ page.data_url }}">Data</a>{% endif %}
+  </div>
+
+  {{ content }}
+</article>
