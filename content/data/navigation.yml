@@ -2,6 +2,8 @@
   url: "/"
 - label: "Research"
   url: "/research/"
+- label: "Experience"
+  url: "/experience/"
 - label: "Publications"
   url: "/publications/"
 - label: "Teaching"

@@ -58,37 +58,6 @@ description: "Personal website for Xuemei Gu."
   </div>
 </section>
 
-<section id="background" class="academic-section section-grid">
-  <div class="section-label">
-    <h2>Background</h2>
-  </div>
-  <div class="section-body two-column">
-    <div>
-      <h3>Interests</h3>
-      <ul class="interest-list compact">
-        {% for keyword in site.data.profile.research_keywords limit:5 %}
-          <li>{{ keyword }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div>
-      <h3>Current position</h3>
-      <div class="timeline-list">
-        <article>
-          <h4>{{ site.data.profile.position }}</h4>
-          <p>{{ site.data.profile.institution }}</p>
-          <span>{{ site.data.profile.location }}</span>
-        </article>
-        <article>
-          <h4>Research focus</h4>
-          <p>{{ site.data.profile.subheadline }}</p>
-          <span>AI for Science and Quantum Physics</span>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="publications" class="academic-section section-grid">
   <div class="section-label">
     <h2>Last publications</h2>
