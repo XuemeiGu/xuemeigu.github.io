@@ -14,7 +14,7 @@
   --accent-soft: rgba(76, 131, 223, 0.22);
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
   --radius: 4px;
-  --max-width: 1240px;
+  --max-width: 1360px;
 }
 
 :root[data-theme="light"] {
@@ -617,15 +617,24 @@ ul {
   color: var(--muted-strong);
 }
 
+.page-content {
+  width: 100%;
+  max-width: none;
+  color: var(--muted-strong);
+}
+
 .prose.article-page {
   max-width: 900px;
 }
 
+.page-content p,
+.page-content li,
 .prose p,
 .prose li {
   color: var(--muted-strong);
 }
 
+.page-content h2,
 .prose h2,
 .section-heading h2 {
   margin: 1.8rem 0 0.75rem;
@@ -634,6 +643,7 @@ ul {
   font-weight: 600;
 }
 
+.page-content h3,
 .prose h3 {
   margin: 1.25rem 0 0.35rem;
   color: var(--text);
