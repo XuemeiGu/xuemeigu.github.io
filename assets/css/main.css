@@ -122,8 +122,8 @@ ul {
 
 .brand-mark {
   color: color-mix(in srgb, var(--text) 42%, transparent);
-  font-size: 2.4rem;
-  font-weight: 300;
+  font-size: 1.55rem;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1;
 }
@@ -153,7 +153,7 @@ ul {
 .site-nav a,
 .theme-toggle {
   padding: 0.4rem 0;
-  font-size: 0.92rem;
+  font-size: 1.02rem;
   font-weight: 700;
   line-height: 1.2;
   white-space: nowrap;
@@ -446,6 +446,31 @@ ul {
   color: var(--muted-strong);
 }
 
+.project-list {
+  display: grid;
+  gap: 1.65rem;
+  max-width: 980px;
+}
+
+.project-list-item {
+  padding-bottom: 1.35rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-list-item h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+}
+
+.project-list-item p {
+  max-width: 78ch;
+}
+
+.project-tags {
+  color: var(--accent) !important;
+  font-size: 0.88rem;
+}
+
 .experience-item {
   display: grid;
   grid-template-columns: 70px minmax(0, 1fr);
@@ -555,6 +580,8 @@ ul {
   grid-template-columns: 140px minmax(0, 1fr);
   gap: 1rem;
   color: var(--muted-strong);
+  font-size: 1.06rem;
+  line-height: 1.7;
 }
 
 .contact-details strong {

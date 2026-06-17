@@ -7,9 +7,19 @@ subtitle: "Research Topics"
 
 ## Research
 
-<div class="card-grid two">
+<div class="project-list">
 {% assign ordered_projects = site.projects | sort: "order" %}
 {% for project in ordered_projects %}
-  {% include project-card.html project=project %}
+  <article class="project-list-item">
+    <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+    <div class="item-meta">
+      {% if project.status %}<span>{{ project.status }}</span>{% endif %}
+      {% if project.period %}<span>{{ project.period }}</span>{% endif %}
+    </div>
+    {% if project.short_description %}<p>{{ project.short_description }}</p>{% endif %}
+    {% if project.tags %}
+      <p class="project-tags">{{ project.tags | join: " · " }}</p>
+    {% endif %}
+  </article>
 {% endfor %}
 </div>
