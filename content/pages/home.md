@@ -28,12 +28,6 @@ description: "Personal website for Xuemei Gu."
         <li>{{ keyword }}</li>
       {% endfor %}
     </ul>
-
-    <h3>Open directions</h3>
-    <p>
-      My work connects machine learning, quantum physics, and AI-assisted scientific workflows,
-      with an emphasis on AI methods that can support modeling, control, and discovery.
-    </p>
   </div>
 </section>
 
@@ -91,32 +85,6 @@ description: "Personal website for Xuemei Gu."
           <span>AI for Science and Quantum Physics</span>
         </article>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="experience" class="academic-section section-grid">
-  <div class="section-label">
-    <h2>Experience</h2>
-  </div>
-  <div class="section-body">
-    <div class="experience-list">
-      {% assign selected_projects = site.projects | sort: "order" %}
-      {% for project in selected_projects limit:4 %}
-        <article class="experience-item">
-          <div class="experience-logo">{{ project.title | slice: 0 }}</div>
-          <div>
-            <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-            {% if project.period %}<p class="item-meta">{{ project.period }}</p>{% endif %}
-            {% if project.short_description %}<p>{{ project.short_description }}</p>{% endif %}
-            {% if project.tags %}
-              <div class="tag-row">
-                {% for tag in project.tags limit:3 %}<span class="tag">{{ tag }}</span>{% endfor %}
-              </div>
-            {% endif %}
-          </div>
-        </article>
-      {% endfor %}
     </div>
   </div>
 </section>
