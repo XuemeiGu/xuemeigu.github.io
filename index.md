@@ -13,7 +13,7 @@ description: "Personal academic website for Xuemei Gu."
     <p class="profile-affiliation">{{ site.data.profile.institution }}</p>
     <div class="profile-links icon-links">
       {% for link in site.data.profile.links %}
-        <a href="{{ link.url }}">{{ link.label }}</a>
+        {% include social-link.html link=link %}
       {% endfor %}
     </div>
   </aside>

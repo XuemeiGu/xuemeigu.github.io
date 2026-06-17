@@ -243,12 +243,13 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2rem;
-  padding: 0.28rem 0.55rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
   border: 1px solid transparent;
-  border-radius: var(--radius);
+  border-radius: 50%;
   color: var(--accent);
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -257,6 +258,33 @@ ul {
   background: var(--accent-soft);
   color: var(--text);
   text-decoration: none;
+}
+
+.contact-social-links {
+  margin: 0.8rem 0 1.2rem;
+}
+
+.social-link {
+  position: relative;
+}
+
+.social-link svg {
+  width: 1.55rem;
+  height: 1.55rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.social-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
 
 .about-panel {
@@ -469,11 +497,26 @@ ul {
 
 .link-row a,
 .footer-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.22rem 0.48rem;
   border: 1px solid var(--accent-2);
   border-radius: var(--radius);
   color: var(--accent);
   font-size: 0.82rem;
+}
+
+.footer-links .social-link {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.footer-links .social-link svg {
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .link-row a:hover,

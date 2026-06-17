@@ -17,9 +17,11 @@ Please include a short topic line and a few sentences about the research questio
 
 ## Useful links
 
+<div class="profile-links icon-links contact-social-links">
 {% for link in site.data.profile.links %}
-- [{{ link.label }}]({{ link.url }})
+  {% include social-link.html link=link %}
 {% endfor %}
+</div>
 
 ## Message template
 

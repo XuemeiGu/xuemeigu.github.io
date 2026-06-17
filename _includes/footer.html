@@ -5,7 +5,7 @@
   </div>
   <div class="footer-links">
     {% for link in site.data.profile.links %}
-      <a href="{{ link.url }}">{{ link.label }}</a>
+      {% include social-link.html link=link %}
     {% endfor %}
   </div>
   <p class="small">© {{ site.time | date: '%Y' }} {{ site.data.profile.name }}. Built with Jekyll, Markdown, and GitHub Pages.</p>
