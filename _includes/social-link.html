@@ -1,5 +1,5 @@
 {% assign label = include.link.label | default: 'Link' %}
-{% assign key = label | downcase %}
+{% assign key = include.link.icon | default: label | downcase %}
 <a class="social-link" href="{{ include.link.url }}" aria-label="{{ label }}" title="{{ label }}">
   {% if key contains 'email' %}
     <svg aria-hidden="true" viewBox="0 0 24 24">
