@@ -136,8 +136,8 @@ ul {
   display: flex;
   align-items: center;
   gap: 1.4rem;
-  margin-left: 1rem;
-  width: 100%;
+  width: auto;
+  margin-left: auto;
 }
 
 .site-nav a,
@@ -167,7 +167,7 @@ ul {
 }
 
 .theme-toggle {
-  margin-left: auto;
+  margin-left: 0.2rem;
   font-size: 1.2rem;
 }
 
@@ -490,6 +490,26 @@ ul {
 .contact-list p {
   color: var(--muted-strong);
   font-size: 1.05rem;
+}
+
+.contact-details {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 660px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-details li {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 1rem;
+  color: var(--muted-strong);
+}
+
+.contact-details strong {
+  color: var(--text);
 }
 
 .content-section,
@@ -863,6 +883,11 @@ ul {
 
   .academic-section {
     padding: 3.4rem 0;
+  }
+
+  .contact-details li {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
   }
 
   .academic-profile h1 {

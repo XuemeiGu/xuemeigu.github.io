@@ -2,23 +2,18 @@
 title: Contact
 permalink: /contact/
 eyebrow: Contact
-subtitle: "PLACEHOLDER: How collaborators, students, and seminar organizers can reach you."
+subtitle: "How collaborators, students, and seminar organizers can reach me."
 ---
 
 ## Contact information
 
-**Email:** [{{ site.data.profile.email }}](mailto:{{ site.data.profile.email }})  
-**Institution:** {{ site.data.profile.institution }}  
-**Location:** {{ site.data.profile.location }}
+- **Email:** [{{ site.data.profile.email }}](mailto:{{ site.data.profile.email }})
+- **Institution:** {{ site.data.profile.institution }}
+- **Visitor address:** {{ site.data.profile.institution }}, {{ site.data.profile.location }}
 
 ## Research inquiries
 
-PLACEHOLDER: Write 3–5 sentences about the best way to contact you. You might mention:
-
-- student projects or thesis inquiries
-- seminar invitations
-- collaborations with AI-for-science or quantum-science groups
-- what to include in a first email
+Please include a short topic line and a few sentences about the research question, project, seminar, or collaboration you have in mind.
 
 ## Useful links
 

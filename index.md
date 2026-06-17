@@ -152,7 +152,23 @@ description: "Personal academic website for Xuemei Gu."
     <h2>Contact</h2>
   </div>
   <div class="section-body contact-list">
-    <p><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></p>
-    <p>{{ site.data.profile.institution }} · {{ site.data.profile.location }}</p>
+    <ul class="contact-details">
+      <li>
+        <strong>Email</strong>
+        <span><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></span>
+      </li>
+      <li>
+        <strong>Institution</strong>
+        <span>{{ site.data.profile.institution }}</span>
+      </li>
+      <li>
+        <strong>Visitor address</strong>
+        <span>{{ site.data.profile.institution }}<br>{{ site.data.profile.location }}</span>
+      </li>
+      <li>
+        <strong>Research inquiries</strong>
+        <span>Collaborations, seminar invitations, and student project inquiries are welcome.</span>
+      </li>
+    </ul>
   </div>
 </section>

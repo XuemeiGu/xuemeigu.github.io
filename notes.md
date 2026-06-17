@@ -1,7 +1,7 @@
 ---
-title: Notes
-permalink: /notes/
-eyebrow: Notes
+title: Blog
+permalink: /blog/
+eyebrow: Blog
 subtitle: "PLACEHOLDER: Short research updates, reading notes, announcements, and reflections."
 ---
 

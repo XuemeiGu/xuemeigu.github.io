@@ -13,7 +13,6 @@
     {% for item in site.data.navigation %}
       <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.label }}</a>
     {% endfor %}
-    <a href="{{ '/contact/' | relative_url }}">Contact</a>
     <button class="theme-toggle" type="button" aria-label="Toggle color theme">☾</button>
   </nav>
 </header>
