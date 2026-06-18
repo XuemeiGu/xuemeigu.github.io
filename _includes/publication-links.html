@@ -3,6 +3,10 @@
 {% assign pdf_url = item.pdf_url | default: "" %}
 {% assign code_url = item.code_url | default: "" %}
 {% assign data_url = item.data_url | default: "" %}
+{% if paper_url contains "PLACEHOLDER" %}{% assign paper_url = "" %}{% endif %}
+{% if pdf_url contains "PLACEHOLDER" %}{% assign pdf_url = "" %}{% endif %}
+{% if code_url contains "PLACEHOLDER" %}{% assign code_url = "" %}{% endif %}
+{% if data_url contains "PLACEHOLDER" %}{% assign data_url = "" %}{% endif %}
 {% if paper_url != "" or pdf_url != "" or code_url != "" or data_url != "" %}
   <div class="publication-links">
     {% if paper_url != "" %}

@@ -2,9 +2,11 @@
 layout: default
 ---
 <article class="content-section prose article-page">
-  <div class="card-meta publication-page-meta">
-    <span>{{ page.year }}</span>
-    <span>{{ page.type }}</span>
+  <div class="publication-card-head publication-page-meta">
+    <div class="card-meta">
+      <span>{{ page.year }}</span>
+      <span>{{ page.type }}</span>
+    </div>
     {% include publication-links.html item=page %}
   </div>
   <h1>{{ page.title }}</h1>

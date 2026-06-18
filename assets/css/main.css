@@ -510,23 +510,27 @@ ul {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.3rem;
 }
 
 .publication-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.42rem;
-  min-height: 1.95rem;
-  padding: 0.24rem 0.56rem;
+  gap: 0.34rem;
+  min-height: 1.65rem;
+  padding: 0.18rem 0.46rem;
   border: 1px solid var(--accent-2);
   border-radius: var(--radius);
   color: var(--accent);
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
+}
+
+.publication-link span {
+  white-space: nowrap;
 }
 
 .publication-link:hover {
@@ -538,8 +542,8 @@ ul {
 .publication-link svg {
   flex: 0 0 auto;
   display: block;
-  width: 1rem !important;
-  height: 1rem !important;
+  width: 0.92rem !important;
+  height: 0.92rem !important;
   fill: none !important;
   stroke: currentColor;
   stroke-linecap: round;
@@ -881,10 +885,16 @@ ul {
 }
 
 .card h3 {
-  margin: 0.2rem 0 0.45rem;
+  margin: 0 0 0.45rem;
   color: var(--text);
   font-size: 1.22rem;
   line-height: 1.35;
+}
+
+.publication-card-head {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 0.7rem;
 }
 
 .card-meta {
