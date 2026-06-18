@@ -43,9 +43,9 @@ description: "Personal website for Xuemei Gu."
           <span><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></span>
         </li>
         <li>
-          <strong>address</strong>
+          <strong>Address</strong>
           <span>
-            Institut für Festkörpertheorie und -optik<br>
+            <span class="address-institute">Institut für Festkörpertheorie und -optik</span><br>
             {{ site.data.profile.institution }}<br>
             Fröbelstieg 1<br>
             07743 Jena, Germany

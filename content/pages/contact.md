@@ -14,7 +14,7 @@ permalink: /contact/
     <li>
       <strong>address</strong>
       <span>
-        Institut für Festkörpertheorie und -optik<br>
+        <span class="address-institute">Institut für Festkörpertheorie und -optik</span><br>
         {{ site.data.profile.institution }}<br>
         Fröbelstieg 1<br>
         07743 Jena, Germany

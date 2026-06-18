@@ -257,8 +257,8 @@ ul {
 }
 
 .profile-links .social-link svg {
-  width: 2.15rem;
-  height: 2.15rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .profile-links a:hover {
@@ -689,22 +689,26 @@ ul {
 
 .contact-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.05fr);
+  grid-template-columns: minmax(500px, 0.95fr) minmax(360px, 1fr);
   gap: 1.5rem;
   align-items: start;
 }
 
 .contact-details li {
   display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
+  grid-template-columns: 110px minmax(0, 1fr);
   gap: 1rem;
   color: var(--muted-strong);
   font-size: 1.14rem;
-  line-height: 1.7;
+  line-height: 2.0;
 }
 
 .contact-details strong {
   color: var(--text);
+}
+
+.address-institute {
+  white-space: nowrap;
 }
 
 .contact-map {
@@ -1143,6 +1147,10 @@ ul {
 
   .brand-text small {
     display: none;
+  }
+
+  .address-institute {
+    white-space: normal;
   }
 }
 
