@@ -1017,6 +1017,14 @@ ul {
   line-height: 1.65;
 }
 
+.talk-note {
+  max-width: 72ch;
+  margin: 0 0 1.1rem;
+  color: var(--muted-strong);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
 .filter-panel {
   display: grid;
   gap: 0.65rem;

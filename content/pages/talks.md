@@ -3,22 +3,30 @@ title: Talks
 permalink: /talks/
 ---
 
-<div class="stack">
+<p class="talk-note">
+  Selected conference talks, workshop contributions, seminars, and poster presentations.
+</p>
+
+<div class="cv-list">
 {% assign talks_sorted = site.talks | sort: "date" | reverse %}
 {% for talk in talks_sorted %}
-<article class="card">
-  <div class="card-meta">
-    <span>{{ talk.date | date: "%B %-d, %Y" }}</span>
-    {% if talk.location %}<span>{{ talk.location }}</span>{% endif %}
+  <article class="cv-entry">
+    <time>{{ talk.date | date: "%Y.%m.%d" }}</time>
+    <div>
+      <h3>{{ talk.title }}</h3>
+      <p>
+        <strong>{{ talk.event }}</strong>{% if talk.location and talk.location != "" %}, {{ talk.location }}{% endif %}.
+      </p>
+      {% assign talk_text = talk.content | strip %}
+      {% if talk_text != "" %}
+        {{ talk.content }}
+      {% endif %}
+      {% if talk.slides_url and talk.slides_url != "" %}
+        <div class="link-row">
+          <a href="{{ talk.slides_url }}">Slides</a>
+        </div>
+      {% endif %}
   </div>
-  <h3>{{ talk.title }}</h3>
-  <p><strong>{{ talk.event }}</strong></p>
-  {{ talk.content }}
-  {% if talk.slides_url and talk.slides_url != "" %}
-  <div class="link-row">
-    <a href="{{ talk.slides_url }}">Slides</a>
-  </div>
-  {% endif %}
-</article>
+  </article>
 {% endfor %}
 </div>
