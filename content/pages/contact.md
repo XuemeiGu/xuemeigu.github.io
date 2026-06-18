@@ -25,9 +25,9 @@ permalink: /contact/
   <div class="contact-map" aria-label="Map showing Friedrich Schiller University Jena">
     <iframe
       title="Map of Friedrich Schiller University Jena"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=11.5797%2C50.9239%2C11.6002%2C50.9348&amp;layer=mapnik&amp;marker=50.9294%2C11.5899"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=11.5760%2C50.9315%2C11.5855%2C50.9360&amp;layer=mapnik&amp;marker=50.9339432%2C11.5807476"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <a href="https://www.openstreetmap.org/?mlat=50.9294&amp;mlon=11.5899#map=16/50.9294/11.5899">View larger map</a>
+    <a href="https://www.openstreetmap.org/?mlat=50.9339432&amp;mlon=11.5807476#map=17/50.9339432/11.5807476">View larger map</a>
   </div>
 </div>
