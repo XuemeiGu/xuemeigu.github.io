@@ -496,11 +496,9 @@ ul {
 }
 
 .tag,
-.card-meta > span,
-.publication-link {
+.card-meta > span {
   display: inline-flex;
   align-items: center;
-  gap: 0.28rem;
   padding: 0.16rem 0.45rem;
   border: 1px solid var(--accent-2);
   border-radius: var(--radius);
@@ -511,10 +509,22 @@ ul {
 .publication-links {
   display: inline-flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.35rem;
 }
 
 .publication-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.95rem;
+  height: 1.95rem;
+  padding: 0;
+  border: 1px solid var(--accent-2);
+  border-radius: var(--radius);
+  color: var(--accent);
+  font-size: 0.88rem;
+  line-height: 1;
   text-decoration: none;
 }
 
@@ -525,9 +535,10 @@ ul {
 }
 
 .publication-link svg {
-  width: 1em;
-  height: 1em;
-  fill: none;
+  display: block;
+  width: 1rem !important;
+  height: 1rem !important;
+  fill: none !important;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -877,6 +888,7 @@ ul {
 .card-meta {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.35rem;
   color: var(--muted);
   font-size: 0.9rem;
