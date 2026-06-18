@@ -1088,9 +1088,10 @@ ul {
   color: var(--text);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 901px) {
   .brand {
-    margin-left: max(0rem, calc((100vw - var(--max-width)) / 2 + 3.5rem));
+    position: absolute;
+    left: max(5rem, calc((100vw - var(--max-width)) / 2 + 13.5rem));
   }
 }
 
@@ -1100,7 +1101,7 @@ ul {
   }
 
   .brand {
-    margin-left: 0;
+    position: static;
   }
 
   .intro-section,
