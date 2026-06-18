@@ -88,7 +88,7 @@ permalink: /experience/
   </article>
 </div>
 
-## Funding and Honors
+## Fellowship and Honors
 
 <div class="cv-list">
   <article class="cv-entry">
