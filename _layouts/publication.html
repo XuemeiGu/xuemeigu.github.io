@@ -5,7 +5,7 @@ layout: default
   <p class="eyebrow">{{ page.type }} · {{ page.year }}</p>
   <h1>{{ page.title }}</h1>
   <p class="authors"><strong>{{ page.authors }}</strong></p>
-  <p><em>{{ page.venue }}</em>{% if page.status %} · {{ page.status }}{% endif %}</p>
+  <p><em>{{ page.venue }}</em></p>
 
   <div class="tag-row spacious">
     {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}

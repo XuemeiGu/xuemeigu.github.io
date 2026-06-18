@@ -4,7 +4,6 @@ authors: "Mei YourSurname, Collaborator A, Collaborator B"
 venue: "PLACEHOLDER: arXiv / Journal / Conference"
 year: 2026
 type: "Preprint"
-status: "Under review"
 featured: true
 paper_url: "https://arxiv.org/abs/PLACEHOLDER"
 code_url: "https://github.com/yourusername/PLACEHOLDER"

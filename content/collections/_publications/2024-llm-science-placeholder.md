@@ -4,7 +4,6 @@ authors: "Mei YourSurname, Collaborator F"
 venue: "PLACEHOLDER: Workshop / Preprint"
 year: 2024
 type: "Preprint"
-status: "Draft"
 featured: false
 paper_url: "https://arxiv.org/abs/PLACEHOLDER"
 code_url: "https://github.com/yourusername/PLACEHOLDER"

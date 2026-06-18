@@ -2,7 +2,6 @@
   <div class="card-meta">
     <span>{{ publication.year }}</span>
     <span>{{ publication.type }}</span>
-    {% if publication.status %}<span>{{ publication.status }}</span>{% endif %}
   </div>
   <h3><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
   <p class="authors">{{ publication.authors }}</p>

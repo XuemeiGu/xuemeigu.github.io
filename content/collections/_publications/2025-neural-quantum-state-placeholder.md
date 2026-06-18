@@ -4,7 +4,6 @@ authors: "Mei YourSurname, Collaborator C"
 venue: "PLACEHOLDER: Physical Review / NeurIPS Workshop / arXiv"
 year: 2025
 type: "Journal"
-status: "Published"
 featured: true
 paper_url: "https://doi.org/PLACEHOLDER"
 code_url: "https://github.com/yourusername/PLACEHOLDER"
