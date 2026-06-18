@@ -122,7 +122,7 @@ ul {
 
 .brand-mark {
   color: color-mix(in srgb, var(--text) 42%, transparent);
-  font-size: 1.55rem;
+  font-size: 1.05rem;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1;
@@ -153,10 +153,13 @@ ul {
 .site-nav a,
 .theme-toggle {
   padding: 0.4rem 0;
-  font-size: 1.02rem;
   font-weight: 700;
   line-height: 1.2;
   white-space: nowrap;
+}
+
+.site-nav a {
+  font-size: 1.14rem;
 }
 
 .site-nav a:hover,
@@ -482,8 +485,8 @@ ul {
 
 .research-topic {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
-  gap: 1.4rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
   padding: 1.6rem 0;
   border-bottom: 1px solid var(--line);
 }
@@ -491,14 +494,6 @@ ul {
 .research-topic:first-child {
   padding-top: 0;
   border-top: 0;
-}
-
-.topic-index {
-  margin: 0 !important;
-  color: var(--accent) !important;
-  font-size: 0.95rem !important;
-  font-weight: 800;
-  line-height: 1.4 !important;
 }
 
 .research-topic h2 {
@@ -514,6 +509,21 @@ ul {
 
 .research-topic p:last-child {
   margin-bottom: 0;
+}
+
+.research-topic-media {
+  width: 100%;
+  max-width: 520px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.research-topic-media img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .experience-item {
@@ -757,7 +767,7 @@ ul {
 .prose p,
 .prose li {
   color: var(--muted-strong);
-  font-size: 1.08rem;
+  font-size: 1.16rem;
   line-height: 1.72;
 }
 
@@ -858,7 +868,7 @@ ul {
 .profile-card p,
 .card p {
   color: var(--muted-strong);
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   line-height: 1.7;
 }
 
@@ -940,7 +950,7 @@ ul {
   align-items: center;
   gap: 0.35rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .timeline {
@@ -986,7 +996,7 @@ ul {
 
 .cv-entry time {
   color: var(--accent);
-  font-size: 0.92rem;
+  font-size: 1.04rem;
   font-weight: 800;
   line-height: 1.45;
 }
@@ -994,14 +1004,14 @@ ul {
 .cv-entry h3 {
   margin: 0;
   color: var(--text);
-  font-size: 1.02rem;
+  font-size: 1.12rem;
   line-height: 1.38;
 }
 
 .cv-entry p {
   margin: 0.12rem 0 0;
   color: var(--muted-strong);
-  font-size: 0.98rem;
+  font-size: 1.08rem;
   line-height: 1.55;
 }
 
@@ -1013,7 +1023,7 @@ ul {
   max-width: 72ch;
   margin: 0 0 1rem;
   color: var(--muted-strong);
-  font-size: 1.02rem;
+  font-size: 1.12rem;
   line-height: 1.65;
 }
 
@@ -1021,7 +1031,7 @@ ul {
   max-width: 72ch;
   margin: 0 0 1.1rem;
   color: var(--muted-strong);
-  font-size: 1.02rem;
+  font-size: 1.12rem;
   line-height: 1.65;
 }
 
@@ -1159,11 +1169,6 @@ ul {
   .cv-entry {
     grid-template-columns: 1fr;
     gap: 0.18rem;
-  }
-
-  .research-topic {
-    grid-template-columns: 1fr;
-    gap: 0.35rem;
   }
 
   .academic-profile h1 {
