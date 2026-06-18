@@ -3,6 +3,17 @@ title: Publications
 permalink: /publications/
 ---
 
+{% assign scholar_url = "" %}
+{% for link in site.data.profile.links %}
+  {% if link.label == "Google Scholar" %}
+    {% assign scholar_url = link.url %}
+  {% endif %}
+{% endfor %}
+
+<p class="publication-note">
+  For a complete and regularly updated publication list, please see my <a href="{{ scholar_url }}">Google Scholar profile</a>.
+</p>
+
 <div class="filter-panel">
   <label for="publication-search">Search publications</label>
   <input id="publication-search" type="search" placeholder="Search title, author, venue, year...">
