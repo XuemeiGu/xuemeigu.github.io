@@ -43,7 +43,7 @@ description: "Personal website for Xuemei Gu."
           <span><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></span>
         </li>
         <li>
-          <strong>Tel</strong>
+          <strong>Office Phone</strong>
           <span><a href="tel:+493641947669">+49 3641 9-47669</a></span>
         </li>
         <li>

@@ -1099,7 +1099,7 @@ ul {
 
 @media (min-width: 901px) {
   .brand-mark {
-    margin-left: clamp(1.5rem, 10vw, 5rem);
+    margin-left: clamp(2rem, 11vw, 6rem);
   }
 }
 
