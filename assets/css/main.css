@@ -474,6 +474,48 @@ ul {
   font-size: 0.96rem;
 }
 
+.research-topics {
+  display: grid;
+  gap: 0;
+  max-width: 1040px;
+}
+
+.research-topic {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 1.4rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.research-topic:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.topic-index {
+  margin: 0 !important;
+  color: var(--accent) !important;
+  font-size: 0.95rem !important;
+  font-weight: 800;
+  line-height: 1.4 !important;
+}
+
+.research-topic h2 {
+  margin: 0 0 0.65rem;
+  color: var(--text);
+  font-size: clamp(1.28rem, 2vw, 1.7rem);
+  line-height: 1.25;
+}
+
+.research-topic p {
+  max-width: 82ch;
+}
+
+.research-topic p:last-child {
+  margin-bottom: 0;
+}
+
 .experience-item {
   display: grid;
   grid-template-columns: 70px minmax(0, 1fr);
@@ -1109,6 +1151,11 @@ ul {
   .cv-entry {
     grid-template-columns: 1fr;
     gap: 0.18rem;
+  }
+
+  .research-topic {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
   }
 
   .academic-profile h1 {
