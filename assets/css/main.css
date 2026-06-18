@@ -121,6 +121,7 @@ ul {
 }
 
 .brand-mark {
+  display: inline-block;
   color: color-mix(in srgb, var(--text) 42%, transparent);
   font-size: 1.42rem;
   font-weight: 400;
@@ -297,10 +298,10 @@ ul {
 }
 
 .about-panel {
-  max-width: 700px;
+  max-width: 780px;
   color: var(--text);
-  font-size: 1.08rem;
-  line-height: 1.66;
+  font-size: 1.03rem;
+  line-height: 1.6;
 }
 
 .about-panel h2,
@@ -322,10 +323,11 @@ ul {
 }
 
 .about-panel p {
-  max-width: 66ch;
+  max-width: 76ch;
   color: var(--muted-strong);
-  font-size: 1.08rem;
-  line-height: 1.66;
+  font-size: 1.03rem;
+  line-height: 1.6;
+  text-wrap: pretty;
 }
 
 .interest-list li {
@@ -1089,9 +1091,8 @@ ul {
 }
 
 @media (min-width: 901px) {
-  .brand {
-    position: absolute;
-    left: max(5rem, calc((100vw - var(--max-width)) / 2 + 13.5rem));
+  .brand-mark {
+    margin-left: clamp(4rem, 9vw, 12rem);
   }
 }
 
@@ -1100,8 +1101,8 @@ ul {
     padding: 0 1rem;
   }
 
-  .brand {
-    position: static;
+  .brand-mark {
+    margin-left: 0;
   }
 
   .intro-section,

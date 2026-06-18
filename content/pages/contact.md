@@ -12,7 +12,7 @@ permalink: /contact/
       <span><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></span>
     </li>
     <li>
-      <strong>address</strong>
+      <strong>Address</strong>
       <span>
         <span class="address-institute">Institut für Festkörpertheorie und -optik</span><br>
         {{ site.data.profile.institution }}<br>
