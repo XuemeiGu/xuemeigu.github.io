@@ -121,7 +121,6 @@ ul {
 }
 
 .brand-mark {
-  margin-left: 0.85rem;
   color: color-mix(in srgb, var(--text) 42%, transparent);
   font-size: 1.42rem;
   font-weight: 400;
@@ -298,10 +297,10 @@ ul {
 }
 
 .about-panel {
-  max-width: 760px;
+  max-width: 700px;
   color: var(--text);
-  font-size: 1.14rem;
-  line-height: 1.75;
+  font-size: 1.08rem;
+  line-height: 1.66;
 }
 
 .about-panel h2,
@@ -320,6 +319,13 @@ ul {
 .about-panel h3,
 .section-body h3 {
   margin: 1.55rem 0 0.6rem;
+}
+
+.about-panel p {
+  max-width: 66ch;
+  color: var(--muted-strong);
+  font-size: 1.08rem;
+  line-height: 1.66;
 }
 
 .interest-list li {
@@ -1082,9 +1088,19 @@ ul {
   color: var(--text);
 }
 
+@media (min-width: 1200px) {
+  .brand {
+    margin-left: max(0rem, calc((100vw - var(--max-width)) / 2 + 3.5rem));
+  }
+}
+
 @media (max-width: 900px) {
   .site-header {
     padding: 0 1rem;
+  }
+
+  .brand {
+    margin-left: 0;
   }
 
   .intro-section,
