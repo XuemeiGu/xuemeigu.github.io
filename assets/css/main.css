@@ -698,6 +698,11 @@ ul {
   align-items: start;
 }
 
+#contact.section-grid {
+  grid-template-columns: minmax(170px, 0.32fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
 .contact-details li {
   display: grid;
   grid-template-columns: 110px minmax(0, 1fr);
@@ -722,9 +727,11 @@ ul {
 
 .contact-map iframe {
   width: 100%;
-  min-height: 310px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 0;
   background: var(--surface-strong);
 }
 
