@@ -11,7 +11,7 @@ permalink: /publications/
 {% endfor %}
 
 <p class="publication-note">
-  For a complete and regularly updated publication list, please see my <a href="{{ scholar_url }}">Google Scholar profile</a>.
+  Here I list the publications; for citations please have a look at <a href="{{ scholar_url }}">Google Scholar</a>.
 </p>
 
 <div class="filter-panel">
