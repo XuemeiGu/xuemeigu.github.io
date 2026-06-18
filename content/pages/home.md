@@ -43,20 +43,11 @@ description: "Personal website for Xuemei Gu."
           <span><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></span>
         </li>
         <li>
-          <strong>Visitor address</strong>
+          <strong>address</strong>
           <span>
             Institut für Festkörpertheorie und -optik<br>
             {{ site.data.profile.institution }}<br>
             Fröbelstieg 1<br>
-            07743 Jena, Germany
-          </span>
-        </li>
-        <li>
-          <strong>Postal address</strong>
-          <span>
-            Institut für Festkörpertheorie und -optik<br>
-            {{ site.data.profile.institution }}<br>
-            Max-Wien-Platz 1<br>
             07743 Jena, Germany
           </span>
         </li>
