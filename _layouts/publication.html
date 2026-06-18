@@ -7,10 +7,6 @@ layout: default
   <p class="authors"><strong>{{ page.authors }}</strong></p>
   <p><em>{{ page.venue }}</em></p>
 
-  <div class="tag-row spacious">
-    {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
-  </div>
-
   <div class="link-row spacious">
     {% if page.paper_url and page.paper_url != "" %}<a class="button small" href="{{ page.paper_url }}">Paper</a>{% endif %}
     {% if page.code_url and page.code_url != "" %}<a class="button small secondary" href="{{ page.code_url }}">Code</a>{% endif %}

@@ -8,11 +8,6 @@ featured: true
 paper_url: "https://example.com/PLACEHOLDER-paper"
 code_url: ""
 data_url: ""
-tags:
-  - Quantum control
-  - Quantum optics
-  - Optimization
-summary: "PLACEHOLDER: Short summary of the control task, learning setup, and result."
 ---
 
 ## Abstract

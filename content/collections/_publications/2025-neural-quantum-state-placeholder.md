@@ -8,11 +8,6 @@ featured: true
 paper_url: "https://doi.org/PLACEHOLDER"
 code_url: "https://github.com/yourusername/PLACEHOLDER"
 data_url: ""
-tags:
-  - Neural quantum states
-  - Many-body physics
-  - Machine learning
-summary: "PLACEHOLDER: Short summary of the model, benchmark, or physical system studied."
 ---
 
 ## Abstract

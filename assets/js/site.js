@@ -31,7 +31,7 @@
   function applyPublicationFilters() {
     const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
     cards.forEach((card) => {
-      const text = card.textContent.toLowerCase();
+      const text = (card.dataset.search || card.textContent).toLowerCase();
       const type = card.dataset.type || '';
       const matchesQuery = !query || text.includes(query);
       const matchesFilter = activeFilter === 'all' || type === activeFilter;

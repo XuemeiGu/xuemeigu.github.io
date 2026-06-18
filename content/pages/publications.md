@@ -7,7 +7,7 @@ subtitle: "Publications"
 
 <div class="filter-panel">
   <label for="publication-search">Search publications</label>
-  <input id="publication-search" type="search" placeholder="Search title, author, venue, tags...">
+  <input id="publication-search" type="search" placeholder="Search title, author, venue, year...">
   <div class="filter-buttons" aria-label="Publication filters">
     <button class="filter-button active" data-filter="all" type="button">All</button>
     <button class="filter-button" data-filter="preprint" type="button">Preprints</button>

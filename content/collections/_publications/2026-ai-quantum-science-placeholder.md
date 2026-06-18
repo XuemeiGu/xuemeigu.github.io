@@ -8,11 +8,6 @@ featured: true
 paper_url: "https://arxiv.org/abs/PLACEHOLDER"
 code_url: "https://github.com/yourusername/PLACEHOLDER"
 data_url: ""
-tags:
-  - AI for Science
-  - Quantum Physics
-  - Reliability
-summary: "PLACEHOLDER: One-sentence summary of the key contribution and result."
 ---
 
 ## Abstract
