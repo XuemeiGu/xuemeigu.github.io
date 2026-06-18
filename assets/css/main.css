@@ -496,13 +496,48 @@ ul {
 }
 
 .tag,
-.card-meta span {
+.card-meta > span,
+.publication-link {
   display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
   padding: 0.16rem 0.45rem;
   border: 1px solid var(--accent-2);
   border-radius: var(--radius);
   color: var(--accent);
   font-size: 0.88rem;
+}
+
+.publication-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.publication-link {
+  text-decoration: none;
+}
+
+.publication-link:hover {
+  background: var(--accent-soft);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.publication-link svg {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.link-mark {
+  font-size: 0.78em;
+  font-weight: 800;
+  letter-spacing: 0;
 }
 
 .publication-row {
