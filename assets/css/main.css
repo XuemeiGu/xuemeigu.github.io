@@ -246,14 +246,19 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.9rem;
-  height: 2.9rem;
+  width: 3.35rem;
+  height: 3.35rem;
   padding: 0;
   border: 1px solid transparent;
   border-radius: 50%;
   color: var(--accent);
   font-size: 1rem;
   font-weight: 700;
+}
+
+.profile-links .social-link svg {
+  width: 2.15rem;
+  height: 2.15rem;
 }
 
 .profile-links a:hover {
