@@ -925,21 +925,42 @@ ul {
 
 .cv-list {
   display: grid;
-  gap: 0.42rem;
+  gap: 0;
   max-width: 980px;
-  margin-bottom: 1.7rem;
+  margin-bottom: 2rem;
 }
 
-.cv-list p {
-  margin: 0;
-  color: var(--muted-strong);
-  font-size: 1.02rem;
-  line-height: 1.62;
+.cv-entry {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 1.1rem;
+  padding: 0.72rem 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.cv-list span {
-  color: var(--text);
+.cv-entry:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.cv-entry time {
+  color: var(--accent);
+  font-size: 0.92rem;
   font-weight: 800;
+  line-height: 1.45;
+}
+
+.cv-entry h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.38;
+}
+
+.cv-entry p {
+  margin: 0.12rem 0 0;
+  color: var(--muted-strong);
+  font-size: 0.98rem;
+  line-height: 1.55;
 }
 
 .authors {
@@ -1083,6 +1104,11 @@ ul {
   .contact-details li {
     grid-template-columns: 1fr;
     gap: 0.15rem;
+  }
+
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.18rem;
   }
 
   .academic-profile h1 {
