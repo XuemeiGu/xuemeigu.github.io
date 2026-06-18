@@ -699,8 +699,8 @@ ul {
 }
 
 #contact.section-grid {
-  grid-template-columns: minmax(170px, 0.32fr) minmax(0, 1fr);
-  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: clamp(1rem, 2vw, 1.75rem);
 }
 
 .contact-details li {
@@ -1099,7 +1099,7 @@ ul {
 
 @media (min-width: 901px) {
   .brand-mark {
-    margin-left: clamp(1.5rem, 9vw, 5rem);
+    margin-left: clamp(1.5rem, 10vw, 5rem);
   }
 }
 
@@ -1119,6 +1119,10 @@ ul {
   .hero-grid,
   .card-grid.two,
   .card-grid.three {
+    grid-template-columns: 1fr;
+  }
+
+  #contact.section-grid {
     grid-template-columns: 1fr;
   }
 
