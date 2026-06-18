@@ -517,13 +517,14 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.95rem;
-  height: 1.95rem;
-  padding: 0;
+  gap: 0.42rem;
+  min-height: 1.95rem;
+  padding: 0.24rem 0.56rem;
   border: 1px solid var(--accent-2);
   border-radius: var(--radius);
   color: var(--accent);
-  font-size: 0.88rem;
+  font-size: 0.92rem;
+  font-weight: 700;
   line-height: 1;
   text-decoration: none;
 }
@@ -535,6 +536,7 @@ ul {
 }
 
 .publication-link svg {
+  flex: 0 0 auto;
   display: block;
   width: 1rem !important;
   height: 1rem !important;
