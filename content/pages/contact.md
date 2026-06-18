@@ -12,7 +12,7 @@ permalink: /contact/
       <span><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></span>
     </li>
     <li>
-      <strong>Office Phone</strong>
+      <strong>Phone</strong>
       <span><a href="tel:+493641947669">+49 3641 9-47669</a></span>
     </li>
     <li>

@@ -698,9 +698,13 @@ ul {
   align-items: start;
 }
 
+.page-content > .contact-layout {
+  margin-left: clamp(2rem, 4vw, 4rem);
+}
+
 #contact.section-grid {
   grid-template-columns: max-content minmax(0, 1fr);
-  gap: clamp(1rem, 2vw, 1.75rem);
+  gap: clamp(1.75rem, 3vw, 2.75rem);
 }
 
 .contact-details li {
@@ -970,6 +974,10 @@ ul {
   line-height: 1.35;
 }
 
+.publication-card h3 {
+  margin-top: 1.15rem;
+}
+
 .card-meta {
   display: flex;
   flex-wrap: wrap;
@@ -1042,7 +1050,12 @@ ul {
 }
 
 .authors {
+  margin-bottom: 0.12rem;
   color: var(--muted-strong) !important;
+}
+
+.publication-venue {
+  margin-top: 0;
 }
 
 .publication-note {
@@ -1053,7 +1066,8 @@ ul {
   line-height: 1.65;
 }
 
-.talk-note {
+.talk-note,
+.teaching-note {
   max-width: 72ch;
   margin: 0 0 1.1rem;
   color: var(--muted-strong);
@@ -1124,6 +1138,10 @@ ul {
 
   #contact.section-grid {
     grid-template-columns: 1fr;
+  }
+
+  .page-content > .contact-layout {
+    margin-left: 0;
   }
 
   .intro-section {
