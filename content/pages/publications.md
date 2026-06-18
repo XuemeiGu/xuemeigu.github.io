@@ -1,8 +1,6 @@
 ---
 title: Publications
 permalink: /publications/
-eyebrow: Publications
-subtitle: "Publications"
 ---
 
 <div class="filter-panel">

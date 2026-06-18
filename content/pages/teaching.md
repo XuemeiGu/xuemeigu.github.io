@@ -1,8 +1,6 @@
 ---
 title: Teaching
 permalink: /teaching/
-eyebrow: Teaching
-subtitle: "Courses and tutorials"
 ---
 
 > I enjoy teaching at the interface of physics, computation, and machine learning. My goal is to help students build both conceptual intuition and practical research skills: clean mathematical reasoning, reproducible coding habits, and the confidence to ask sharp scientific questions.

@@ -1,8 +1,6 @@
 ---
 title: CV
 permalink: /cv/
-eyebrow: Curriculum vitae
-subtitle: "PLACEHOLDER: Academic timeline, awards, service, and skills. Add your downloadable CV link below."
 ---
 
 <a class="button" href="{{ '/assets/files/cv-placeholder.md' | relative_url }}">Open CV placeholder</a>

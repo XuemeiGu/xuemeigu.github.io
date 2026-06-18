@@ -1,8 +1,6 @@
 ---
 title: Talks
 permalink: /talks/
-eyebrow: Talks
-subtitle: "PLACEHOLDER: Invited talks, conference presentations, seminars, and workshops."
 ---
 
 <div class="stack">

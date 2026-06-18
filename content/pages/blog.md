@@ -1,8 +1,6 @@
 ---
 title: Blog
 permalink: /blog/
-eyebrow: Blog
-subtitle: "PLACEHOLDER: "
 ---
 
 <div class="stack">

@@ -1,11 +1,7 @@
 ---
 title: Research
 permalink: /research/
-eyebrow: Research
-subtitle: "Research Topics"
 ---
-
-## Research
 
 <div class="project-list">
 {% assign ordered_projects = site.projects | sort: "order" %}

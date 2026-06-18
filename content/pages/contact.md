@@ -1,8 +1,6 @@
 ---
 title: Contact
 permalink: /contact/
-eyebrow: Contact
-subtitle: "..."
 ---
 
 ## Contact information

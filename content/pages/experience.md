@@ -1,8 +1,6 @@
 ---
 title: Experience
 permalink: /experience/
-eyebrow: Experience
-subtitle: "Academic appointments, education, research training, and service."
 ---
 
 ## Current position
