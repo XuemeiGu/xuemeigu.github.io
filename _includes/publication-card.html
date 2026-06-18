@@ -1,9 +1,7 @@
 <article class="card publication-card" data-year="{{ publication.year }}" data-type="{{ publication.type | downcase }}" data-search="{{ publication.title | append: ' ' | append: publication.authors | append: ' ' | append: publication.venue | append: ' ' | append: publication.year | append: ' ' | append: publication.type | downcase | escape }}">
-  <div class="publication-card-head">
-    <div class="card-meta">
-      <span>{{ publication.year }}</span>
-      <span>{{ publication.type }}</span>
-    </div>
+  <div class="card-meta">
+    <span>{{ publication.year }}</span>
+    <span>{{ publication.type }}</span>
     {% include publication-links.html item=publication %}
   </div>
   <h3><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
