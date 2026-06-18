@@ -121,7 +121,7 @@ ul {
 }
 
 .brand-mark {
-  margin-left: 0.55rem;
+  margin-left: 0.85rem;
   color: color-mix(in srgb, var(--text) 42%, transparent);
   font-size: 1.42rem;
   font-weight: 400;
@@ -139,7 +139,7 @@ ul {
   gap: 1.4rem;
   width: auto;
   margin-left: auto;
-  margin-right: 0.9rem;
+  margin-right: 1.3rem;
 }
 
 .site-nav a,
