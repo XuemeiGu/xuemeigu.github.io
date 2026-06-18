@@ -3,10 +3,6 @@ title: Teaching
 permalink: /teaching/
 ---
 
-> I enjoy teaching at the interface of physics, computation, and machine learning. My goal is to help students build both conceptual intuition and practical research skills: clean mathematical reasoning, reproducible coding habits, and the confidence to ask sharp scientific questions.
-
-## Teaching Experience
-
 <div class="cv-list">
   <article class="cv-entry">
     <time>WS25/26</time>
