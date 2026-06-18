@@ -2,9 +2,9 @@
   <div class="card-meta">
     <span>{{ publication.year }}</span>
     <span>{{ publication.type }}</span>
-    {% include publication-links.html item=publication %}
   </div>
   <h3><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
   <p class="authors">{{ publication.authors }}</p>
   <p><em>{{ publication.venue }}</em></p>
+  {% include publication-links.html item=publication %}
 </article>

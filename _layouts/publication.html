@@ -5,11 +5,11 @@ layout: default
   <div class="card-meta publication-page-meta">
     <span>{{ page.year }}</span>
     <span>{{ page.type }}</span>
-    {% include publication-links.html item=page %}
   </div>
   <h1>{{ page.title }}</h1>
   <p class="authors"><strong>{{ page.authors }}</strong></p>
   <p><em>{{ page.venue }}</em></p>
+  {% include publication-links.html item=page %}
 
   {{ content }}
 </article>
