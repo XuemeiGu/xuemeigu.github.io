@@ -833,10 +833,7 @@ ul {
 .code-profile {
   display: block;
   margin: 1.1rem 0 2.2rem;
-  padding: 1rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: color-mix(in srgb, var(--surface) 84%, transparent);
+  padding: 0;
 }
 
 .code-profile h2,
