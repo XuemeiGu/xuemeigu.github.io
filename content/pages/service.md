@@ -79,32 +79,22 @@ permalink: /service/
       <span>Reviewer</span>
       <div>
         <h3>Journal and publication review</h3>
-        <ul class="service-tags" aria-label="Reviewed journals">
-          <li>Nature Photonics</li>
-          <li>Nature Machine Intelligence</li>
-          <li>Light: Science &amp; Applications</li>
-          <li>Physical Review Letters</li>
-          <li>PRX Intelligence</li>
-          <li>Physical Review Applied</li>
-          <li>Physical Review A</li>
-          <li>Quantum</li>
-          <li>New Journal of Physics</li>
-          <li>Advanced Photonics Nexus</li>
-          <li>PNAS Nexus</li>
-          <li>Machine Learning: Science and Technology</li>
-        </ul>
-        <p>And others.</p>
+        <p>Nature Photonics, Nature Machine Intelligence, Light: Science &amp; Applications, Physical Review Letters, PRX Intelligence, Physical Review Applied, Physical Review A, Quantum, New Journal of Physics, Advanced Photonics Nexus, PNAS Nexus, Machine Learning: Science and Technology, and others.</p>
       </div>
     </article>
     <article class="service-panel">
       <span>Editor</span>
-      <h3>Guest editor</h3>
-      <p>Topic on Nonlinear and Quantum Optics in Micro-Nano Structures for Frontiers in Physics.</p>
+      <div>
+        <h3>Guest editor</h3>
+        <p>Topic on Nonlinear and Quantum Optics in Micro-Nano Structures for Frontiers in Physics.</p>
+      </div>
     </article>
     <article class="service-panel">
       <span>Project review</span>
-      <h3>Funding review</h3>
-      <p>Austrian Science Fund (FWF).</p>
+      <div>
+        <h3>Funding review</h3>
+        <p>Austrian Science Fund (FWF).</p>
+      </div>
     </article>
   </div>
 </section>

@@ -1,0 +1,17 @@
+---
+# Add or reorder repositories here. These entries control the /code/ page.
+- name: PyTheus
+  description: Inverse-design framework for quantum optical experiments.
+  url: https://github.com/artificial-scientist-lab/PyTheus
+
+- name: Impact4Cast
+  description: Forecasting high-impact research topics from evolving knowledge graphs.
+  url: https://github.com/artificial-scientist-lab/Impact4Cast
+
+- name: SciMuse
+  description: LLM and knowledge-graph pipeline for scientific idea generation.
+  url: https://github.com/artificial-scientist-lab/SciMuse
+
+- name: AI-mandel
+  description: LLM-agent workflow for autonomous quantum physics research with intelligent tools.
+  url: https://github.com/artificial-scientist-lab/ai-mandel
