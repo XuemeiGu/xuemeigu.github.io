@@ -3,6 +3,7 @@ title: "Automated discovery of nonlocal photonic gates"
 authors: "Sören Arlt, Mario Krenn, Xuemei Gu"
 venue: "Phys. Rev. Research 8, L022031 (2026)"
 year: 2026
+sort_order: 10
 type: "Journal"
 featured: true
 paper_url: "https://doi.org/10.1103/f415-kgwr"

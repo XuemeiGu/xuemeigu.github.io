@@ -3,6 +3,7 @@ title: "Towards autonomous quantum physics research using LLM agents with access
 authors: "Sören Arlt, Xuemei Gu, Mario Krenn"
 venue: "arXiv:2511.11752 (2025)"
 year: 2025
+sort_order: 70
 type: "Preprint"
 featured: false
 paper_url: "https://arxiv.org/abs/2511.11752"

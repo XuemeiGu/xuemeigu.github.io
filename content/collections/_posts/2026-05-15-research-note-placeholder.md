@@ -1,5 +1,6 @@
 ---
 title: "PLACEHOLDER: Reading notes on AI for quantum science"
+published: false
 tags:
   - AI for Science
   - quantum physics

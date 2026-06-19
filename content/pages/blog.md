@@ -1,7 +1,11 @@
 ---
-title: Blog
+title: News and Notes
 permalink: /blog/
 ---
+
+<p class="blog-note">
+  News, visits, funding updates, research notes, study notes, and occasional personal writing.
+</p>
 
 <div class="stack">
 {% for post in site.posts %}
@@ -10,12 +14,7 @@ permalink: /blog/
   <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
   <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
 </article>
+{% else %}
+<p class="blog-note">News and notes will appear here soon.</p>
 {% endfor %}
 </div>
-
-## Suggested note types
-
-- Research updates after a preprint, conference, or workshop
-- Reading notes on AI for science, quantum optics, or foundation models
-- Short explainers for students
-- Notes about reproducibility, scientific workflows, or useful tools

@@ -903,7 +903,8 @@ ul {
 }
 
 .button,
-.filter-button {
+.filter-button,
+.pagination-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -921,10 +922,22 @@ ul {
 
 .button:hover,
 .filter-button:hover,
-.filter-button.active {
+.filter-button.active,
+.pagination-button:hover,
+.pagination-button.active {
   background: var(--accent-soft);
   color: var(--text);
   text-decoration: none;
+}
+
+.pagination-button:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+.pagination-button:disabled:hover {
+  background: var(--accent-2);
+  color: #fff;
 }
 
 .button.secondary {
@@ -1066,8 +1079,50 @@ ul {
   line-height: 1.65;
 }
 
+.publication-results,
+.publication-empty {
+  margin: 1rem 0 0.85rem;
+  color: var(--muted-strong);
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.publication-empty {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.publication-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+}
+
+.publication-pagination[hidden] {
+  display: none;
+}
+
+.pagination-pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.pagination-ellipsis {
+  color: var(--muted-strong);
+  font-weight: 800;
+  line-height: 1;
+  padding: 0 0.12rem;
+}
+
 .talk-note,
-.teaching-note {
+.teaching-note,
+.blog-note {
   max-width: 72ch;
   margin: 0 0 1.1rem;
   color: var(--muted-strong);

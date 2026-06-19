@@ -3,6 +3,7 @@ title: "Virtual reality for understanding artificial-intelligence-driven scienti
 authors: "Philipp Schmidt, Sören Arlt, Carlos Ruiz-Gonzalez, Xuemei Gu, Carla Rodríguez, Mario Krenn"
 venue: "Mach. Learn.: Sci. Technol. 5 035045 (2024)"
 year: 2024
+sort_order: 110
 type: "Journal"
 featured: false
 paper_url: "https://doi.org/10.1088/2632-2153/ad5fdb"
