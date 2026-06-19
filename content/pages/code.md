@@ -4,7 +4,7 @@ permalink: /code/
 ---
 
 <p class="code-note">
-  Selected open-source repositories from research at the interface of AI and quantum physics.
+  Research code, tools, and open-source projects related to AI-assisted scientific discovery and quantum physics.
 </p>
 
 <section class="code-profile" aria-label="GitHub profile summary">
