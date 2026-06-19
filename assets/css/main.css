@@ -823,7 +823,7 @@ ul {
 }
 
 .code-note {
-  max-width: 90ch;
+  max-width: 190ch;
   margin: 0 0 1.3rem;
   color: var(--muted-strong);
   font-size: 1.12rem;
