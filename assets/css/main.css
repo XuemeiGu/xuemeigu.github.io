@@ -831,10 +831,7 @@ ul {
 }
 
 .code-profile {
-  display: grid;
-  grid-template-columns: minmax(300px, 0.9fr) minmax(360px, 1fr);
-  gap: clamp(0.9rem, 2vw, 1.4rem);
-  align-items: center;
+  display: block;
   margin: 1.1rem 0 2.2rem;
   padding: 1rem;
   border: 1px solid var(--line);
@@ -856,7 +853,7 @@ ul {
 
 .github-stats {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .github-stats img {

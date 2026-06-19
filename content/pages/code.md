@@ -8,11 +8,6 @@ permalink: /code/
 </p>
 
 <section class="code-profile" aria-label="GitHub profile summary">
-  <div>
-    <h2>GitHub</h2>
-    <p>Research code, tools, and open-source projects related to AI-assisted scientific discovery and quantum physics.</p>
-    <a class="button" href="https://github.com/XuemeiGu">GitHub profile</a>
-  </div>
   <div class="github-stats">
     <img
       src="https://github-readme-stats.vercel.app/api?username=XuemeiGu&amp;show_icons=true&amp;hide_title=true&amp;hide_border=true&amp;theme=github_dark&amp;rank_icon=github"
