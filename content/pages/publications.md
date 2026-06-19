@@ -29,7 +29,7 @@ permalink: /publications/
   <p class="publication-results" id="publication-results" aria-live="polite"></p>
   <nav class="publication-pagination" aria-label="Publication pages" hidden>
     <button class="pagination-button" data-pagination="prev" type="button">Previous</button>
-    <div class="pagination-pages" aria-label="Page numbers"></div>
+    <span class="pagination-status" aria-live="polite"></span>
     <button class="pagination-button" data-pagination="next" type="button">Next</button>
   </nav>
 </div>

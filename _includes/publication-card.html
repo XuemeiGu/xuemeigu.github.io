@@ -12,7 +12,27 @@
       <span>{{ publication.year }}</span>
       <span>{{ publication_type_label }}</span>
     </div>
-    {% include publication-links.html item=publication %}
+    <div class="publication-card-actions">
+      {% include publication-links.html item=publication %}
+      {% if publication.presentations %}
+        <div class="publication-links publication-presentation-links">
+          {% for presentation in publication.presentations %}
+            {% if presentation.url and presentation.url != "" %}
+              <a class="publication-link publication-presentation-link" href="{{ presentation.url }}" aria-label="{{ presentation.label }}" title="{{ presentation.label }}">
+            {% else %}
+              <span class="publication-link publication-presentation-link">
+            {% endif %}
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+                <span>{{ presentation.label }}</span>
+            {% if presentation.url and presentation.url != "" %}
+              </a>
+            {% else %}
+              </span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
   </div>
   <h3>
     {% if publication_title_url and publication_title_url != "" %}
@@ -23,17 +43,4 @@
   </h3>
   <p class="authors">{{ publication.authors }}</p>
   <p class="publication-venue"><em>{{ publication.venue }}</em></p>
-  {% if publication.presentations %}
-    <p class="publication-presentations">
-      {% for presentation in publication.presentations %}
-        Presented at
-        {% if presentation.url and presentation.url != "" %}
-          <a href="{{ presentation.url }}">{{ presentation.label }}</a>
-        {% else %}
-          <span>{{ presentation.label }}</span>
-        {% endif %}
-        {% unless forloop.last %}; {% endunless %}
-      {% endfor %}
-    </p>
-  {% endif %}
 </article>

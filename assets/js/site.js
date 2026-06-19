@@ -40,7 +40,7 @@
   const resultsLabel = document.querySelector('#publication-results');
   const emptyMessage = document.querySelector('#publication-empty');
   const paginationControls = Array.from(document.querySelectorAll('.publication-pagination'));
-  const pageButtonGroups = Array.from(document.querySelectorAll('.pagination-pages'));
+  const paginationStatus = Array.from(document.querySelectorAll('.pagination-status'));
   const prevButtons = Array.from(document.querySelectorAll('[data-pagination="prev"]'));
   const nextButtons = Array.from(document.querySelectorAll('[data-pagination="next"]'));
   const pageSize = publicationList ? Number(publicationList.dataset.pageSize) || 5 : 5;
@@ -76,24 +76,6 @@
       const matchesFilter = activeFilter === 'all' || type === activeFilter;
       return matchesQuery && matchesFilter;
     });
-  }
-
-  function getVisiblePublicationPages(totalPages) {
-    const pages = new Set([1, totalPages, currentPage - 1, currentPage, currentPage + 1]);
-    const visiblePages = Array.from(pages)
-      .filter((page) => page >= 1 && page <= totalPages)
-      .sort((a, b) => a - b);
-
-    return visiblePages.reduce((items, page, index) => {
-      const previous = visiblePages[index - 1];
-      if (previous && page - previous === 2) {
-        items.push(previous + 1);
-      } else if (previous && page - previous > 2) {
-        items.push('ellipsis');
-      }
-      items.push(page);
-      return items;
-    }, []);
   }
 
   function formatPublicationPageRange(page, totalEntries) {
@@ -137,7 +119,7 @@
       publicationControls.hidden = false;
     }
 
-    if (paginationControls.length && pageButtonGroups.length) {
+    if (paginationControls.length) {
       paginationControls.forEach((control) => {
         control.hidden = matchingCards.length <= pageSize;
       });
@@ -150,33 +132,12 @@
         button.disabled = currentPage === totalPages;
       });
 
-      pageButtonGroups.forEach((group) => {
-        group.textContent = '';
-
-        getVisiblePublicationPages(totalPages).forEach((page) => {
-          if (page === 'ellipsis') {
-            const ellipsis = document.createElement('span');
-            ellipsis.className = 'pagination-ellipsis';
-            ellipsis.textContent = '...';
-            group.append(ellipsis);
-            return;
-          }
-
-          const button = document.createElement('button');
-          button.className = 'pagination-button';
-          button.type = 'button';
-          button.textContent = formatPublicationPageRange(page, matchingCards.length);
-          button.setAttribute('aria-label', `Show entries ${button.textContent}`);
-          if (page === currentPage) {
-            button.classList.add('active');
-            button.setAttribute('aria-current', 'page');
-          }
-          button.addEventListener('click', () => {
-            currentPage = page;
-            updatePublicationPagination();
-          });
-          group.append(button);
-        });
+      paginationStatus.forEach((status) => {
+        if (matchingCards.length <= pageSize) {
+          status.textContent = '';
+        } else {
+          status.textContent = `Page ${currentPage} of ${totalPages} · ${formatPublicationPageRange(currentPage, matchingCards.length)}`;
+        }
       });
     }
   }
