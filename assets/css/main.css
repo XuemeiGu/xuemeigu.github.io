@@ -1321,6 +1321,101 @@ ul {
   line-height: 1.55;
 }
 
+.service-section {
+  margin-top: 2.5rem;
+}
+
+.service-section:first-of-type {
+  margin-top: 0.6rem;
+}
+
+.service-section-heading {
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-section-heading h2 {
+  margin: 0;
+  padding-bottom: 0.45rem;
+}
+
+.service-list {
+  display: grid;
+  gap: 0;
+  max-width: 1080px;
+}
+
+.service-entry {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: clamp(1rem, 2.2vw, 1.7rem);
+  padding: 0.82rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-entry:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.service-entry time,
+.service-feature time {
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.service-entry h3,
+.service-feature h3,
+.service-panel h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.service-entry p,
+.service-feature p,
+.service-panel p {
+  margin: 0.18rem 0 0;
+  color: var(--muted-strong);
+  font-size: 1.04rem;
+  line-height: 1.55;
+}
+
+.service-feature {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: clamp(1rem, 2.2vw, 1.7rem);
+  max-width: 1080px;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface) 84%, transparent);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.8fr) minmax(220px, 0.7fr);
+  gap: 0.9rem;
+}
+
+.service-panel {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface) 84%, transparent);
+}
+
+.service-panel span {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
 .authors {
   margin-bottom: 0.12rem;
   color: var(--muted-strong) !important;
@@ -1466,6 +1561,10 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
   .page-content > .contact-layout {
     margin-left: 0;
   }
@@ -1586,6 +1685,12 @@ ul {
     grid-template-columns: 1fr;
     gap: 0.45rem;
     padding: 0.9rem;
+  }
+
+  .service-entry,
+  .service-feature {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
   }
 
   .academic-profile h1 {
