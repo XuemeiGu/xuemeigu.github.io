@@ -1,36 +1,125 @@
 ---
 # Add new publications here. Use type: Journal, Preprint, or Conference.
 # For special journal formats, keep type: Journal and add display_type: "News & Views" or "Perspective".
-- title: Phase anomaly brings quantum implications
+- title: Automated discovery of nonlocal photonic gates
+  authors: Sören Arlt, Mario Krenn, Xuemei Gu
+  venue: Phys. Rev. Research 8, L022031 (2026)
+  year: 2026
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1103/f415-kgwr
+  pdf_url: "/assets/files/publications/2026-nonlocalgates.pdf"
+  code_url: https://github.com/artificial-scientist-lab/nonlocalgates
+  data_url: ''
+- title: Automated experimental design for high-probability entanglement generation
+  authors: Carlos Ruiz-Gonzalez, Mario Krenn, Xuemei Gu
+  venue: arXiv:2605.02721 (2026)
+  year: 2026
+  type: Preprint
+  featured: false
+  paper_url: https://arxiv.org/abs/2605.02721
+  pdf_url: "/assets/files/publications/2605.02721.pdf"
+  code_url: ''
+  data_url: ''
+- title: Subjective nature of path information in quantum mechanics
+  authors: Xinhe Jiang, Armin Hochrainer, Jaroslav Kysela, Manuel Erhard, Xuemei Gu, Ya Yu, Anton Zeilinger
+  venue: Nat Commun 17, 2433 (2026)
+  year: 2026
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1038/s41467-026-69034-7
+  pdf_url: "/assets/files/publications/2026-three-crystal-setup.pdf"
+  code_url: ''
+  data_url: ''
+- title: Towards autonomous quantum physics research using LLM agents with access to intelligent tools
+  authors: Sören Arlt, Xuemei Gu, Mario Krenn
+  venue: arXiv:2511.11752 (2025)
+  year: 2025
+  type: Preprint
+  featured: false
+  paper_url: https://arxiv.org/abs/2511.11752
+  pdf_url: "/assets/files/publications/2025-ai-mandel.pdf"
+  code_url: https://github.com/artificial-scientist-lab/ai-mandel
+  data_url: ''
+- title: Automated discovery of high-dimensional multipartite entanglement with photons that never interacted
+  authors: Sören Arlt, Xuemei Gu, Mario Krenn
+  venue: arXiv:2510.10707 (2025)
+  year: 2025
+  type: Preprint
+  featured: false
+  paper_url: https://arxiv.org/abs/2510.10707
+  pdf_url: "/assets/files/publications/2510.10707.pdf"
+  code_url: https://github.com/artificial-scientist-lab/logicalES
+  data_url: ''
+- title: Analytical Fock Representation of Two-Mode Squeezing for Quantum Interference
   authors: Xuemei Gu, Mario Krenn
-  venue: Nat. Photon. 16, 815–817 (2022)
-  year: 2022
-  type: Journal
-  display_type: News & Views
-  featured: true
-  paper_url: https://doi.org/10.1038/s41566-022-01118-4
-  pdf_url: "/assets/files/publications/quantum-gouy-phase-view.pdf"
+  venue: arXiv:2511.16529 (2025)
+  year: 2025
+  type: Preprint
+  featured: false
+  paper_url: https://arxiv.org/abs/2511.16529
+  pdf_url: "/assets/files/publications/2511.16529.pdf"
   code_url: ''
   data_url: ''
-- title: Experimental full network nonlocality with independent sources and strict locality constraints
-  authors: Xue-Mei Gu, Liang Huang, Alejandro Pozas-Kerstjens, Yang-Fan Jiang, Dian Wu, Bing Bai, Qi-Chao Sun, Ming-Cheng Chen, Jun Zhang, Sixia Yu, Qiang Zhang, Chao-Yang Lu, Jian-Wei Pan
-  venue: Phys. Rev. Lett. 130, 190201 (2023)
-  year: 2023
+- title: 'Tutorial: Hong–Ou–Mandel interference with structured photons'
+  authors: Tareq Jaouni, Xuemei Gu, Mario Krenn, Alessio D’Errico, Ebrahim Karimi
+  venue: Nanophotonics, 14(23), 4163-4175 (2025)
+  year: 2025
   type: Journal
   featured: true
-  paper_url: https://doi.org/10.1103/PhysRevLett.130.190201
-  pdf_url: "/assets/files/publications/PhysRevLett.130.190201.pdf"
+  paper_url: https://doi.org/10.1515/nanoph-2025-0034
+  pdf_url: "/assets/files/publications/2025-tutorial-hom.pdf"
   code_url: ''
   data_url: ''
-- title: Digital discovery of 100 diverse quantum experiments with PyTheus
-  authors: Carlos Ruiz-Gonzalez, Sören Arlt, Jan Petermann, Sharareh Sayyad, Tareq Jaouni, Ebrahim Karimi, Nora Tischler, Xuemei Gu, Mario Krenn
-  venue: Quantum 7, 1204 (2023)
-  year: 2023
+- title: Unconditional quantum teleportational advantage of single photons
+  authors: Li-Chao Peng, Dian Wu, Xue-Mei Gu, Jian Qin, Ke-Mi Xu, Han-Sen Zhong, Hui Wang, Yu-Ming He, Ming-Chen Chen, Li Li, Nai-Le Liu, Chao-Yang Lu, Jian-Wei Pan
+  venue: arXiv:2511.08951 (2025)
+  year: 2025
+  type: Preprint
+  featured: false
+  paper_url: https://arxiv.org/abs/2511.08951
+  pdf_url: "/assets/files/publications/2511.08951.pdf"
+  code_url: ''
+  data_url: ''
+- title: Experimental Multipartite Entanglement Detection With Minimal-Size Correlations
+  authors: Dian Wu, Fei Shi, Jia-Cheng Sun, Bo-Wen Wang, Xue-Mei Gu, Giulio Chiribella, Qi Zhao, Jian Wu
+  venue: arXiv:2510.22918 (2025)
+  year: 2025
+  type: Preprint
+  featured: false
+  paper_url: https://arxiv.org/abs/2510.22918
+  pdf_url: "/assets/files/publications/2510.22918.pdf"
+  code_url: ''
+  data_url: ''
+- title: Discovering emergent connections in quantum physics research via dynamic word embeddings
+  authors: Felix Frohnert, Xuemei Gu, Mario Krenn, Evert van Nieuwenburg
+  venue: 'Mach. Learn.: Sci. Technol. 6 015029 (2025)'
+  year: 2025
   type: Journal
   featured: false
-  paper_url: https://doi.org/10.22331/q-2023-12-12-1204
-  pdf_url: "/assets/files/publications/2023-Pytheus.pdf"
-  code_url: https://github.com/artificial-scientist-lab/PyTheus
+  paper_url: https://doi.org/10.1088/2632-2153/adb00a
+  pdf_url: "/assets/files/publications/2025-mlst-embedding.pdf"
+  code_url: https://github.com/FelixFrohnertDB/arxiv_nlp
+  data_url: ''
+- title: Forecasting high-impact research topics via machine learning on evolving knowledge graphs
+  authors: Xuemei Gu, Mario Krenn
+  venue: 'Mach. Learn.: Sci. Technol. 6 025041 (2025)'
+  year: 2025
+  type: Journal
+  featured: false
+  paper_url: https://doi.org/10.1088/2632-2153/add6ef
+  pdf_url: "/assets/files/publications/2025-impact4cast.pdf"
+  code_url: https://github.com/artificial-scientist-lab/Impact4Cast
+  data_url: https://zenodo.org/records/10692137
+- title: Virtual reality for understanding artificial-intelligence-driven scientific discovery with an application in quantum optics
+  authors: Philipp Schmidt, Sören Arlt, Carlos Ruiz-Gonzalez, Xuemei Gu, Carla Rodríguez, Mario Krenn
+  venue: 'Mach. Learn.: Sci. Technol. 5 035045 (2024)'
+  year: 2024
+  type: Journal
+  featured: false
+  paper_url: https://doi.org/10.1088/2632-2153/ad5fdb
+  pdf_url: "/assets/files/publications/2024-mlst-virtual-reality.pdf"
+  code_url: https://github.com/artificial-scientist-lab/AriadneVR
   data_url: ''
 - title: 'Interesting scientific idea generation using knowledge graphs and LLMs: Evaluations with 100 research group leaders'
   authors: Xuemei Gu, Mario Krenn
@@ -62,113 +151,34 @@
   pdf_url: "/assets/files/publications/2024-mlst-deepdream.pdf"
   code_url: https://github.com/artificial-scientist-lab/deepGraphDreaming
   data_url: ''
-- title: Virtual reality for understanding artificial-intelligence-driven scientific discovery with an application in quantum optics
-  authors: Philipp Schmidt, Sören Arlt, Carlos Ruiz-Gonzalez, Xuemei Gu, Carla Rodríguez, Mario Krenn
-  venue: 'Mach. Learn.: Sci. Technol. 5 035045 (2024)'
-  year: 2024
+- title: Digital discovery of 100 diverse quantum experiments with PyTheus
+  authors: Carlos Ruiz-Gonzalez, Sören Arlt, Jan Petermann, Sharareh Sayyad, Tareq Jaouni, Ebrahim Karimi, Nora Tischler, Xuemei Gu, Mario Krenn
+  venue: Quantum 7, 1204 (2023)
+  year: 2023
   type: Journal
   featured: false
-  paper_url: https://doi.org/10.1088/2632-2153/ad5fdb
-  pdf_url: "/assets/files/publications/2024-mlst-virtual-reality.pdf"
-  code_url: https://github.com/artificial-scientist-lab/AriadneVR
+  paper_url: https://doi.org/10.22331/q-2023-12-12-1204
+  pdf_url: "/assets/files/publications/2023-Pytheus.pdf"
+  code_url: https://github.com/artificial-scientist-lab/PyTheus
   data_url: ''
-- title: Towards autonomous quantum physics research using LLM agents with access to intelligent tools
-  authors: Sören Arlt, Xuemei Gu, Mario Krenn
-  venue: arXiv:2511.11752 (2025)
-  year: 2025
-  type: Preprint
-  featured: false
-  paper_url: https://arxiv.org/abs/2511.11752
-  pdf_url: "/assets/files/publications/2025-ai-mandel.pdf"
-  code_url: https://github.com/artificial-scientist-lab/ai-mandel
-  data_url: ''
-- title: Automated discovery of high-dimensional multipartite entanglement with photons that never interacted
-  authors: Sören Arlt, Xuemei Gu, Mario Krenn
-  venue: arXiv:2510.10707 (2025)
-  year: 2025
-  type: Preprint
-  featured: false
-  paper_url: https://arxiv.org/abs/2510.10707
-  pdf_url: "/assets/files/publications/2510.10707.pdf"
-  code_url: https://github.com/artificial-scientist-lab/logicalES
-  data_url: ''
-- title: Experimental Multipartite Entanglement Detection With Minimal-Size Correlations
-  authors: Dian Wu, Fei Shi, Jia-Cheng Sun, Bo-Wen Wang, Xue-Mei Gu, Giulio Chiribella, Qi Zhao, Jian Wu
-  venue: arXiv:2510.22918 (2025)
-  year: 2025
-  type: Preprint
-  featured: false
-  paper_url: https://arxiv.org/abs/2510.22918
-  pdf_url: "/assets/files/publications/2510.22918.pdf"
-  code_url: ''
-  data_url: ''
-- title: Unconditional quantum teleportational advantage of single photons
-  authors: Li-Chao Peng, Dian Wu, Xue-Mei Gu, Jian Qin, Ke-Mi Xu, Han-Sen Zhong, Hui Wang, Yu-Ming He, Ming-Chen Chen, Li Li, Nai-Le Liu, Chao-Yang Lu, Jian-Wei Pan
-  venue: arXiv:2511.08951 (2025)
-  year: 2025
-  type: Preprint
-  featured: false
-  paper_url: https://arxiv.org/abs/2511.08951
-  pdf_url: "/assets/files/publications/2511.08951.pdf"
-  code_url: ''
-  data_url: ''
-- title: Discovering emergent connections in quantum physics research via dynamic word embeddings
-  authors: Felix Frohnert, Xuemei Gu, Mario Krenn, Evert van Nieuwenburg
-  venue: 'Mach. Learn.: Sci. Technol. 6 015029 (2025)'
-  year: 2025
+- title: Experimental full network nonlocality with independent sources and strict locality constraints
+  authors: Xue-Mei Gu, Liang Huang, Alejandro Pozas-Kerstjens, Yang-Fan Jiang, Dian Wu, Bing Bai, Qi-Chao Sun, Ming-Cheng Chen, Jun Zhang, Sixia Yu, Qiang Zhang, Chao-Yang Lu, Jian-Wei Pan
+  venue: Phys. Rev. Lett. 130, 190201 (2023)
+  year: 2023
   type: Journal
-  featured: false
-  paper_url: https://doi.org/10.1088/2632-2153/adb00a
-  pdf_url: "/assets/files/publications/2025-mlst-embedding.pdf"
-  code_url: https://github.com/FelixFrohnertDB/arxiv_nlp
+  featured: true
+  paper_url: https://doi.org/10.1103/PhysRevLett.130.190201
+  pdf_url: "/assets/files/publications/PhysRevLett.130.190201.pdf"
+  code_url: ''
   data_url: ''
-- title: Forecasting high-impact research topics via machine learning on evolving knowledge graphs
+- title: Phase anomaly brings quantum implications
   authors: Xuemei Gu, Mario Krenn
-  venue: 'Mach. Learn.: Sci. Technol. 6 025041 (2025)'
-  year: 2025
+  venue: Nat. Photon. 16, 815–817 (2022)
+  year: 2022
   type: Journal
-  featured: false
-  paper_url: https://doi.org/10.1088/2632-2153/add6ef
-  pdf_url: "/assets/files/publications/2025-impact4cast.pdf"
-  code_url: https://github.com/artificial-scientist-lab/Impact4Cast
-  data_url: https://zenodo.org/records/10692137
-- title: 'Tutorial: Hong–Ou–Mandel interference with structured photons'
-  authors: Tareq Jaouni, Xuemei Gu, Mario Krenn, Alessio D’Errico, Ebrahim Karimi
-  venue: Nanophotonics, 14(23), 4163-4175 (2025)
-  year: 2025
-  type: Journal
+  display_type: News & Views
   featured: true
-  paper_url: https://doi.org/10.1515/nanoph-2025-0034
-  pdf_url: "/assets/files/publications/2025-tutorial-hom.pdf"
-  code_url: ''
-  data_url: ''
-- title: Automated experimental design for high-probability entanglement generation
-  authors: Carlos Ruiz-Gonzalez, Mario Krenn, Xuemei Gu
-  venue: arXiv:2605.02721 (2026)
-  year: 2026
-  type: Preprint
-  featured: false
-  paper_url: https://arxiv.org/abs/2605.02721
-  pdf_url: "/assets/files/publications/2605.02721.pdf"
-  code_url: ''
-  data_url: ''
-- title: Automated discovery of nonlocal photonic gates
-  authors: Sören Arlt, Mario Krenn, Xuemei Gu
-  venue: Phys. Rev. Research 8, L022031 (2026)
-  year: 2026
-  type: Journal
-  featured: true
-  paper_url: https://doi.org/10.1103/f415-kgwr
-  pdf_url: "/assets/files/publications/2026-nonlocalgates.pdf"
-  code_url: https://github.com/artificial-scientist-lab/nonlocalgates
-  data_url: ''
-- title: Subjective nature of path information in quantum mechanics
-  authors: Xinhe Jiang, Armin Hochrainer, Jaroslav Kysela, Manuel Erhard, Xuemei Gu, Ya Yu, Anton Zeilinger
-  venue: Nat Commun 17, 2433 (2026)
-  year: 2026
-  type: Journal
-  featured: true
-  paper_url: https://doi.org/10.1038/s41467-026-69034-7
-  pdf_url: "/assets/files/publications/2026-three-crystal-setup.pdf"
+  paper_url: https://doi.org/10.1038/s41566-022-01118-4
+  pdf_url: "/assets/files/publications/quantum-gouy-phase-view.pdf"
   code_url: ''
   data_url: ''
