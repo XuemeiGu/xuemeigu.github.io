@@ -10,7 +10,7 @@ permalink: /code/
 <section class="code-profile" aria-label="GitHub profile summary">
   <div class="github-stats">
     <img
-      src="https://github-readme-stats.vercel.app/api?username=XuemeiGu&amp;show_icons=true&amp;hide_title=true&amp;hide_border=true&amp;theme=github_dark&amp;rank_icon=github"
+      src="https://github-readme-stats.vercel.app/api?username=XuemeiGu&amp;show_icons=true&amp;hide=prs,issues,contribs&amp;hide_title=true&amp;hide_border=true&amp;theme=github_dark&amp;rank_icon=github"
       alt="GitHub statistics for Xuemei Gu"
       loading="lazy">
   </div>
