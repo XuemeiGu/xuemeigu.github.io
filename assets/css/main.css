@@ -397,10 +397,7 @@ ul {
 }
 
 .news-item {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 120px;
-  gap: 1.5rem;
-  align-items: center;
+  display: block;
 }
 
 #news.section-grid {
@@ -424,6 +421,10 @@ ul {
   color: var(--text);
 }
 
+.news-item p {
+  margin: 0;
+}
+
 .news-item time,
 .item-meta,
 .timeline-list span,
@@ -431,6 +432,11 @@ ul {
 .small {
   color: var(--muted);
   font-size: 0.96rem;
+}
+
+.news-item time {
+  margin-right: 0.85rem;
+  white-space: nowrap;
 }
 
 .news-mark,
@@ -684,6 +690,43 @@ ul {
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
+}
+
+.publication-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.55rem 1rem;
+}
+
+.publication-card-top .publication-links {
+  margin-top: 0;
+  margin-left: auto;
+}
+
+.publication-card .card-meta,
+.publication-page-meta {
+  gap: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.publication-card .card-meta > span,
+.publication-page-meta > span {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--muted);
+  font-size: inherit;
+}
+
+.publication-card .card-meta > span + span::before,
+.publication-page-meta > span + span::before {
+  content: "·";
+  margin: 0 0.45rem;
+  color: var(--muted);
 }
 
 .publication-link span {
@@ -1395,6 +1438,10 @@ ul {
 
   .news-item {
     grid-template-columns: 1fr;
+  }
+
+  .publication-card-top .publication-links {
+    margin-left: 0;
   }
 
   .news-mark {

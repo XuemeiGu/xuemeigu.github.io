@@ -40,11 +40,7 @@ description: "Personal website for Xuemei Gu."
   <div class="section-body news-list">
     {% for item in visible_news limit: 4 %}
       <article class="news-item">
-        <div>
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.text }}</p>
-        </div>
-        <time>{{ item.date | date: "%Y.%m.%d" }}</time>
+        <p><time>{{ item.date | date: "%Y.%m.%d" }}</time> {{ item.text }}</p>
       </article>
     {% endfor %}
   </div>
