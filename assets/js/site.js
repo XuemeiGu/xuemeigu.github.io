@@ -103,9 +103,7 @@
 
     if (resultsLabel) {
       if (matchingCards.length) {
-        const firstVisible = pageStart + 1;
-        const lastVisible = Math.min(pageEnd, matchingCards.length);
-        resultsLabel.textContent = `Total of ${matchingCards.length} entries: showing ${firstVisible}-${lastVisible}`;
+        resultsLabel.textContent = `Total of ${matchingCards.length} entries`;
       } else {
         resultsLabel.textContent = 'Total of 0 entries';
       }
