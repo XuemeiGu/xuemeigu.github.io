@@ -31,6 +31,26 @@ description: "Personal website for Xuemei Gu."
   </div>
 </section>
 
+{% assign visible_news = site.data.news | where_exp: "item", "item.published != false" %}
+{% if visible_news.size > 0 %}
+<section id="news" class="academic-section section-grid">
+  <div class="section-label">
+    <h2>News</h2>
+  </div>
+  <div class="section-body news-list">
+    {% for item in visible_news limit: 4 %}
+      <article class="news-item">
+        <div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </div>
+        <time>{{ item.date | date: "%Y.%m.%d" }}</time>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <section id="contact" class="academic-section section-grid">
   <div class="section-label">
     <h2>Contact</h2>

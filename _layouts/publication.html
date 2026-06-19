@@ -1,14 +1,15 @@
 ---
 layout: default
 ---
-<article class="content-section prose article-page">
+{% assign publication_type_label = page.display_type | default: page.type %}
+<article class="content-section prose article-page publication-page">
   <div class="card-meta publication-page-meta">
     <span>{{ page.year }}</span>
-    <span>{{ page.type }}</span>
+    <span>{{ publication_type_label }}</span>
   </div>
   <h1>{{ page.title }}</h1>
-  <p class="authors"><strong>{{ page.authors }}</strong></p>
-  <p><em>{{ page.venue }}</em></p>
+  <p class="authors">{{ page.authors }}</p>
+  <p class="publication-venue"><em>{{ page.venue }}</em></p>
   {% include publication-links.html item=page %}
 
   {{ content }}

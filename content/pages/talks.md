@@ -1,5 +1,5 @@
 ---
-title: Talks
+title: Talks & Posters
 permalink: /talks/
 ---
 
