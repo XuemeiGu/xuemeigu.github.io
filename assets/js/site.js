@@ -36,6 +36,7 @@
   const filterButtons = document.querySelectorAll('.filter-button');
   const publicationList = document.querySelector('.publication-list');
   const cards = Array.from(document.querySelectorAll('.publication-card'));
+  const publicationControls = document.querySelector('.publication-controls');
   const resultsLabel = document.querySelector('#publication-results');
   const emptyMessage = document.querySelector('#publication-empty');
   const paginationControls = Array.from(document.querySelectorAll('.publication-pagination'));
@@ -101,7 +102,6 @@
     });
 
     if (resultsLabel) {
-      resultsLabel.hidden = false;
       if (matchingCards.length) {
         const firstVisible = pageStart + 1;
         const lastVisible = Math.min(pageEnd, matchingCards.length);
@@ -113,6 +113,10 @@
 
     if (emptyMessage) {
       emptyMessage.hidden = matchingCards.length > 0;
+    }
+
+    if (publicationControls) {
+      publicationControls.hidden = false;
     }
 
     if (paginationControls.length && pageButtonGroups.length) {

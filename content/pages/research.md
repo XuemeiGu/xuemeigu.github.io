@@ -3,52 +3,13 @@ title: Research
 permalink: /research/
 ---
 
-<section class="research-topics">
-  <article class="research-topic">
-    <div>
-      <h2>AI-Assisted Discovery of Quantum Experiments</h2>
-      <p>
-      PLACEHOLDER
-      </p>
-      <p>
-      PLACEHOLDER
-      </p>
-    </div>
-  </article>
+<p class="research-note">
+  Research themes at the interface of artificial intelligence, quantum optics, and scientific discovery.
+</p>
 
-  <article class="research-topic">
-    <div>
-      <h2>Interpretable AI for Physics</h2>
-      <p>
-      PLACEHOLDER
-      </p>
-      <p>
-      PLACEHOLDER
-      </p>
-    </div>
-  </article>
-
-  <article class="research-topic">
-    <div>
-      <h2>Quantum Optics and Photonic Quantum Technologies</h2>
-      <p>
-      PLACEHOLDER
-      </p>
-      <p>
-      PLACEHOLDER
-      </p>
-    </div>
-  </article>
-
-  <article class="research-topic">
-    <div>
-      <h2>Knowledge Graphs, Ideas, and Scientific Creativity</h2>
-      <p>
-      PLACEHOLDER
-      </p>
-      <p>
-      PLACEHOLDER
-      </p>
-    </div>
-  </article>
+<section class="project-showcase" aria-label="Research projects">
+{% assign projects_sorted = site.projects | sort: "order" %}
+{% for project in projects_sorted %}
+  {% include project-card.html project=project %}
+{% endfor %}
 </section>

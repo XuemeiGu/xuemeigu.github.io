@@ -25,15 +25,16 @@ permalink: /publications/
   </div>
 </div>
 
-<p class="publication-results" id="publication-results" aria-live="polite" hidden></p>
+<div class="publication-controls" hidden>
+  <p class="publication-results" id="publication-results" aria-live="polite"></p>
+  <nav class="publication-pagination" aria-label="Publication pages" hidden>
+    <button class="pagination-button" data-pagination="prev" type="button">Previous</button>
+    <div class="pagination-pages" aria-label="Page numbers"></div>
+    <button class="pagination-button" data-pagination="next" type="button">Next</button>
+  </nav>
+</div>
 
-<nav class="publication-pagination" aria-label="Publication pages" hidden>
-  <button class="pagination-button" data-pagination="prev" type="button">Previous</button>
-  <div class="pagination-pages" aria-label="Page numbers"></div>
-  <button class="pagination-button" data-pagination="next" type="button">Next</button>
-</nav>
-
-<div class="stack publication-list" data-page-size="5">
+<div class="stack publication-list" data-page-size="10">
 {% assign publications_sorted = site.publications | sort: "sort_order" %}
 {% for publication in publications_sorted %}
   {% include publication-card.html publication=publication %}
@@ -41,9 +42,3 @@ permalink: /publications/
 </div>
 
 <p class="publication-empty" id="publication-empty" hidden>No publications match your search.</p>
-
-<nav class="publication-pagination" aria-label="Publication pages" hidden>
-  <button class="pagination-button" data-pagination="prev" type="button">Previous</button>
-  <div class="pagination-pages" aria-label="Page numbers"></div>
-  <button class="pagination-button" data-pagination="next" type="button">Next</button>
-</nav>
