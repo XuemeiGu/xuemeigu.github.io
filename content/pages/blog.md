@@ -1,10 +1,10 @@
 ---
-title: News and Notes
+title: Blog
 permalink: /blog/
 ---
 
 <p class="blog-note">
-  News, visits, funding updates, research notes, study notes, and occasional personal writing.
+  Research notes, study notes, short reflections, and occasional personal writing.
 </p>
 
 <div class="stack">
@@ -15,6 +15,6 @@ permalink: /blog/
   <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
 </article>
 {% else %}
-<p class="blog-note">News and notes will appear here soon.</p>
+<p class="blog-note">Blog posts will appear here soon.</p>
 {% endfor %}
 </div>

@@ -1122,7 +1122,8 @@ ul {
 
 .talk-note,
 .teaching-note,
-.blog-note {
+.blog-note,
+.news-note {
   max-width: 72ch;
   margin: 0 0 1.1rem;
   color: var(--muted-strong);
