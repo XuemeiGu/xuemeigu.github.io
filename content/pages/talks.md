@@ -8,7 +8,7 @@ permalink: /talks/
 </p>
 
 <div class="cv-list">
-{% assign talks_sorted = site.talks | sort: "date" | reverse %}
+{% assign talks_sorted = site.data.talks | sort: "date" | reverse %}
 {% for talk in talks_sorted %}
   <article class="cv-entry">
     <time>{{ talk.date | date: "%Y.%m.%d" }}</time>
@@ -17,9 +17,9 @@ permalink: /talks/
       <p>
         <strong>{{ talk.event }}</strong>{% if talk.location and talk.location != "" %}, {{ talk.location }}{% endif %}.
       </p>
-      {% assign talk_text = talk.content | strip %}
+      {% assign talk_text = talk.description | default: "" | strip %}
       {% if talk_text != "" %}
-        {{ talk.content }}
+        <p>{{ talk_text }}</p>
       {% endif %}
       {% if talk.slides_url and talk.slides_url != "" %}
         <div class="link-row">

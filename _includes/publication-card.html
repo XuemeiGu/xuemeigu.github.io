@@ -1,10 +1,17 @@
 {% assign publication_type_label = publication.display_type | default: publication.type %}
+{% assign publication_title_url = publication.paper_url | default: publication.pdf_url %}
 <article class="card publication-card" data-year="{{ publication.year }}" data-title="{{ publication.title | escape }}" data-type="{{ publication.type | downcase }}" data-search="{{ publication.title | append: ' ' | append: publication.authors | append: ' ' | append: publication.venue | append: ' ' | append: publication.year | append: ' ' | append: publication.type | append: ' ' | append: publication_type_label | downcase | escape }}">
   <div class="card-meta">
     <span>{{ publication.year }}</span>
     <span>{{ publication_type_label }}</span>
   </div>
-  <h3><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
+  <h3>
+    {% if publication_title_url and publication_title_url != "" %}
+      <a href="{{ publication_title_url | relative_url }}">{{ publication.title }}</a>
+    {% else %}
+      {{ publication.title }}
+    {% endif %}
+  </h3>
   <p class="authors">{{ publication.authors }}</p>
   <p class="publication-venue"><em>{{ publication.venue }}</em></p>
   {% include publication-links.html item=publication %}

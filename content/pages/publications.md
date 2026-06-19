@@ -35,7 +35,7 @@ permalink: /publications/
 </div>
 
 <div class="stack publication-list" data-page-size="10">
-{% assign publications_sorted = site.publications | sort: "year" | reverse %}
+{% assign publications_sorted = site.data.publications | sort: "year" | reverse %}
 {% for publication in publications_sorted %}
   {% include publication-card.html publication=publication %}
 {% endfor %}

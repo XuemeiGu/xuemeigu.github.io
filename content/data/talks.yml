@@ -1,0 +1,40 @@
+---
+# Add talks, posters, workshops, and session-chair activities here.
+# Optional fields: location, slides_url, description.
+- title: Best Poster Award
+  event: ML4Physical Sciences, NeurIPS
+  location: New Orleans, USA
+  date: 2023-12-15
+  slides_url: ''
+- title: Invited talk
+  event: NetSci
+  location: Vienna, Austria
+  date: 2023-07-10
+  slides_url: ''
+- title: Invited talk
+  event: QPhotoniX
+  location: Jinhua, China
+  date: 2023-11-26
+  slides_url: ''
+- title: AI4Science posters
+  event: ICML
+  location: Vienna, Austria
+  date: 2024-07-24
+  slides_url: ''
+  description: Two posters at the AI4Science workshop.
+- title: Workshop posters
+  event: ML4PS Workshop and IAI Workshop, NeurIPS
+  location: Vancouver, Canada
+  date: 2024-12-15
+  slides_url: ''
+  description: Two posters at the ML4PS Workshop and one poster at the IAI Workshop.
+- title: Keynote
+  event: DoKDoK
+  location: Eisenach, Germany
+  date: 2025-08-29
+  slides_url: ''
+- title: Speaker and Session Chair
+  event: ICSSI
+  location: Copenhagen, Denmark
+  date: 2025-06-17
+  slides_url: ''

@@ -18,13 +18,13 @@ collections_dir: content/collections
 
 collections:
   publications:
-    output: true
+    output: false
     permalink: /publications/:name/
   projects:
     output: true
     permalink: /research/:name/
   talks:
-    output: true
+    output: false
     permalink: /talks/:name/
 
 defaults:
@@ -38,11 +38,6 @@ defaults:
       type: "posts"
     values:
       layout: post
-  - scope:
-      path: ""
-      type: "publications"
-    values:
-      layout: publication
   - scope:
       path: ""
       type: "projects"
@@ -68,3 +63,5 @@ exclude:
   - .DS_Store
   - CNAME.example
   - docs
+  - content/collections/_publications
+  - content/collections/_talks

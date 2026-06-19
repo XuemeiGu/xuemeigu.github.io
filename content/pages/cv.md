@@ -39,7 +39,7 @@ PLACEHOLDER: One-sentence description of your current role.
 
 ## Invited talks and selected presentations
 
-{% assign talks_sorted = site.talks | sort: "date" | reverse %}
+{% assign talks_sorted = site.data.talks | sort: "date" | reverse %}
 {% for talk in talks_sorted %}
 - **{{ talk.title }}**, {{ talk.event }}, {{ talk.location }}, {{ talk.date | date: "%Y" }}.
 {% endfor %}
