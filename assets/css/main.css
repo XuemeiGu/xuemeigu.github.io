@@ -1234,6 +1234,101 @@ ul {
   line-height: 1.55;
 }
 
+.background-note {
+  max-width: 760px;
+  margin: 0 0 1.8rem;
+  color: var(--muted-strong);
+  font-size: 1.14rem;
+  line-height: 1.65;
+}
+
+.background-section {
+  margin-top: 2.35rem;
+}
+
+.background-section:first-of-type {
+  margin-top: 1.2rem;
+}
+
+.background-section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.background-section-heading h2 {
+  margin: 0;
+  padding-bottom: 0.45rem;
+}
+
+.background-section-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: clamp(1.4rem, 3vw, 2.4rem);
+  align-items: start;
+}
+
+.background-timeline {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.background-timeline.compact {
+  gap: 0.55rem;
+}
+
+.background-entry {
+  display: grid;
+  grid-template-columns: 142px 58px minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+  padding: 0.72rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.background-entry:first-child {
+  border-top: 0;
+}
+
+.background-entry time {
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.background-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface-strong);
+  color: var(--muted-strong);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+}
+
+.background-entry h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.background-entry p {
+  margin: 0.16rem 0 0;
+  color: var(--muted-strong);
+  font-size: 1.02rem;
+  line-height: 1.52;
+}
+
 .authors {
   margin-bottom: 0.12rem;
   color: var(--muted-strong) !important;
@@ -1484,6 +1579,25 @@ ul {
   .cv-entry {
     grid-template-columns: 1fr;
     gap: 0.18rem;
+  }
+
+  .background-section-split {
+    grid-template-columns: 1fr;
+  }
+
+  .background-entry {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    padding: 0.82rem 0;
+  }
+
+  .background-mark {
+    width: auto;
+    height: auto;
+    min-height: 0;
+    justify-self: start;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
   }
 
   .academic-profile h1 {
