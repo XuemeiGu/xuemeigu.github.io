@@ -27,6 +27,12 @@ permalink: /publications/
 
 <p class="publication-results" id="publication-results" aria-live="polite" hidden></p>
 
+<nav class="publication-pagination" aria-label="Publication pages" hidden>
+  <button class="pagination-button" data-pagination="prev" type="button">Previous</button>
+  <div class="pagination-pages" aria-label="Page numbers"></div>
+  <button class="pagination-button" data-pagination="next" type="button">Next</button>
+</nav>
+
 <div class="stack publication-list" data-page-size="5">
 {% assign publications_sorted = site.publications | sort: "sort_order" %}
 {% for publication in publications_sorted %}

@@ -1,6 +1,11 @@
 (function () {
   const root = document.documentElement;
-  const storedTheme = localStorage.getItem('theme');
+  let storedTheme = null;
+  try {
+    storedTheme = localStorage.getItem('theme');
+  } catch (error) {
+    storedTheme = null;
+  }
   root.setAttribute('data-theme', storedTheme || 'dark');
 
   const themeButton = document.querySelector('.theme-toggle');
@@ -9,7 +14,11 @@
     themeButton.addEventListener('click', () => {
       const current = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', current);
-      localStorage.setItem('theme', current);
+      try {
+        localStorage.setItem('theme', current);
+      } catch (error) {
+        // Theme persistence is optional.
+      }
       themeButton.textContent = current === 'dark' ? '☾' : '☀';
     });
   }
@@ -29,10 +38,10 @@
   const cards = Array.from(document.querySelectorAll('.publication-card'));
   const resultsLabel = document.querySelector('#publication-results');
   const emptyMessage = document.querySelector('#publication-empty');
-  const pagination = document.querySelector('.publication-pagination');
-  const pageButtons = document.querySelector('.pagination-pages');
-  const prevButton = document.querySelector('[data-pagination="prev"]');
-  const nextButton = document.querySelector('[data-pagination="next"]');
+  const paginationControls = Array.from(document.querySelectorAll('.publication-pagination'));
+  const pageButtonGroups = Array.from(document.querySelectorAll('.pagination-pages'));
+  const prevButtons = Array.from(document.querySelectorAll('[data-pagination="prev"]'));
+  const nextButtons = Array.from(document.querySelectorAll('[data-pagination="next"]'));
   const pageSize = publicationList ? Number(publicationList.dataset.pageSize) || 5 : 5;
   let activeFilter = 'all';
   let currentPage = 1;
@@ -106,35 +115,46 @@
       emptyMessage.hidden = matchingCards.length > 0;
     }
 
-    if (pagination && pageButtons && prevButton && nextButton) {
-      pagination.hidden = matchingCards.length <= pageSize;
-      prevButton.disabled = currentPage === 1;
-      nextButton.disabled = currentPage === totalPages;
-      pageButtons.replaceChildren();
+    if (paginationControls.length && pageButtonGroups.length) {
+      paginationControls.forEach((control) => {
+        control.hidden = matchingCards.length <= pageSize;
+      });
 
-      getVisiblePublicationPages(totalPages).forEach((page) => {
-        if (page === 'ellipsis') {
-          const ellipsis = document.createElement('span');
-          ellipsis.className = 'pagination-ellipsis';
-          ellipsis.textContent = '...';
-          pageButtons.append(ellipsis);
-          return;
-        }
+      prevButtons.forEach((button) => {
+        button.disabled = currentPage === 1;
+      });
 
-        const button = document.createElement('button');
-        button.className = 'pagination-button';
-        button.type = 'button';
-        button.textContent = formatPublicationPageRange(page, matchingCards.length);
-        button.setAttribute('aria-label', `Show entries ${button.textContent}`);
-        if (page === currentPage) {
-          button.classList.add('active');
-          button.setAttribute('aria-current', 'page');
-        }
-        button.addEventListener('click', () => {
-          currentPage = page;
-          updatePublicationPagination();
+      nextButtons.forEach((button) => {
+        button.disabled = currentPage === totalPages;
+      });
+
+      pageButtonGroups.forEach((group) => {
+        group.textContent = '';
+
+        getVisiblePublicationPages(totalPages).forEach((page) => {
+          if (page === 'ellipsis') {
+            const ellipsis = document.createElement('span');
+            ellipsis.className = 'pagination-ellipsis';
+            ellipsis.textContent = '...';
+            group.append(ellipsis);
+            return;
+          }
+
+          const button = document.createElement('button');
+          button.className = 'pagination-button';
+          button.type = 'button';
+          button.textContent = formatPublicationPageRange(page, matchingCards.length);
+          button.setAttribute('aria-label', `Show entries ${button.textContent}`);
+          if (page === currentPage) {
+            button.classList.add('active');
+            button.setAttribute('aria-current', 'page');
+          }
+          button.addEventListener('click', () => {
+            currentPage = page;
+            updatePublicationPagination();
+          });
+          group.append(button);
         });
-        pageButtons.append(button);
       });
     }
   }
@@ -157,19 +177,19 @@
     });
   });
 
-  if (prevButton) {
-    prevButton.addEventListener('click', () => {
+  prevButtons.forEach((button) => {
+    button.addEventListener('click', () => {
       currentPage = Math.max(1, currentPage - 1);
       updatePublicationPagination();
     });
-  }
+  });
 
-  if (nextButton) {
-    nextButton.addEventListener('click', () => {
+  nextButtons.forEach((button) => {
+    button.addEventListener('click', () => {
       currentPage += 1;
       updatePublicationPagination();
     });
-  }
+  });
 
   updatePublicationPagination();
 })();
