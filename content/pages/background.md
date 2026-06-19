@@ -75,62 +75,60 @@ permalink: /background/
   </div>
 </section>
 
-<section class="background-section background-section-split">
-  <div>
-    <div class="background-section-heading">
-      <h2>Fellowships & Honors</h2>
-    </div>
-    <div class="background-timeline compact">
-      <article class="background-entry">
-        <time>2023.05</time>
-        <div>
-          <h3>Alexander von Humboldt Fellowship</h3>
-          <p>Project: AI-assisted discovery of novel quantum optical imaging concepts from astronomy to microscopy.</p>
-        </div>
-      </article>
-      <article class="background-entry">
-        <time>2021.05</time>
-        <div>
-          <h3>Mozi Outstanding Youth Special Allowance</h3>
-          <p>University of Science and Technology of China.</p>
-        </div>
-      </article>
-      <article class="background-entry">
-        <time>2021.01</time>
-        <div>
-          <h3>Excellent Postdoctoral Fellowship</h3>
-          <p>University of Science and Technology of China.</p>
-        </div>
-      </article>
-      <article class="background-entry">
-        <time>2016.06</time>
-        <div>
-          <h3>Chinese Government Scholarship for Studying Abroad 2016</h3>
-          <p>No. 201606190189.</p>
-        </div>
-      </article>
-    </div>
+<section class="background-section">
+  <div class="background-section-heading">
+    <h2>Selected Fellowships & Honors</h2>
   </div>
+  <div class="background-timeline compact">
+    <article class="background-entry">
+      <time>2023.05</time>
+      <div>
+        <h3>Alexander von Humboldt Fellowship</h3>
+        <p>Project: AI-assisted discovery of novel quantum optical imaging concepts from astronomy to microscopy.</p>
+      </div>
+    </article>
+    <article class="background-entry">
+      <time>2021.05</time>
+      <div>
+        <h3>Mozi Outstanding Youth Special Allowance</h3>
+        <p>University of Science and Technology of China.</p>
+      </div>
+    </article>
+    <article class="background-entry">
+      <time>2021.01</time>
+      <div>
+        <h3>Excellent Postdoctoral Fellowship</h3>
+        <p>University of Science and Technology of China.</p>
+      </div>
+    </article>
+    <article class="background-entry">
+      <time>2016.06</time>
+      <div>
+        <h3>Chinese Government Scholarship for Studying Abroad 2016</h3>
+        <p>No. 201606190189.</p>
+      </div>
+    </article>
+  </div>
+</section>
 
-  <div>
-    <div class="background-section-heading">
-      <h2>Industry Experience</h2>
-    </div>
-    <div class="background-timeline compact">
-      <article class="background-entry">
-        <time>2012.10-2014.03</time>
-        <div>
-          <h3>R&amp;D Researcher</h3>
-          <p>Nanjing Zhuohui Detection Technology Co., Ltd., China.</p>
-        </div>
-      </article>
-      <article class="background-entry">
-        <time>2012.05-2012.09</time>
-        <div>
-          <h3>R&amp;D Researcher</h3>
-          <p>Nanjing Century Ark Analytical Instrument Co., Ltd., China.</p>
-        </div>
-      </article>
-    </div>
+<section class="background-section">
+  <div class="background-section-heading">
+    <h2>Industry Experience</h2>
+  </div>
+  <div class="background-timeline compact">
+    <article class="background-entry">
+      <time>2012.10-2014.03</time>
+      <div>
+        <h3>R&amp;D Researcher</h3>
+        <p>Nanjing Zhuohui Detection Technology Co., Ltd., China.</p>
+      </div>
+    </article>
+    <article class="background-entry">
+      <time>2012.05-2012.09</time>
+      <div>
+        <h3>R&amp;D Researcher</h3>
+        <p>Nanjing Century Ark Analytical Instrument Co., Ltd., China.</p>
+      </div>
+    </article>
   </div>
 </section>
