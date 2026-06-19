@@ -905,8 +905,15 @@ ul {
   line-height: 1.45;
 }
 
-.repo-entry .publication-link {
+.repo-stars {
+  display: inline-flex;
   margin-top: auto;
+  line-height: 1;
+}
+
+.repo-stars img {
+  display: block;
+  height: 24px;
 }
 
 .contact-list p {
