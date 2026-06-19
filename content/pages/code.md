@@ -29,7 +29,7 @@ permalink: /code/
           <p>{{ repo.description }}</p>
         </div>
         <a class="repo-stars" href="{{ repo.url }}" aria-label="GitHub stars for {{ repo.name }}" title="GitHub stars">
-          <img src="https://img.shields.io/github/stars/{{ repo_path }}?style=flat&amp;label=stars&amp;color=4f8de8&amp;labelColor=242733" alt="GitHub stars for {{ repo.name }}" loading="lazy">
+          <img src="https://img.shields.io/github/stars/{{ repo_path }}?style=flat&amp;label=%E2%98%85&amp;color=4f8de8&amp;labelColor=242733" alt="GitHub stars for {{ repo.name }}" loading="lazy">
         </a>
       </article>
     {% endfor %}
