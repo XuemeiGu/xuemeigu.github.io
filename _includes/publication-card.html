@@ -1,6 +1,12 @@
 {% assign publication_type_label = publication.display_type | default: publication.type %}
 {% assign publication_title_url = publication.paper_url | default: publication.pdf_url %}
-<article class="card publication-card" data-year="{{ publication.year }}" data-title="{{ publication.title | escape }}" data-type="{{ publication.type | downcase }}" data-search="{{ publication.title | append: ' ' | append: publication.authors | append: ' ' | append: publication.venue | append: ' ' | append: publication.year | append: ' ' | append: publication.type | append: ' ' | append: publication_type_label | downcase | escape }}">
+{% assign publication_search = publication.title | append: ' ' | append: publication.authors | append: ' ' | append: publication.venue | append: ' ' | append: publication.year | append: ' ' | append: publication.type | append: ' ' | append: publication_type_label %}
+{% if publication.presentations %}
+  {% for presentation in publication.presentations %}
+    {% assign publication_search = publication_search | append: ' ' | append: presentation.label %}
+  {% endfor %}
+{% endif %}
+<article class="card publication-card" data-year="{{ publication.year }}" data-title="{{ publication.title | escape }}" data-type="{{ publication.type | downcase }}" data-search="{{ publication_search | downcase | escape }}">
   <div class="publication-card-top">
     <div class="card-meta">
       <span>{{ publication.year }}</span>
@@ -17,4 +23,17 @@
   </h3>
   <p class="authors">{{ publication.authors }}</p>
   <p class="publication-venue"><em>{{ publication.venue }}</em></p>
+  {% if publication.presentations %}
+    <p class="publication-presentations">
+      {% for presentation in publication.presentations %}
+        Presented at
+        {% if presentation.url and presentation.url != "" %}
+          <a href="{{ presentation.url }}">{{ presentation.label }}</a>
+        {% else %}
+          <span>{{ presentation.label }}</span>
+        {% endif %}
+        {% unless forloop.last %}; {% endunless %}
+      {% endfor %}
+    </p>
+  {% endif %}
 </article>

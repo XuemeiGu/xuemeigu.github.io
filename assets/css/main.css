@@ -1144,6 +1144,22 @@ ul {
   margin-top: 1.15rem;
 }
 
+.publication-presentations {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.publication-presentations a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.publication-presentations a:hover {
+  text-decoration: underline;
+}
+
 .card-meta {
   display: flex;
   flex-wrap: wrap;

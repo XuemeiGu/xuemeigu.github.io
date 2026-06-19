@@ -1,6 +1,7 @@
 ---
 # Add new publications here. Use type: Journal, Preprint, or Conference.
 # For special journal formats, keep type: Journal and add display_type: "News & Views" or "Perspective".
+# For workshop posters of an existing paper, add presentations instead of a separate publication entry.
 # 2026
 - title: Automated discovery of nonlocal photonic gates
   authors: Sören Arlt, Mario Krenn, Xuemei Gu
@@ -168,6 +169,9 @@
   pdf_url: "/assets/files/publications/2024-mlst-deepdream.pdf"
   code_url: https://github.com/artificial-scientist-lab/deepGraphDreaming
   data_url: ''
+  presentations:
+    - label: IAI Workshop @ NeurIPS 2024
+      url: https://openreview.net/forum?id=TfrQgdcVlm
 
 # 2023
 - title: Digital discovery of 100 diverse quantum experiments with PyTheus
@@ -193,6 +197,50 @@
   data_url: ''
 
 # 2022
+- title: Experimental demonstration of genuine tripartite nonlocality under strict locality conditions
+  authors: Liang Huang, Xue-Mei Gu, Yang-Fan Jiang, Dian Wu, Bing Bai, Ming-Cheng Chen, Qi-Chao Sun, Jun Zhang, Sixia Yu, Qiang Zhang, Chao-Yang Lu, Jian-Wei Pan
+  venue: Phys. Rev. Lett. 129, 060401 (2022)
+  year: 2022
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1103/PhysRevLett.129.060401
+  pdf_url: "/assets/files/publications/PhysRevLett.129.060401.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Experimental refutation of real-valued quantum mechanics under strict locality conditions
+  authors: Dian Wu, Yang-Fan Jiang, Xue-Mei Gu, Liang Huang, Bing Bai, Qi-Chao Sun, Xingjian Zhang, Si-Qiu Gong, Yingqiu Mao, Han-Sen Zhong, Ming-Cheng Chen, Jun Zhang, Qiang Zhang, Chao-Yang Lu, Jian-Wei Pan
+  venue: Phys. Rev. Lett. 129, 140401 (2022)
+  year: 2022
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1103/PhysRevLett.129.140401
+  pdf_url: "/assets/files/publications/PhysRevLett.129.140401.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Closing the locality and detection loopholes in multiparticle entanglement self-testing
+  authors: Dian Wu, Qi Zhao, Can Wang, Liang Huang, Yang-Fan Jiang, Bing Bai, You Zhou, Xue-Mei Gu, Feng-Ming Liu, Ying-Qiu Mao, Qi-Chao Sun, Ming-Cheng Chen, Jun Zhang, Cheng-Zhi Peng, Xiao-Bo Zhu, Qiang Zhang, Chao-Yang Lu, Jian-Wei Pan
+  venue: Phys. Rev. Lett. 128, 250401 (2022)
+  year: 2022
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1103/PhysRevLett.128.250401
+  pdf_url: "/assets/files/publications/PhysRevLett.128.250401.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Learning interpretable representations of entanglement in quantum optics experiments using deep generative models
+  authors: Daniel Flam-Shepherd, Tony C Wu, Xuemei Gu, Alba Cervera-Lierta, Mario Krenn, Alan Aspuru-Guzik
+  venue: Nat Mach Intell 4, 544–554 (2022)
+  year: 2022
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1038/s42256-022-00493-5
+  pdf_url: "/assets/files/publications/s42256-022-00493-5.pdf"
+  code_url: ''
+  data_url: ''
+
 - title: Phase anomaly brings quantum implications
   authors: Xuemei Gu, Mario Krenn
   venue: Nat. Photon. 16, 815–817 (2022)
@@ -202,5 +250,178 @@
   featured: true
   paper_url: https://doi.org/10.1038/s41566-022-01118-4
   pdf_url: "/assets/files/publications/quantum-gouy-phase-view.pdf"
+  code_url: ''
+  data_url: ''
+
+# 2021
+- title: Robust self-testing of multiparticle entanglement
+  authors: Dian Wu, Qi Zhao, Xue-Mei Gu, Han-Sen Zhong, You Zhou, Li-Chao Peng, Jian Qin, Yi-Han Luo, Kai Chen, Li Li, Nai-Le Liu, Chao-Yang Lu, Jian-Wei Pan
+  venue: Phys. Rev. Lett. 127, 230503 (2021)
+  year: 2021
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1103/PhysRevLett.127.230503
+  pdf_url: "/assets/files/publications/PhysRevLett.127.230503.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Heralded Nondestructive Quantum Entangling Gate with Single-Photon Sources
+  authors: Jin-Peng Li, Xuemei Gu, Jian Qin, Dian Wu, Xiang You, Hui Wang, Christian Schneider, Sven Höfling, Yong-Heng Huo, Chao-Yang Lu, Nai-Le Liu, Li Li, Jian-Wei Pan
+  venue: Phys. Rev. Lett. 126, 140501 (2021)
+  year: 2021
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1103/PhysRevLett.126.140501
+  pdf_url: "/assets/files/publications/PhysRevLett.126.140501.pdf"
+  code_url: ''
+  data_url: ''
+
+# 2020
+- title: Compact Greenberger—Horne—Zeilinger state generation via frequency combs and graph theory
+  authors: Xuemei Gu, Mario Krenn
+  venue: Front. Phys. 15, 61502 (2020)
+  year: 2020
+  type: Journal
+  display_type: News & Views
+  featured: true
+  paper_url: https://doi.org/10.1007/s11467-020-1028-7
+  pdf_url: "/assets/files/publications/s11467-020-1028-7.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Phenomenology of complex structured light in turbulent air
+  authors: Xuemei Gu, Lijun Chen, Mario Krenn
+  venue: Opt. Express 28, 11033-11050 (2020)
+  year: 2020
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1364/OE.386962
+  pdf_url: "/assets/files/publications/oe-28-8-11033.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: 'Quantum experiments and hypergraphs: Multiphoton sources for quantum interference, quantum computation, and quantum entanglement'
+  authors: Xuemei Gu, Lijun Chen, Mario Krenn
+  venue: Phys. Rev. A 101, 033816 (2020)
+  year: 2020
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1103/PhysRevA.101.033816
+  pdf_url: "/assets/files/publications/PhysRevA.101.033816.pdf"
+  code_url: ''
+  data_url: ''
+
+# 2019
+- title: Quantum experiments and graphs. III. High-dimensional and multiparticle entanglement
+  authors: Xuemei Gu, Lijun Chen, Anton Zeilinger, Mario Krenn
+  venue: Phys. Rev. A 99, 032338 (2019)
+  year: 2019
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1103/PhysRevA.99.032338
+  pdf_url: "/assets/files/publications/PhysRevA.99.032338.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: 'Quantum experiments and graphs II: Quantum interference, computation, and state generation'
+  authors: Xuemei Gu, Manuel Erhard, Anton Zeilinger, Mario Krenn
+  venue: Proc. Natl. Acad. Sci. U.S.A. 116 (10) 4147-4155 (2019)
+  year: 2019
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1073/pnas.1815884116
+  pdf_url: "/assets/files/publications/2019-graph2.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Questions on the Structure of Perfect Matchings inspired by Quantum Physics
+  authors: Mario Krenn, Xuemei Gu, Daniel Soltész
+  venue: Proceedings of the 2nd Croatian Combinatorial Days, 57-70 (2019)
+  year: 2019
+  type: Conference
+  featured: true
+  paper_url: https://doi.org/10.5592/CO/CCD.2018.05
+  pdf_url: "/assets/files/publications/2019-graph-question.pdf"
+  code_url: ''
+  data_url: ''
+
+# 2018
+- title: 'Gouy Phase Radial Mode Sorter for Light: Concepts and Experiments'
+  authors: Xuemei Gu, Mario Krenn, Manuel Erhard, Anton Zeilinger
+  venue: Phys. Rev. Lett. 120, 103601 (2018)
+  year: 2018
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1103/PhysRevLett.120.103601
+  pdf_url: "/assets/files/publications/PhysRevLett.120.103601.pdf"
+  code_url: ''
+  data_url: ''
+
+# 2017
+- title: 'Quantum Experiments and Graphs: Multiparty States as Coherent Superpositions of Perfect Matchings'
+  authors: Mario Krenn, Xuemei Gu, Anton Zeilinger
+  venue: Phys. Rev. Lett. 119, 240403 (2017)
+  year: 2017
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1103/PhysRevLett.119.240403
+  pdf_url: "/assets/files/publications/PhysRevLett.119.240403.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Efficient and universal quantum key distribution based on chaos and middleware
+  authors: Dong Jiang, Yuanyuan Chen, Xuemei Gu, Ling Xie, Lijun Chen
+  venue: International Journal of Modern Physics B, 31(2), 1650264 (2017)
+  year: 2017
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1142/S0217979216502647
+  pdf_url: ""
+  code_url: ''
+  data_url: ''
+
+# 2016
+- title: Counterfactual entanglement distribution using quantum dot spins
+  authors: Yuanyuan Chen, Dong Jiang, Xuemei Gu, Ling Xie, Lijun Chen
+  venue: J. Opt. Soc. Am. B 33, 663-669 (2016)
+  year: 2016
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1364/JOSAB.33.000663
+  pdf_url: "/assets/files/publications/josab-33-4-663.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Interaction-free generation of orbital angular momentum entanglement
+  authors: Yuanyuan Chen, Dong Jiang, Xuemei Gu, Ling Xie, Lijun Chen
+  venue: International Journal of Modern Physics B, 30(5), 1650006 (2016)
+  year: 2016
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1142/S0217979216500065
+  pdf_url: ""
+  code_url: ''
+  data_url: ''
+
+# 2015
+- title: Counterfactual quantum cryptography network with untrusted relay
+  authors: Yuanyuan Chen, Xuemei Gu, Dong Jiang, Ling Xie, Lijun Chen
+  venue: International Journal of Modern Physics B, 29(20), 1550134 (2015)
+  year: 2015
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1142/S0217979215501349
+  pdf_url: ""
+  code_url: ''
+  data_url: ''
+
+- title: Tripartite counterfactual entanglement distribution
+  authors: Yuanyuan Chen, Xuemei Gu, Dong Jiang, Ling Xie, Lijun Chen
+  venue: Opt. Express 23, 21193-21203 (2015)
+  year: 2015
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1364/OE.23.021193
+  pdf_url: "/assets/files/publications/oe-23-16-21193.pdf"
   code_url: ''
   data_url: ''
