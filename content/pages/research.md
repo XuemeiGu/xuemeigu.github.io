@@ -4,7 +4,7 @@ permalink: /research/
 ---
 
 <p class="research-note">
-  Research at the interface of artificial intelligence, quantum optics, and scientific discovery.
+  Research at the interface of artificial intelligence, quantum optics, and scientific discovery. See also the <a href="{{ '/code/' | relative_url }}">code and repositories</a>.
 </p>
 
 <section class="project-showcase" aria-label="Research projects">
