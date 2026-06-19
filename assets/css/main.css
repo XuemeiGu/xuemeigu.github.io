@@ -1326,7 +1326,7 @@ ul {
 }
 
 .service-section:first-of-type {
-  margin-top: 0.6rem;
+  margin-top: 1.45rem;
 }
 
 .service-section-heading {
@@ -1339,10 +1339,19 @@ ul {
   padding-bottom: 0.45rem;
 }
 
+.service-note {
+  max-width: 72ch;
+  margin: 0 0 1.2rem;
+  color: var(--muted-strong);
+  font-size: 1.12rem;
+  line-height: 1.65;
+}
+
 .service-list {
   display: grid;
   gap: 0;
   max-width: 1080px;
+  margin-left: clamp(1.2rem, 3.2vw, 3rem);
 }
 
 .service-entry {
@@ -1388,32 +1397,28 @@ ul {
   grid-template-columns: 150px minmax(0, 1fr);
   gap: clamp(1rem, 2.2vw, 1.7rem);
   max-width: 1080px;
+  margin-left: clamp(1.2rem, 3.2vw, 3rem);
   padding: 1rem 1.1rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--surface) 84%, transparent);
 }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.8fr) minmax(220px, 0.7fr);
-  gap: 0.9rem;
-}
-
 .service-panel {
-  padding: 1rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: color-mix(in srgb, var(--surface) 84%, transparent);
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: clamp(1rem, 2.2vw, 1.7rem);
+  padding: 0.92rem 0;
+  border-bottom: 1px solid var(--line);
 }
 
 .service-panel span {
   display: block;
-  margin-bottom: 0.45rem;
   color: var(--accent);
-  font-size: 0.92rem;
+  font-size: 1.02rem;
   font-weight: 800;
   letter-spacing: 0;
+  line-height: 1.35;
 }
 
 .authors {
@@ -1561,10 +1566,6 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
-
   .page-content > .contact-layout {
     margin-left: 0;
   }
@@ -1688,9 +1689,15 @@ ul {
   }
 
   .service-entry,
-  .service-feature {
+  .service-feature,
+  .service-panel {
     grid-template-columns: 1fr;
     gap: 0.35rem;
+  }
+
+  .service-list,
+  .service-feature {
+    margin-left: 0;
   }
 
   .academic-profile h1 {

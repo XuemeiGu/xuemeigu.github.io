@@ -3,6 +3,10 @@ title: Service
 permalink: /service/
 ---
 
+<p class="service-note">
+  Teaching, supervision, reviewing, and academic service activities.
+</p>
+
 <section class="service-section">
   <div class="service-section-heading">
     <h2>Teaching</h2>
@@ -70,7 +74,7 @@ permalink: /service/
   <div class="service-section-heading">
     <h2>Reviewing & Academic Service</h2>
   </div>
-  <div class="service-grid">
+  <div class="service-list">
     <article class="service-panel">
       <span>Reviewer</span>
       <h3>Journal and publication review</h3>
