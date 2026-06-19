@@ -3,7 +3,6 @@ title: "Subjective nature of path information in quantum mechanics"
 authors: "Xinhe Jiang, Armin Hochrainer, Jaroslav Kysela, Manuel Erhard, Xuemei Gu, Ya Yu, Anton Zeilinger"
 venue: "Nat Commun 17, 2433 (2026)"
 year: 2026
-sort_order: 20
 type: "Journal"
 featured: true
 paper_url: "https://doi.org/10.1038/s41467-026-69034-7"

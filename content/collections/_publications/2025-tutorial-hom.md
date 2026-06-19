@@ -3,7 +3,6 @@ title: "Tutorial: Hong–Ou–Mandel interference with structured photons"
 authors: "Tareq Jaouni, Xuemei Gu, Mario Krenn, Alessio D’Errico, Ebrahim Karimi"
 venue: "Nanophotonics, 14(23), 4163-4175 (2025)"
 year: 2025
-sort_order: 40
 type: "Journal"
 featured: true
 paper_url: "https://doi.org/10.1515/nanoph-2025-0034"

@@ -3,7 +3,6 @@ title: "Forecasting high-impact research topics via machine learning on evolving
 authors: "Xuemei Gu, Mario Krenn"
 venue: "Mach. Learn.: Sci. Technol. 6 025041 (2025)"
 year: 2025
-sort_order: 50
 type: "Journal"
 featured: false
 paper_url: "https://doi.org/10.1088/2632-2153/add6ef"

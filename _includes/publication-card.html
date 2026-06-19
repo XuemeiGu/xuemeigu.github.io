@@ -1,4 +1,4 @@
-<article class="card publication-card" data-year="{{ publication.year }}" data-type="{{ publication.type | downcase }}" data-search="{{ publication.title | append: ' ' | append: publication.authors | append: ' ' | append: publication.venue | append: ' ' | append: publication.year | append: ' ' | append: publication.type | downcase | escape }}">
+<article class="card publication-card" data-year="{{ publication.year }}" data-title="{{ publication.title | escape }}" data-type="{{ publication.type | downcase }}" data-search="{{ publication.title | append: ' ' | append: publication.authors | append: ' ' | append: publication.venue | append: ' ' | append: publication.year | append: ' ' | append: publication.type | downcase | escape }}">
   <div class="card-meta">
     <span>{{ publication.year }}</span>
     <span>{{ publication.type }}</span>

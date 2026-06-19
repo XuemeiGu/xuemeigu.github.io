@@ -47,6 +47,26 @@
   let activeFilter = 'all';
   let currentPage = 1;
 
+  function sortPublicationCards() {
+    if (!publicationList || !cards.length) {
+      return;
+    }
+
+    cards.sort((firstCard, secondCard) => {
+      const firstYear = Number(firstCard.dataset.year) || 0;
+      const secondYear = Number(secondCard.dataset.year) || 0;
+      if (firstYear !== secondYear) {
+        return secondYear - firstYear;
+      }
+
+      return (firstCard.dataset.title || '').localeCompare(secondCard.dataset.title || '');
+    });
+
+    cards.forEach((card) => {
+      publicationList.append(card);
+    });
+  }
+
   function getMatchingPublicationCards() {
     const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
     return cards.filter((card) => {
@@ -193,5 +213,6 @@
     });
   });
 
+  sortPublicationCards();
   updatePublicationPagination();
 })();

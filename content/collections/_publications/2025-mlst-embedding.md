@@ -3,7 +3,6 @@ title: "Discovering emergent connections in quantum physics research via dynamic
 authors: "Felix Frohnert, Xuemei Gu, Mario Krenn, Evert van Nieuwenburg"
 venue: "Mach. Learn.: Sci. Technol. 6 015029 (2025)"
 year: 2025
-sort_order: 60
 type: "Journal"
 featured: false
 paper_url: "https://doi.org/10.1088/2632-2153/adb00a"

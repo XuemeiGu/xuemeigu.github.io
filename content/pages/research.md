@@ -4,7 +4,7 @@ permalink: /research/
 ---
 
 <p class="research-note">
-  Research themes at the interface of artificial intelligence, quantum optics, and scientific discovery.
+  Research at the interface of artificial intelligence, quantum optics, and scientific discovery.
 </p>
 
 <section class="project-showcase" aria-label="Research projects">
