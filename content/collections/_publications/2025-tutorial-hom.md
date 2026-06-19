@@ -6,10 +6,9 @@ year: 2025
 type: "Journal"
 featured: true
 paper_url: "https://doi.org/10.1515/nanoph-2025-0034"
-pdf_url: "/assets/files/publications/tutorial-hom.pdf"
+pdf_url: "/assets/files/publications/2025-tutorial-hom.pdf"
 code_url: ""
 data_url: ""
-
 ---
 
 ## Abstract

@@ -6,7 +6,7 @@ year: 2025
 type: "Preprint"
 featured: false
 paper_url: "https://arxiv.org/abs/2511.11752"
-pdf_url: "/assets/files/publications/ai-mandel.pdf"
+pdf_url: "/assets/files/publications/2025-ai-mandel.pdf"
 code_url: "https://github.com/artificial-scientist-lab/ai-mandel"
 data_url: ""
 ---

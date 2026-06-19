@@ -6,7 +6,7 @@ year: 2026
 type: "Journal"
 featured: true
 paper_url: "https://doi.org/10.1103/f415-kgwr"
-pdf_url: "/assets/files/publications/nonlocalgates.pdf"
+pdf_url: "/assets/files/publications/2026-nonlocalgates.pdf"
 code_url: "https://github.com/artificial-scientist-lab/nonlocalgates"
 data_url: ""
 ---

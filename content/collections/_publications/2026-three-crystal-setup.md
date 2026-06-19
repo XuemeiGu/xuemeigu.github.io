@@ -6,7 +6,7 @@ year: 2026
 type: "Journal"
 featured: true
 paper_url: "https://doi.org/10.1038/s41467-026-69034-7"
-pdf_url: "/assets/files/publications/three-crystal-setup.pdf"
+pdf_url: "/assets/files/publications/2026-three-crystal-setup.pdf"
 code_url: ""
 data_url: ""
 ---
