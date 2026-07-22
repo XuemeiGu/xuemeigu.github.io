@@ -2,13 +2,14 @@
 layout: default
 ---
 {% assign publication_type_label = page.display_type | default: page.type %}
+{% assign highlighted_authors = page.authors | replace: "Xue-Mei Gu", "<strong class='author-highlight'>Xue-Mei Gu</strong>" | replace: "Xuemei Gu", "<strong class='author-highlight'>Xuemei Gu</strong>" | replace: "X-M Gu", "<strong class='author-highlight'>X-M Gu</strong>" %}
 <article class="content-section prose article-page publication-page">
   <div class="card-meta publication-page-meta">
     <span>{{ page.year }}</span>
     <span>{{ publication_type_label }}</span>
   </div>
   <h1>{{ page.title }}</h1>
-  <p class="authors">{{ page.authors }}</p>
+  <p class="authors">{{ highlighted_authors }}</p>
   <p class="publication-venue"><em>{{ page.venue }}</em></p>
   {% include publication-links.html item=page %}
 

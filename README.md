@@ -11,7 +11,7 @@ Most routine edits are made in the data files:
 - Home page news: `content/data/news.yml`
 - Navigation: `content/data/navigation.yml`
 
-For publications, add new entries near the top under the correct year. Journal papers, preprints, and conference papers can all live in `publications.yml`. Workshop posters for an already listed paper should usually be added as a `presentations` note under the related paper instead of as a separate publication.
+For publications, add new entries under the correct year. Journal papers, preprints, conference papers, and other publications can all live in `publications.yml`. Workshop posters for an already listed paper should usually be added as a `presentations` note under the related paper instead of as a separate publication.
 
 Example:
 

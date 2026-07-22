@@ -1522,6 +1522,11 @@ ul {
   color: var(--muted-strong) !important;
 }
 
+.author-highlight {
+  color: var(--text);
+  font-weight: 700;
+}
+
 .publication-venue {
   margin-top: 0;
 }

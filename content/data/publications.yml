@@ -1,5 +1,5 @@
 ---
-# Add new publications here. Use type: Journal, Preprint, or Conference.
+# Add new publications here. Use type: Journal, Preprint, Conference, or Other.
 # For special journal formats, keep type: Journal and add display_type: "News & Views" or "Perspective".
 # For workshop posters of an existing paper, add presentations instead of a separate publication entry.
 # 2026
@@ -36,6 +36,28 @@
   code_url: ''
   data_url: ''
 
+- title: Unconditional advantage of quantum teleportation over direct transmission of single photons through a lossy channel
+  authors: Li-Chao Peng, Dian Wu, Yuan Li, Xue-Mei Gu, Jian Qin, Ke-Mi Xu, Han-Sen Zhong, Hui Wang, Yu-Ming He, Ming-Chen Chen, Li Li, Nai-Le Liu, Chao-Yang Lu, Jian-Wei Pan
+  venue: Nature Physics (2026)
+  year: 2026
+  type: Journal
+  featured: true
+  paper_url: https://doi.org/10.1038/s41567-026-03348-7
+  pdf_url: "/assets/files/publications/2511.08951.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Analytical Fock Representation of Two-Mode Squeezing for Quantum Interference
+  authors: Xuemei Gu, Carlos Ruiz-Gonzalez, Mario Krenn
+  venue: arXiv:2511.16529 (2026)
+  year: 2026
+  type: Preprint
+  featured: false
+  paper_url: https://arxiv.org/abs/2511.16529
+  pdf_url: "/assets/files/publications/2511.16529.pdf"
+  code_url: ''
+  data_url: ''
+
 # 2025
 - title: Towards autonomous quantum physics research using LLM agents with access to intelligent tools
   authors: Sören Arlt, Xuemei Gu, Mario Krenn
@@ -59,17 +81,6 @@
   code_url: https://github.com/artificial-scientist-lab/logicalES
   data_url: ''
 
-- title: Analytical Fock Representation of Two-Mode Squeezing for Quantum Interference
-  authors: Xuemei Gu, Mario Krenn
-  venue: arXiv:2511.16529 (2025)
-  year: 2025
-  type: Preprint
-  featured: false
-  paper_url: https://arxiv.org/abs/2511.16529
-  pdf_url: "/assets/files/publications/2511.16529.pdf"
-  code_url: ''
-  data_url: ''
-
 - title: 'Tutorial: Hong–Ou–Mandel interference with structured photons'
   authors: Tareq Jaouni, Xuemei Gu, Mario Krenn, Alessio D’Errico, Ebrahim Karimi
   venue: Nanophotonics, 14(23), 4163-4175 (2025)
@@ -78,17 +89,6 @@
   featured: true
   paper_url: https://doi.org/10.1515/nanoph-2025-0034
   pdf_url: "/assets/files/publications/2025-tutorial-hom.pdf"
-  code_url: ''
-  data_url: ''
-
-- title: Unconditional quantum teleportational advantage of single photons
-  authors: Li-Chao Peng, Dian Wu, Xue-Mei Gu, Jian Qin, Ke-Mi Xu, Han-Sen Zhong, Hui Wang, Yu-Ming He, Ming-Chen Chen, Li Li, Nai-Le Liu, Chao-Yang Lu, Jian-Wei Pan
-  venue: arXiv:2511.08951 (2025)
-  year: 2025
-  type: Preprint
-  featured: false
-  paper_url: https://arxiv.org/abs/2511.08951
-  pdf_url: "/assets/files/publications/2511.08951.pdf"
   code_url: ''
   data_url: ''
 
@@ -193,6 +193,18 @@
   featured: true
   paper_url: https://doi.org/10.1103/PhysRevLett.130.190201
   pdf_url: "/assets/files/publications/PhysRevLett.130.190201.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Quantum Computing
+  authors: Xuemei Gu
+  venue: Project 101 Course Book (2023), co-authored with the national team led by Prof. John Hopcroft
+  year: 2023
+  type: Other
+  display_type: Course book
+  featured: false
+  paper_url: https://www.proj101.cn/quantum
+  pdf_url: ''
   code_url: ''
   data_url: ''
 
@@ -366,6 +378,17 @@
   featured: true
   paper_url: https://doi.org/10.1103/PhysRevLett.119.240403
   pdf_url: "/assets/files/publications/PhysRevLett.119.240403.pdf"
+  code_url: ''
+  data_url: ''
+
+- title: Deterministic secure quantum communication using a single d-level system
+  authors: Dong Jiang, Yuanyuan Chen, Xuemei Gu, Ling Xie, Lijun Chen
+  venue: Scientific Reports 7, 44934 (2017)
+  year: 2017
+  type: Journal
+  featured: false
+  paper_url: https://doi.org/10.1038/srep44934
+  pdf_url: ''
   code_url: ''
   data_url: ''
 

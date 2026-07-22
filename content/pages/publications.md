@@ -25,6 +25,7 @@ permalink: /publications/
       <option value="preprint">Preprint</option>
       <option value="journal">Journal paper</option>
       <option value="conference">Conference paper</option>
+      <option value="other">Other publication</option>
     </select>
   </div>
 

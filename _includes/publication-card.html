@@ -6,6 +6,7 @@
     {% assign publication_search = publication_search | append: ' ' | append: presentation.label %}
   {% endfor %}
 {% endif %}
+{% assign highlighted_authors = publication.authors | replace: "Xue-Mei Gu", "<strong class='author-highlight'>Xue-Mei Gu</strong>" | replace: "Xuemei Gu", "<strong class='author-highlight'>Xuemei Gu</strong>" | replace: "X-M Gu", "<strong class='author-highlight'>X-M Gu</strong>" %}
 <article class="card publication-card" data-year="{{ publication.year }}" data-title="{{ publication.title | escape }}" data-type="{{ publication.type | downcase }}" data-search="{{ publication_search | downcase | escape }}">
   <div class="publication-card-top">
     <div class="card-meta">
@@ -41,6 +42,6 @@
       {{ publication.title }}
     {% endif %}
   </h3>
-  <p class="authors">{{ publication.authors }}</p>
+  <p class="authors">{{ highlighted_authors }}</p>
   <p class="publication-venue"><em>{{ publication.venue }}</em></p>
 </article>
