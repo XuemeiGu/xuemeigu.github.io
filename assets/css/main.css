@@ -903,34 +903,8 @@ ul {
   line-height: 1.65;
 }
 
-.code-profile {
-  display: block;
-  margin: 1.1rem 0 2.2rem;
-  padding: 0;
-}
-
-.code-profile h2,
 .code-section-heading h2 {
   margin: 0;
-}
-
-.code-profile p {
-  margin: 0.35rem 0 0.9rem;
-  color: var(--muted-strong);
-  font-size: 1.05rem;
-  line-height: 1.55;
-}
-
-.github-stats {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.github-stats img {
-  display: block;
-  max-width: 100%;
-  min-height: 150px;
-  border-radius: var(--radius);
 }
 
 .code-section {
@@ -1970,7 +1944,6 @@ ul {
   .two-column,
   .hero-grid,
   .project-showcase,
-  .code-profile,
   .card-grid.two,
   .card-grid.three {
     grid-template-columns: 1fr;
@@ -1987,10 +1960,6 @@ ul {
 
   .page-content > .contact-layout {
     margin-left: 0;
-  }
-
-  .github-stats {
-    justify-content: flex-start;
   }
 
   .outreach-intro {

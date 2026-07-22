@@ -7,15 +7,6 @@ permalink: /code/
   Research code, tools, and open-source projects related to AI-assisted scientific discovery and quantum physics.
 </p>
 
-<section class="code-profile" aria-label="GitHub profile summary">
-  <div class="github-stats">
-    <img
-      src="https://github-readme-stats.vercel.app/api?username=XuemeiGu&amp;show_icons=true&amp;hide=prs,issues,contribs&amp;hide_title=true&amp;hide_border=true&amp;theme=github_dark&amp;rank_icon=github"
-      alt="GitHub statistics for Xuemei Gu"
-      loading="lazy">
-  </div>
-</section>
-
 <section class="code-section">
   <div class="code-section-heading">
     <h2>Open-Source Repositories</h2>
