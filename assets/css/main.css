@@ -401,7 +401,7 @@ ul {
 
 #news.section-grid {
   grid-template-columns: max-content minmax(0, 1fr);
-  gap: clamp(3rem, 5vw, 5.5rem);
+  gap: clamp(4rem, 6.5vw, 7rem);
 }
 
 .news-item h3,
@@ -422,7 +422,7 @@ ul {
 
 #news .news-item p {
   margin: 0;
-  font-size: 1.22rem;
+  font-size: 1.3rem;
   line-height: 1.58;
 }
 
@@ -437,7 +437,7 @@ ul {
 
 .news-item time {
   margin-right: 0.85rem;
-  font-size: 1.04rem;
+  font-size: 1.12rem;
   white-space: nowrap;
 }
 
@@ -1409,41 +1409,40 @@ ul {
 .background-timeline {
   position: relative;
   display: grid;
-  gap: 0.82rem;
-  padding-left: 1.55rem;
+  gap: 0;
+  padding-left: 0;
 }
 
 .background-timeline::before {
   content: "";
   position: absolute;
-  top: 0.9rem;
-  bottom: 0.9rem;
-  left: 0.3rem;
+  top: 0.95rem;
+  bottom: 1.55rem;
+  left: calc(190px + 1.5rem - 0.5px);
   width: 1px;
   background: linear-gradient(to bottom, var(--accent-2), color-mix(in srgb, var(--accent-2) 28%, transparent));
 }
 
 .background-timeline.compact {
-  gap: 0.7rem;
+  gap: 0;
 }
 
 .background-entry {
   position: relative;
   display: grid;
   grid-template-columns: 190px minmax(0, 1fr);
-  gap: clamp(1rem, 2.4vw, 1.8rem);
+  gap: 3rem;
   align-items: start;
-  padding: 0.95rem 1.05rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: color-mix(in srgb, var(--surface) 84%, transparent);
+  padding: 0.45rem 0 1.45rem;
+  border: 0;
+  background: transparent;
 }
 
 .background-entry::before {
   content: "";
   position: absolute;
-  top: 1.28rem;
-  left: calc(-1.55rem - 4px);
+  top: 0.78rem;
+  left: calc(190px + 1.5rem - 5px);
   width: 9px;
   height: 9px;
   border: 2px solid var(--accent-2);
@@ -1453,15 +1452,16 @@ ul {
 
 .background-entry time {
   color: var(--accent);
-  font-size: 1.14rem;
+  font-size: 1.08rem;
   font-weight: 800;
   line-height: 1.32;
+  text-align: right;
 }
 
 .background-entry h3 {
   margin: 0;
   color: var(--text);
-  font-size: 1.18rem;
+  font-size: 1.24rem;
   line-height: 1.35;
 }
 
@@ -2138,8 +2138,12 @@ ul {
 
   .background-entry {
     grid-template-columns: 1fr;
-    gap: 0.45rem;
-    padding: 0.9rem;
+    gap: 0.25rem;
+    padding: 0.2rem 0 1.2rem;
+  }
+
+  .background-entry time {
+    text-align: left;
   }
 
   .service-entry,
