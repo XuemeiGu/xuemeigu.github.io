@@ -1563,68 +1563,59 @@ ul {
   line-height: 1.4;
 }
 
-.outreach-event-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.72rem;
-}
-
-.outreach-event-card {
-  min-width: 0;
-  padding: 0.92rem 1rem;
+.outreach-content-box {
+  padding: 1rem 1.1rem;
   border: 1px solid var(--line);
   border-radius: 0.5rem;
   background: color-mix(in srgb, var(--surface) 76%, transparent);
 }
 
-.outreach-event-meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.4rem 0.8rem;
+.outreach-text-list {
+  display: grid;
+  gap: 0.62rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.outreach-event-meta time {
+.outreach-text-list li {
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: baseline;
+}
+
+.outreach-text-list time {
   color: var(--accent);
   font-size: 0.82rem;
   font-weight: 800;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.outreach-event-meta span {
-  padding: 0.16rem 0.48rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.76rem;
-  font-weight: 700;
-  line-height: 1.35;
-}
-
-.outreach-event-card h3 {
-  margin: 0.62rem 0 0.24rem;
-  color: var(--text);
-  font-size: 1.04rem;
-  font-weight: 650;
-  line-height: 1.32;
-}
-
-.outreach-event-card .outreach-event-topic {
+.outreach-text-list p {
   margin: 0;
-  color: var(--muted-strong);
-  font-size: 0.96rem;
-  font-weight: 500;
-  line-height: 1.42;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.46;
 }
 
-.outreach-event-card .outreach-event-location,
-.outreach-event-card .outreach-event-description {
-  margin: 0.3rem 0 0;
-  color: var(--muted);
+.outreach-text-list strong {
+  color: var(--muted-strong);
+  font-weight: 650;
+}
+
+.outreach-list-detail {
+  display: block;
+  margin-top: 0.06rem;
+  color: color-mix(in srgb, var(--muted) 82%, transparent);
+  font-size: 0.82rem;
+}
+
+.outreach-text-list a {
+  display: inline-block;
+  margin-left: 0.4rem;
   font-size: 0.84rem;
-  line-height: 1.4;
+  font-weight: 700;
 }
 
 .outreach-page .service-list,
@@ -2079,8 +2070,9 @@ ul {
     gap: 0.28rem;
   }
 
-  .outreach-event-grid {
+  .outreach-text-list li {
     grid-template-columns: 1fr;
+    gap: 0.08rem;
   }
 
   .outreach-page .service-section-heading {
