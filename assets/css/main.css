@@ -401,7 +401,7 @@ ul {
 
 #news.section-grid {
   grid-template-columns: max-content minmax(0, 1fr);
-  gap: clamp(1.75rem, 3.2vw, 3.4rem);
+  gap: clamp(3rem, 5vw, 5.5rem);
 }
 
 .news-item h3,
@@ -420,8 +420,10 @@ ul {
   color: var(--text);
 }
 
-.news-item p {
+#news .news-item p {
   margin: 0;
+  font-size: 1.22rem;
+  line-height: 1.58;
 }
 
 .news-item time,
@@ -435,6 +437,7 @@ ul {
 
 .news-item time {
   margin-right: 0.85rem;
+  font-size: 1.04rem;
   white-space: nowrap;
 }
 
@@ -471,41 +474,25 @@ ul {
 
 .news-archive {
   display: grid;
+  gap: 0.72rem;
   max-width: 1060px;
 }
 
-.news-archive-item {
+.news-archive .news-archive-item {
   display: grid;
   grid-template-columns: 125px minmax(0, 1fr);
   gap: clamp(1rem, 2.4vw, 2rem);
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.news-archive-item:first-child {
-  border-top: 1px solid var(--line);
+  margin: 0;
+  color: var(--muted-strong);
+  font-size: 1.08rem;
+  line-height: 1.55;
 }
 
 .news-archive-item time {
   color: var(--accent);
-  font-size: 0.9rem;
+  font-size: 1.02rem;
   font-weight: 800;
   white-space: nowrap;
-}
-
-.news-archive .news-archive-item h2 {
-  margin: 0;
-  color: var(--text);
-  font-size: 1.12rem;
-  font-weight: 700;
-  line-height: 1.35;
-}
-
-.news-archive .news-archive-item p {
-  margin: 0.25rem 0 0;
-  color: var(--muted);
-  font-size: 0.98rem;
-  line-height: 1.5;
 }
 
 .news-mark,
@@ -1977,6 +1964,10 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  #news.section-grid {
+    gap: 2.25rem;
+  }
+
   .page-content > .contact-layout {
     margin-left: 0;
   }
@@ -2075,7 +2066,7 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .news-archive-item {
+  .news-archive .news-archive-item {
     grid-template-columns: 1fr;
     gap: 0.28rem;
   }

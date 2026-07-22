@@ -12,12 +12,9 @@ description: Recent news, talks, publications, and professional highlights from 
 {% assign visible_news = site.data.news | where_exp: "item", "item.published != false" | sort: "date" | reverse %}
 <div class="news-archive">
 {% for item in visible_news %}
-  <article class="news-archive-item">
+  <p class="news-archive-item">
     <time datetime="{{ item.date }}">{{ item.date | date: "%Y.%m.%d" }}</time>
-    <div>
-      <h2>{{ item.title }}</h2>
-      <p>{{ item.text }}</p>
-    </div>
-  </article>
+    <span>{{ item.text }}</span>
+  </p>
 {% endfor %}
 </div>
