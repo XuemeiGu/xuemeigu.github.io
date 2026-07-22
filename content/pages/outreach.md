@@ -72,41 +72,31 @@ permalink: /outreach/
   <div class="service-section-heading">
     <h2>Supervision</h2>
   </div>
-  <article class="service-feature">
-    <time>Since 2021</time>
-    <div>
-      <h3>Research supervision and co-supervision</h3>
-      <p>5 PhD students and 3 Master's students in experimental quantum optics, quantum technologies, and AI-driven scientific discovery in physics.</p>
-    </div>
-  </article>
+  <div class="outreach-content-box">
+    <ul class="outreach-text-list outreach-supervision-list">
+      <li>
+        <p><span class="outreach-entry-key">Since 2021</span><span class="outreach-line-text">Research supervision and co-supervision, 5 PhD students and 3 Master's students in experimental quantum optics, quantum technologies, and AI-driven scientific discovery in physics</span></p>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <section class="service-section" id="academic-service">
   <div class="service-section-heading">
     <h2>Reviewing &amp; Academic Service</h2>
   </div>
-  <div class="service-list">
-    <article class="service-panel">
-      <span>Reviewer</span>
-      <div>
-        <h3>Journal and publication review</h3>
-        <p>Nature Photonics, Nature Machine Intelligence, Light: Science &amp; Applications, Physical Review Letters, PRX Intelligence, Physical Review Applied, Physical Review A, Quantum, New Journal of Physics, Advanced Photonics Nexus, PNAS Nexus, Machine Learning: Science and Technology, and others.</p>
-      </div>
-    </article>
-    <article class="service-panel">
-      <span>Editor</span>
-      <div>
-        <h3>Guest editor</h3>
-        <p>Topic on Nonlinear and Quantum Optics in Micro-Nano Structures for Frontiers in Physics.</p>
-      </div>
-    </article>
-    <article class="service-panel">
-      <span>Project review</span>
-      <div>
-        <h3>Funding review</h3>
-        <p>Austrian Science Fund (FWF).</p>
-      </div>
-    </article>
+  <div class="outreach-content-box">
+    <ul class="outreach-text-list outreach-service-list">
+      <li>
+        <p><span class="outreach-entry-key">Reviewer</span><span class="outreach-line-text">Journal and publication review, Nature Photonics, Nature Machine Intelligence, Light: Science &amp; Applications, Physical Review Letters, PRX Intelligence, Physical Review Applied, Physical Review A, Quantum, New Journal of Physics, Advanced Photonics Nexus, PNAS Nexus, Machine Learning: Science and Technology, and others</span></p>
+      </li>
+      <li>
+        <p><span class="outreach-entry-key">Editor</span><span class="outreach-line-text">Guest editor, topic on Nonlinear and Quantum Optics in Micro-Nano Structures for Frontiers in Physics</span></p>
+      </li>
+      <li>
+        <p><span class="outreach-entry-key">Project review</span><span class="outreach-line-text">Funding review, Austrian Science Fund (FWF)</span></p>
+      </li>
+    </ul>
   </div>
 </section>
 
