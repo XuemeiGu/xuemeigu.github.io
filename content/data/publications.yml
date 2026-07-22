@@ -47,17 +47,6 @@
   code_url: ''
   data_url: ''
 
-- title: Analytical Fock Representation of Two-Mode Squeezing for Quantum Interference
-  authors: Xuemei Gu, Carlos Ruiz-Gonzalez, Mario Krenn
-  venue: arXiv:2511.16529 (2026)
-  year: 2026
-  type: Preprint
-  featured: false
-  paper_url: https://arxiv.org/abs/2511.16529
-  pdf_url: "/assets/files/publications/2511.16529.pdf"
-  code_url: ''
-  data_url: ''
-
 # 2025
 - title: Towards autonomous quantum physics research using LLM agents with access to intelligent tools
   authors: Sören Arlt, Xuemei Gu, Mario Krenn
@@ -103,6 +92,17 @@
   code_url: ''
   data_url: ''
 
+- title: Analytical Fock Representation of Two-Mode Squeezing for Quantum Interference
+  authors: Xuemei Gu, Carlos Ruiz-Gonzalez, Mario Krenn
+  venue: arXiv:2511.16529 (2025)
+  year: 2025
+  type: Preprint
+  featured: false
+  paper_url: https://arxiv.org/abs/2511.16529
+  pdf_url: "/assets/files/publications/2511.16529.pdf"
+  code_url: ''
+  data_url: ''
+  
 - title: Discovering emergent connections in quantum physics research via dynamic word embeddings
   authors: Felix Frohnert, Xuemei Gu, Mario Krenn, Evert van Nieuwenburg
   venue: 'Mach. Learn.: Sci. Technol. 6 015029 (2025)'
