@@ -31,7 +31,7 @@ description: "Personal website for Xuemei Gu."
   </div>
 </section>
 
-{% assign visible_news = site.data.news | where_exp: "item", "item.published != false" %}
+{% assign visible_news = site.data.news | where_exp: "item", "item.published != false" | sort: "date" | reverse %}
 {% if visible_news.size > 0 %}
 <section id="news" class="academic-section section-grid">
   <div class="section-label">
@@ -43,6 +43,9 @@ description: "Personal website for Xuemei Gu."
         <p><time>{{ item.date | date: "%Y.%m.%d" }}</time> {{ item.text }}</p>
       </article>
     {% endfor %}
+    {% if visible_news.size > 4 %}
+      <p class="news-more"><a href="{{ '/news/' | relative_url }}">More news <span aria-hidden="true">→</span></a></p>
+    {% endif %}
   </div>
 </section>
 {% endif %}

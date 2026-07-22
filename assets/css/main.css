@@ -438,6 +438,76 @@ ul {
   white-space: nowrap;
 }
 
+.news-more {
+  margin: 0.25rem 0 0;
+}
+
+.news-more a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--accent);
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
+.news-more a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.news-page-intro {
+  max-width: 72ch;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-page-intro p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.news-archive {
+  display: grid;
+  max-width: 1060px;
+}
+
+.news-archive-item {
+  display: grid;
+  grid-template-columns: 125px minmax(0, 1fr);
+  gap: clamp(1rem, 2.4vw, 2rem);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-archive-item:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.news-archive-item time {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.news-archive .news-archive-item h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.news-archive .news-archive-item p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
 .news-mark,
 .experience-logo {
   display: grid;
@@ -2002,6 +2072,11 @@ ul {
 
   .news-item {
     grid-template-columns: 1fr;
+  }
+
+  .news-archive-item {
+    grid-template-columns: 1fr;
+    gap: 0.28rem;
   }
 
   .outreach-event-grid {
