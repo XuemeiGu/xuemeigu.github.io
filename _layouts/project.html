@@ -1,15 +1,60 @@
 ---
 layout: default
 ---
-<article class="content-section prose article-page">
+<article class="content-section prose article-page project-page">
   <p class="eyebrow">Research project</p>
   <h1>{{ page.title }}</h1>
   {% if page.short_description %}<p class="lead">{{ page.short_description }}</p>{% endif %}
   {% if page.image %}
-    <img class="project-hero-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
+    <figure class="project-figure">
+      <img class="project-hero-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
+      {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
+    </figure>
   {% endif %}
   <div class="tag-row spacious">
     {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
   </div>
   {{ content }}
+
+  {% if page.selected_publications %}
+    <section class="project-detail-section" aria-labelledby="selected-publications">
+      <h2 id="selected-publications">Selected publications</h2>
+      <ul class="project-publication-list">
+        {% for selected_title in page.selected_publications %}
+          {% assign publication = site.data.publications | where: "title", selected_title | first %}
+          {% if publication %}
+            <li>
+              <div class="project-publication-main">
+                <time>{{ publication.year }}</time>
+                <p>
+                  {% assign publication_title_url = publication.paper_url | default: publication.pdf_url %}
+                  {% if publication_title_url and publication_title_url != "" %}
+                    <a class="project-publication-title" href="{{ publication_title_url | relative_url }}">{{ publication.title }}</a>
+                  {% else %}
+                    <span class="project-publication-title">{{ publication.title }}</span>
+                  {% endif %}
+                  <span class="project-publication-venue"><em>{{ publication.venue }}</em></span>
+                </p>
+              </div>
+              {% include publication-links.html item=publication %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.related_repositories %}
+    <section class="project-detail-section" aria-labelledby="project-tools">
+      <h2 id="project-tools">Code &amp; tools</h2>
+      <ul class="project-tool-list">
+        {% for repository_name in page.related_repositories %}
+          {% assign repository = site.data.repositories | where: "name", repository_name | first %}
+          {% if repository %}
+            <li><a href="{{ repository.url }}">{{ repository.name }}</a><span> — {{ repository.description }}</span></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
 </article>

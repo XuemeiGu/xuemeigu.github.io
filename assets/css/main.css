@@ -700,15 +700,102 @@ ul {
   color: var(--accent);
 }
 
+.project-figure {
+  margin: 1.2rem 0 1rem;
+}
+
 .project-hero-image {
   display: block;
   width: 100%;
-  margin: 1.2rem 0 1rem;
+  margin: 0;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface-strong);
+}
+
+.project-figure figcaption {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.project-page h2 {
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-detail-section {
+  margin-top: 2rem;
+}
+
+.project-publication-list,
+.project-tool-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-publication-list > li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.7rem 1rem;
+  align-items: start;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-publication-main {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: baseline;
+}
+
+.project-publication-main time {
+  color: var(--accent);
+  font-size: 0.98rem;
+  font-weight: var(--weight-bold);
+}
+
+.project-publication-main p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.project-publication-title {
+  display: block;
+  color: var(--text);
+  font-size: 1.06rem;
+  font-weight: var(--weight-bold);
+}
+
+.project-publication-venue {
+  display: block;
+  margin-top: 0.08rem;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.project-publication-list .publication-links {
+  margin-top: 0;
+}
+
+.project-tool-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.project-tool-list li {
+  color: var(--muted-strong);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.project-tool-list a {
+  font-weight: var(--weight-bold);
 }
 
 .experience-item {
@@ -2057,6 +2144,15 @@ ul {
   .news-archive .news-archive-item {
     grid-template-columns: 1fr;
     gap: 0.28rem;
+  }
+
+  .project-publication-list > li,
+  .project-publication-main {
+    grid-template-columns: 1fr;
+  }
+
+  .project-publication-main {
+    gap: 0.12rem;
   }
 
   .outreach-text-list li {
