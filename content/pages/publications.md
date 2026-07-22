@@ -33,7 +33,6 @@ permalink: /publications/
     <select id="publication-sort">
       <option value="date-desc">Date: newest first</option>
       <option value="date-asc">Date: oldest first</option>
-      <option value="title-asc">Title: A–Z</option>
     </select>
   </div>
 </div>

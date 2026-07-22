@@ -58,10 +58,6 @@
       const firstYear = Number(firstCard.dataset.year) || 0;
       const secondYear = Number(secondCard.dataset.year) || 0;
 
-      if (sortMode === 'title-asc') {
-        return (firstCard.dataset.title || '').localeCompare(secondCard.dataset.title || '');
-      }
-
       if (firstYear !== secondYear) {
         return sortMode === 'date-asc' ? firstYear - secondYear : secondYear - firstYear;
       }
