@@ -1699,6 +1699,17 @@ ul {
   display: block;
 }
 
+.outreach-service-list p {
+  display: grid;
+  grid-template-columns: 145px minmax(0, 1fr);
+  column-gap: 0.8rem;
+  align-items: baseline;
+}
+
+.outreach-service-list .outreach-line-text {
+  margin-left: 0;
+}
+
 .outreach-text-list a {
   display: inline-block;
   margin-left: 0.4rem;
@@ -2167,6 +2178,11 @@ ul {
   }
 
   .outreach-text-list li {
+    grid-template-columns: 1fr;
+    gap: 0.08rem;
+  }
+
+  .outreach-service-list p {
     grid-template-columns: 1fr;
     gap: 0.08rem;
   }
