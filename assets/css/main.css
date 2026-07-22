@@ -12,6 +12,7 @@
   --text: #e6e9ef;
   --muted: #a4adba;
   --muted-strong: #c4cbd6;
+  --brand-mark-color: color-mix(in srgb, var(--text) 64%, transparent);
   --line: #3a3f4c;
   --accent: #89b7e8;
   --accent-2: #4c83df;
@@ -34,6 +35,7 @@
   --text: #1c2230;
   --muted: #5f6c7b;
   --muted-strong: #2f3948;
+  --brand-mark-color: color-mix(in srgb, var(--text) 42%, transparent);
   --line: #d9e0ea;
   --accent: #245fa8;
   --accent-2: #2f65c9;
@@ -148,7 +150,7 @@ ul {
 
 .brand-mark {
   display: inline-block;
-  color: color-mix(in srgb, var(--text) 42%, transparent);
+  color: var(--brand-mark-color);
   font-size: 1.42rem;
   font-weight: 400;
   letter-spacing: 0;
