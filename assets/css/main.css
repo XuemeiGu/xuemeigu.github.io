@@ -1,5 +1,7 @@
 :root {
   color-scheme: dark;
+  --font-sans: "Source Sans 3", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --bg: #232631;
   --bg-deep: #20232d;
   --nav: #272a36;
@@ -47,10 +49,17 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.65;
   text-rendering: optimizeLegibility;
+}
+
+h1,
+h2 {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+  letter-spacing: -0.012em;
 }
 
 a {
