@@ -1,15 +1,15 @@
 ---
-title: "Quantum Optics & Photonic Technologies"
-short_description: "Conceptual, computational, and experimentally grounded research on quantum light, interference, entanglement, and photonic information processing."
+title: "Quantum Science & Photonic Technologies"
+short_description: "Conceptual, computational, and experimentally grounded research in quantum science, quantum light, and photonic information processing."
 image: "/assets/img/projects/quantum-optics-technologies.jpg"
 image_alt: "Integrated photonic device and optical experiment with entangled photon paths."
 image_caption: "Conceptual illustration of interference, structured photons, and integrated photonic technologies."
 featured: true
 order: 3
 tags:
+  - Quantum science
   - Quantum optics
-  - Photonics
-  - Quantum information
+  - Photonic technologies
 selected_publications:
   - "Subjective nature of path information in quantum mechanics"
   - "Unconditional advantage of quantum teleportation over direct transmission of single photons through a lossy channel"
@@ -20,7 +20,7 @@ selected_publications:
 
 ## Overview
 
-My research in quantum optics is grounded in extensive experimental work on photonic quantum systems. My current focus builds on this foundation through conceptual, computational, and AI-assisted approaches to quantum optics and photonic technologies.
+My research in quantum science is grounded in extensive experimental work on photonic quantum systems. My current focus builds on this foundation through conceptual, computational, and AI-assisted approaches to quantum optics, quantum information, and photonic technologies.
 
 A recurring theme is how interference, indistinguishability, path identity, and the internal structure of photons can be used as resources. These ideas connect foundational questions about quantum states and measurements with practical methods for generating entanglement and implementing photonic information-processing tasks.
 

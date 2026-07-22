@@ -703,8 +703,9 @@ ul {
 }
 
 .project-figure {
-  max-width: 800px;
-  margin: 2rem 0 1rem;
+  width: 100%;
+  max-width: none;
+  margin: 1.2rem 0 1rem;
 }
 
 .project-hero-image {
@@ -1167,6 +1168,13 @@ ul {
 
 .prose.article-page {
   max-width: 900px;
+}
+
+.prose.article-page.project-page {
+  width: 100%;
+  max-width: min(1180px, 100%);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .prose.article-page.publication-page {
