@@ -30,7 +30,7 @@ permalink: /outreach/
       <li>
         <p>
           <time datetime="{{ talk.date }}">{{ talk.date | date: "%Y.%m.%d" }}</time>
-          <span class="outreach-line-text">{{ talk.event }}, {{ talk.title }}{% if talk.location and talk.location != "" %}, {{ talk.location }}{% endif %}</span>
+          <span class="outreach-line-text">{{ talk.title }}, {{ talk.event }}{% if talk.location and talk.location != "" %}, {{ talk.location }}{% endif %}</span>
           {% if talk.slides_url and talk.slides_url != "" %}<a href="{{ talk.slides_url }}">Slides</a>{% endif %}
         </p>
       </li>
