@@ -1,17 +1,19 @@
 :root {
   color-scheme: dark;
   --font-sans: "Source Sans 3", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --weight-heading: 500;
+  --weight-bold: 600;
+  --weight-heavy: 600;
   --bg: #232631;
   --bg-deep: #20232d;
   --nav: #272a36;
   --surface: #282b36;
   --surface-strong: #303441;
-  --text: #f5f7fb;
-  --muted: #b8becb;
-  --muted-strong: #dce3ef;
-  --line: #343947;
-  --accent: #9ecbff;
+  --text: #e6e9ef;
+  --muted: #a4adba;
+  --muted-strong: #c4cbd6;
+  --line: #3a3f4c;
+  --accent: #89b7e8;
   --accent-2: #4c83df;
   --accent-soft: rgba(76, 131, 223, 0.22);
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
@@ -21,6 +23,9 @@
 
 :root[data-theme="light"] {
   color-scheme: light;
+  --weight-heading: 600;
+  --weight-bold: 700;
+  --weight-heavy: 800;
   --bg: #ffffff;
   --bg-deep: #f7f8fb;
   --nav: #ffffff;
@@ -57,15 +62,20 @@ body {
 
 h1,
 h2 {
-  font-family: var(--font-serif);
-  font-optical-sizing: auto;
+  font-family: var(--font-sans);
+  font-weight: var(--weight-heading);
   letter-spacing: -0.012em;
+}
+
+h3,
+strong,
+b {
+  font-weight: var(--weight-bold);
 }
 
 .academic-profile h1,
 #news .section-label h2,
 #contact .section-label h2 {
-  font-family: var(--font-sans);
   letter-spacing: 0;
 }
 
@@ -171,7 +181,7 @@ ul {
 .site-nav a,
 .theme-toggle {
   padding: 0.4rem 0;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   line-height: 1.2;
   white-space: nowrap;
 }
@@ -270,7 +280,7 @@ ul {
   border-radius: 50%;
   color: var(--accent);
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 }
 
 .profile-links .social-link svg {
@@ -324,7 +334,7 @@ ul {
 .section-body h3 {
   color: var(--text);
   font-size: 1.38rem;
-  font-weight: 800;
+  font-weight: var(--weight-heavy);
   line-height: 1.25;
 }
 
@@ -426,7 +436,7 @@ ul {
   margin: 0;
   color: var(--text);
   font-size: 1.36rem;
-  font-weight: 800;
+  font-weight: var(--weight-heavy);
   line-height: 1.28;
 }
 
@@ -467,7 +477,7 @@ ul {
   gap: 0.35rem;
   color: var(--accent);
   font-size: 0.98rem;
-  font-weight: 800;
+  font-weight: var(--weight-heavy);
 }
 
 .news-more a:hover {
@@ -507,7 +517,7 @@ ul {
 .news-archive-item time {
   color: var(--accent);
   font-size: 1.02rem;
-  font-weight: 800;
+  font-weight: var(--weight-heavy);
   white-space: nowrap;
 }
 
@@ -689,7 +699,7 @@ ul {
   margin: 0;
   color: var(--muted);
   font-size: clamp(1rem, 1.35vw, 1.12rem);
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   line-height: 1.45;
 }
 
@@ -759,7 +769,7 @@ ul {
   border-radius: var(--radius);
   color: var(--accent);
   font-size: 0.88rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   line-height: 1;
   text-decoration: none;
 }
@@ -794,7 +804,7 @@ ul {
   gap: 0;
   color: var(--muted);
   font-size: 0.96rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 }
 
 .publication-card .card-meta > span,
@@ -837,7 +847,7 @@ ul {
 
 .link-mark {
   font-size: 0.78em;
-  font-weight: 800;
+  font-weight: var(--weight-heavy);
   letter-spacing: 0;
 }
 
@@ -852,7 +862,7 @@ ul {
 }
 
 .publication-row a {
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 }
 
 .link-row {
@@ -1082,7 +1092,7 @@ ul {
   margin: 0 0 0.42rem;
   color: var(--accent);
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: var(--weight-heavy);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -1138,7 +1148,7 @@ ul {
   margin: 1.8rem 0 0.75rem;
   color: var(--text);
   font-size: 1.78rem;
-  font-weight: 600;
+  font-weight: var(--weight-heading);
 }
 
 .page-content h3,
@@ -1245,7 +1255,7 @@ ul {
   color: #fff;
   font: inherit;
   font-size: 0.98rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   cursor: pointer;
   text-decoration: none;
 }
@@ -1352,7 +1362,7 @@ ul {
 .timeline time {
   color: var(--muted);
   font-size: 0.96rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 }
 
 .timeline h3 {
@@ -1383,7 +1393,7 @@ ul {
 .cv-entry time {
   color: var(--accent);
   font-size: 1.04rem;
-  font-weight: 800;
+  font-weight: var(--weight-heavy);
   line-height: 1.45;
 }
 
@@ -1469,7 +1479,7 @@ ul {
 .background-entry time {
   color: var(--accent);
   font-size: 1.08rem;
-  font-weight: 800;
+  font-weight: var(--weight-heavy);
   line-height: 1.32;
   text-align: right;
 }
@@ -1533,7 +1543,7 @@ ul {
   background: color-mix(in srgb, var(--surface) 74%, transparent);
   color: var(--muted-strong);
   font-size: 0.86rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   line-height: 1.2;
 }
 
@@ -1561,7 +1571,7 @@ ul {
 
 .outreach-page .service-section-heading h2 {
   font-size: 1.48rem;
-  font-weight: 600;
+  font-weight: var(--weight-heading);
 }
 
 .outreach-page .service-section-heading p {
@@ -1595,7 +1605,7 @@ ul {
 .outreach-text-list time {
   color: var(--accent);
   font-size: 1.02rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   white-space: nowrap;
 }
 
@@ -1613,7 +1623,7 @@ ul {
 .outreach-entry-key {
   color: var(--accent);
   font-size: 1.02rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   white-space: nowrap;
 }
 
@@ -1628,7 +1638,7 @@ ul {
   display: inline-block;
   margin-left: 0.4rem;
   font-size: 0.84rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 }
 
 .outreach-page .service-list,
@@ -1708,7 +1718,7 @@ ul {
 .service-feature time {
   color: var(--accent);
   font-size: 1.1rem;
-  font-weight: 800;
+  font-weight: var(--weight-heavy);
   line-height: 1.35;
 }
 
@@ -1760,7 +1770,7 @@ ul {
   display: block;
   color: var(--accent);
   font-size: 1.02rem;
-  font-weight: 800;
+  font-weight: var(--weight-heavy);
   letter-spacing: 0;
   line-height: 1.35;
 }
@@ -1772,7 +1782,7 @@ ul {
 
 .author-highlight {
   color: var(--text);
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 }
 
 .publication-venue {
@@ -1804,7 +1814,7 @@ ul {
   margin: 1rem 0 0.85rem;
   color: var(--muted-strong);
   font-size: 0.98rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 }
 
 .publication-controls .publication-results {
@@ -1833,7 +1843,7 @@ ul {
 .pagination-status {
   color: var(--muted-strong);
   font-size: 0.98rem;
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   white-space: nowrap;
 }
 
