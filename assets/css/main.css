@@ -165,7 +165,7 @@ ul {
   gap: 1.4rem;
   width: auto;
   margin-left: auto;
-  margin-right: clamp(3rem, 5vw, 6.5rem);
+  margin-right: clamp(4.5rem, 8vw, 10rem);
 }
 
 .site-nav a,
