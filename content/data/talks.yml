@@ -1,40 +1,79 @@
 ---
 # Add talks, posters, workshops, and session-chair activities here.
-# Optional fields: location, slides_url, description.
-- title: Best Poster Award
-  event: ML4Physical Sciences, NeurIPS
-  location: New Orleans, USA
-  date: 2023-12-15
+# Optional fields: kind, location, slides_url, description.
+- title: Telescope, esQueranto, and the Sloane machine
+  event: Seminar, Tübingen
+  kind: Seminar
+  location: Tübingen, Germany
+  date: "2026-02-23"
   slides_url: ''
-- title: Invited talk
-  event: NetSci
-  location: Vienna, Austria
-  date: 2023-07-10
-  slides_url: ''
-- title: Invited talk
-  event: QPhotoniX
-  location: Jinhua, China
-  date: 2023-11-26
-  slides_url: ''
-- title: AI4Science posters
-  event: ICML
-  location: Vienna, Austria
-  date: 2024-07-24
-  slides_url: ''
-  description: Two posters at the AI4Science workshop.
-- title: Workshop posters
-  event: ML4PS Workshop and IAI Workshop, NeurIPS
-  location: Vancouver, Canada
-  date: 2024-12-15
-  slides_url: ''
-  description: Two posters at the ML4PS Workshop and one poster at the IAI Workshop.
+
 - title: Keynote
-  event: DoKDoK
+  event: DoKDoK 2025
+  kind: Keynote
   location: Eisenach, Germany
-  date: 2025-08-29
+  date: "2025-08-29"
   slides_url: ''
-- title: Speaker and Session Chair
-  event: ICSSI
+
+- title: SciMuse
+  event: ICSSI 2025
+  kind: Talk · Session chair
   location: Copenhagen, Denmark
-  date: 2025-06-17
+  date: "2025-06-17"
+  slides_url: ''
+
+- title: Three workshop posters across ML4PS and IAI
+  event: NeurIPS 2024
+  kind: Posters
+  location: Vancouver, Canada
+  date: "2024-12-05"
+  slides_url: ''
+
+- title: Full network nonlocality
+  event: Vienna Quantum Foundations 2024
+  kind: Flash talk · Poster
+  location: Vienna, Austria
+  date: "2024-09-22"
+  slides_url: ''
+
+- title: AI-driven experimental design
+  event: JenaLIGHT 2024 — Photonics meets AI
+  kind: Poster
+  location: Jena, Germany
+  date: "2024-09-03"
+  slides_url: ''
+
+- title: Impact4Cast and SciMuse
+  event: ICML 2024 · AI4Science
+  kind: Posters
+  location: Vienna, Austria
+  date: "2024-07-26"
+  slides_url: ''
+
+- title: Next Gen Science
+  event: 73rd Lindau Nobel Laureate Meeting
+  kind: Poster
+  location: Lindau, Germany
+  date: "2024-06-30"
+  slides_url: ''
+
+- title: SciMuse
+  event: APS March Meeting 2024
+  kind: Talk
+  location: Minneapolis, USA
+  date: "2024-03-07"
+  slides_url: ''
+
+- title: Best Poster Award
+  event: ML4Physical Sciences · NeurIPS 2023
+  kind: Award
+  location: New Orleans, USA
+  date: "2023-12-15"
+  slides_url: ''
+
+- title: Network science talk
+  event: NetSci 2023
+  kind: Invited talk
+  location: Vienna, Austria
+  date: "2023-07-10"
   slides_url: ''

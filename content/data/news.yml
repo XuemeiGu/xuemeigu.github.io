@@ -1,8 +1,20 @@
-- date: "2026-05-15"
-  published: false
-  title: "PLACEHOLDER: "
-  text: "..."
-- date: "2026-04-10"
-  published: false
-  title: "PLACEHOLDER"
-  text: "...."
+# Demo news items. Replace or revise these as new highlights arise.
+- date: "2026-02-23"
+  published: true
+  title: "Seminar in Tübingen"
+  text: "Presented recent work on telescope, esQueranto, and the Sloane machine at a seminar in Tübingen."
+
+- date: "2025-08-29"
+  published: true
+  title: "DoKDoK keynote"
+  text: "Delivered a keynote at DoKDoK 2025 in Eisenach, Germany."
+
+- date: "2025-06-17"
+  published: true
+  title: "ICSSI 2025"
+  text: "Presented SciMuse and served as a session chair at ICSSI 2025 in Copenhagen."
+
+- date: "2024-12-05"
+  published: true
+  title: "NeurIPS 2024"
+  text: "Presented three workshop posters across ML4PS and IAI at NeurIPS 2024 in Vancouver."

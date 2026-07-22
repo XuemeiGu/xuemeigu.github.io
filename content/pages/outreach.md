@@ -3,34 +3,49 @@ title: Outreach
 permalink: /outreach/
 ---
 
-<p class="service-note">
-  Selected talks and posters, teaching, supervision, reviewing, and academic service.
-</p>
+<div class="outreach-page">
+  <header class="outreach-intro">
+    <div>
+      <p class="eyebrow">Academic engagement</p>
+      <p class="service-note">
+        Selected talks and posters, teaching, supervision, reviewing, and academic service.
+      </p>
+    </div>
+    <nav class="outreach-jump-links" aria-label="Outreach sections">
+      <a href="#talks">Talks &amp; Posters</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#supervision">Supervision</a>
+      <a href="#academic-service">Academic Service</a>
+    </nav>
+  </header>
 
 <section class="service-section" id="talks">
   <div class="service-section-heading">
     <h2>Talks &amp; Posters</h2>
+    <p>A curated selection of recent and notable contributions.</p>
   </div>
-  <div class="cv-list">
+  <div class="outreach-event-grid">
   {% assign talks_sorted = site.data.talks | sort: "date" | reverse %}
   {% for talk in talks_sorted %}
-    <article class="cv-entry">
-      <time>{{ talk.date | date: "%Y.%m.%d" }}</time>
-      <div>
-        <h3>{{ talk.title }}</h3>
-        <p>
-          <strong>{{ talk.event }}</strong>{% if talk.location and talk.location != "" %}, {{ talk.location }}{% endif %}.
-        </p>
-        {% assign talk_text = talk.description | default: "" | strip %}
-        {% if talk_text != "" %}
-          <p>{{ talk_text }}</p>
-        {% endif %}
-        {% if talk.slides_url and talk.slides_url != "" %}
-          <div class="link-row">
-            <a href="{{ talk.slides_url }}">Slides</a>
-          </div>
-        {% endif %}
+    <article class="outreach-event-card">
+      <div class="outreach-event-meta">
+        <time datetime="{{ talk.date }}">{{ talk.date | date: "%b %Y" }}</time>
+        <span>{{ talk.kind | default: "Talk" }}</span>
       </div>
+      <h3>{{ talk.event }}</h3>
+      <p class="outreach-event-topic">{{ talk.title }}</p>
+      {% if talk.location and talk.location != "" %}
+        <p class="outreach-event-location">{{ talk.location }}</p>
+      {% endif %}
+      {% assign talk_text = talk.description | default: "" | strip %}
+      {% if talk_text != "" %}
+        <p class="outreach-event-description">{{ talk_text }}</p>
+      {% endif %}
+      {% if talk.slides_url and talk.slides_url != "" %}
+        <div class="link-row">
+          <a href="{{ talk.slides_url }}">Slides</a>
+        </div>
+      {% endif %}
     </article>
   {% endfor %}
   </div>
@@ -127,3 +142,5 @@ permalink: /outreach/
     </article>
   </div>
 </section>
+
+</div>

@@ -1415,6 +1415,180 @@ ul {
   margin-top: 2.5rem;
 }
 
+.outreach-page {
+  max-width: 1240px;
+}
+
+.outreach-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.25rem 2rem;
+  align-items: end;
+  padding: 0.3rem 0 1.35rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.outreach-intro .eyebrow {
+  margin-bottom: 0.25rem;
+}
+
+.outreach-intro .service-note {
+  max-width: 66ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.outreach-jump-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.42rem;
+}
+
+.outreach-jump-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.28rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 74%, transparent);
+  color: var(--muted-strong);
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.outreach-jump-links a:hover {
+  border-color: var(--accent-2);
+  background: var(--accent-soft);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.outreach-page .service-section {
+  margin-top: 2rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.outreach-page .service-section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.outreach-page .service-section-heading h2 {
+  font-size: 1.48rem;
+  font-weight: 600;
+}
+
+.outreach-page .service-section-heading p {
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.outreach-event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.72rem;
+}
+
+.outreach-event-card {
+  min-width: 0;
+  padding: 0.92rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--surface) 76%, transparent);
+}
+
+.outreach-event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 0.8rem;
+}
+
+.outreach-event-meta time {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.outreach-event-meta span {
+  padding: 0.16rem 0.48rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.outreach-event-card h3 {
+  margin: 0.62rem 0 0.24rem;
+  color: var(--text);
+  font-size: 1.04rem;
+  font-weight: 650;
+  line-height: 1.32;
+}
+
+.outreach-event-card .outreach-event-topic {
+  margin: 0;
+  color: var(--muted-strong);
+  font-size: 0.96rem;
+  font-weight: 500;
+  line-height: 1.42;
+}
+
+.outreach-event-card .outreach-event-location,
+.outreach-event-card .outreach-event-description {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+.outreach-page .service-list,
+.outreach-page .service-feature {
+  margin-left: 0;
+}
+
+.outreach-page .service-entry,
+.outreach-page .service-feature {
+  grid-template-columns: 125px minmax(0, 1fr);
+  padding: 0.7rem 0;
+}
+
+.outreach-page .service-panel {
+  grid-template-columns: 160px minmax(0, 1fr);
+  padding: 0.74rem 0;
+}
+
+.outreach-page .service-entry h3,
+.outreach-page .service-feature h3,
+.outreach-page .service-panel h3 {
+  color: var(--muted-strong);
+  font-size: 1.04rem;
+  font-weight: 650;
+}
+
+.outreach-page .service-entry p,
+.outreach-page .service-feature p,
+.outreach-page .service-panel p {
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.48;
+}
+
 .service-section:first-of-type {
   margin-top: 1.45rem;
 }
@@ -1740,6 +1914,15 @@ ul {
     justify-content: flex-start;
   }
 
+  .outreach-intro {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .outreach-jump-links {
+    justify-content: flex-start;
+  }
+
   .filter-panel {
     grid-template-columns: minmax(0, 1fr) minmax(13rem, 0.8fr);
   }
@@ -1819,6 +2002,14 @@ ul {
 
   .news-item {
     grid-template-columns: 1fr;
+  }
+
+  .outreach-event-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outreach-page .service-section-heading {
+    display: block;
   }
 
   .filter-panel {
