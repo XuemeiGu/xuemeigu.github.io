@@ -17,15 +17,9 @@ data_dir: content/data
 collections_dir: content/collections
 
 collections:
-  publications:
-    output: false
-    permalink: /publications/:name/
   projects:
     output: true
     permalink: /research/:name/
-  talks:
-    output: false
-    permalink: /talks/:name/
 
 defaults:
   - scope:
@@ -43,12 +37,6 @@ defaults:
       type: "projects"
     values:
       layout: project
-  - scope:
-      path: ""
-      type: "talks"
-    values:
-      layout: page
-
 markdown: kramdown
 kramdown:
   input: GFM
@@ -63,5 +51,3 @@ exclude:
   - .DS_Store
   - CNAME.example
   - docs
-  - content/collections/_publications
-  - content/collections/_talks
