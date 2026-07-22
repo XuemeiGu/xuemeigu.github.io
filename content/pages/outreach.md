@@ -30,8 +30,8 @@ permalink: /outreach/
     {% for talk in talks_sorted %}
       <li>
         <p>
-          <time datetime="{{ talk.date }}">{{ talk.date | date: "%b %Y" }}</time>
-          <span aria-hidden="true"> · </span><strong>{{ talk.event }}</strong><span aria-hidden="true"> — </span>{{ talk.title }}
+          <time datetime="{{ talk.date }}">{{ talk.date | date: "%Y.%m.%d" }}</time>
+          <span class="outreach-line-text">{{ talk.event }}, {{ talk.title }}{% if talk.location and talk.location != "" %}, {{ talk.location }}{% endif %}</span>
           {% if talk.slides_url and talk.slides_url != "" %}<a href="{{ talk.slides_url }}">Slides</a>{% endif %}
         </p>
       </li>
@@ -47,22 +47,22 @@ permalink: /outreach/
   <div class="outreach-content-box">
     <ul class="outreach-text-list outreach-teaching-list">
       <li>
-        <p><time>WS 2025/26</time><span aria-hidden="true"> · </span><strong>AI for Quantum Physics</strong><span aria-hidden="true"> — </span>Lecturer, Friedrich Schiller University Jena, Germany.</p>
+        <p><time>WS 2025/26</time><span class="outreach-line-text">AI for Quantum Physics, Lecturer, Friedrich Schiller University Jena, Germany</span></p>
       </li>
       <li>
-        <p><time>SS 2026</time><span aria-hidden="true"> · </span><strong>Advanced Topics in Quantum Information Technology</strong><span aria-hidden="true"> — </span>Guest lecturer, Friedrich Schiller University Jena, Germany.</p>
+        <p><time>SS 2026</time><span class="outreach-line-text">Advanced Topics in Quantum Information Technology, Guest lecturer, Friedrich Schiller University Jena, Germany</span></p>
       </li>
       <li>
-        <p><time>SS 2025</time><span aria-hidden="true"> · </span><strong>Advanced Quantum Communication</strong><span aria-hidden="true"> — </span>Guest lecturer, Friedrich Schiller University Jena, Germany.</p>
+        <p><time>SS 2025</time><span class="outreach-line-text">Advanced Quantum Communication, Guest lecturer, Friedrich Schiller University Jena, Germany</span></p>
       </li>
       <li>
-        <p><time>WS 2019/20</time><span aria-hidden="true"> · </span><strong>Introduction to Quantum Information</strong><span aria-hidden="true"> — </span>Teaching assistant, Nanjing University, China.</p>
+        <p><time>WS 2019/20</time><span class="outreach-line-text">Introduction to Quantum Information, Teaching assistant, Nanjing University, China</span></p>
       </li>
       <li>
-        <p><time>WS 2015/16</time><span aria-hidden="true"> · </span><strong>Principles and Applications of Sensors</strong><span aria-hidden="true"> — </span>Lecturer, Zijin College, Nanjing University of Science and Technology, Nanjing, China.</p>
+        <p><time>WS 2015/16</time><span class="outreach-line-text">Principles and Applications of Sensors, Lecturer, Zijin College, Nanjing University of Science and Technology, Nanjing, China</span></p>
       </li>
       <li>
-        <p><time>SS 2015</time><span aria-hidden="true"> · </span><strong>Data Communication</strong><span aria-hidden="true"> — </span>Teaching assistant, Nanjing University, China.</p>
+        <p><time>SS 2015</time><span class="outreach-line-text">Data Communication, Teaching assistant, Nanjing University, China</span></p>
       </li>
     </ul>
   </div>
