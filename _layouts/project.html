@@ -5,12 +5,6 @@ layout: default
   <p class="eyebrow">Research project</p>
   <h1>{{ page.title }}</h1>
   {% if page.short_description %}<p class="lead">{{ page.short_description }}</p>{% endif %}
-  {% if page.image %}
-    <figure class="project-figure">
-      <img class="project-hero-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
-      {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
-    </figure>
-  {% endif %}
   <div class="tag-row spacious">
     {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
   </div>
@@ -56,5 +50,12 @@ layout: default
         {% endfor %}
       </ul>
     </section>
+  {% endif %}
+
+  {% if page.image %}
+    <figure class="project-figure">
+      <img class="project-hero-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
+      {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
+    </figure>
   {% endif %}
 </article>

@@ -22,6 +22,10 @@ selected_publications:
 
 My research in quantum optics is grounded in extensive experimental work on photonic quantum systems. My current focus builds on this foundation through conceptual, computational, and AI-assisted approaches to quantum optics and photonic technologies.
 
+A recurring theme is how interference, indistinguishability, path identity, and the internal structure of photons can be used as resources. These ideas connect foundational questions about quantum states and measurements with practical methods for generating entanglement and implementing photonic information-processing tasks.
+
+Experimental experience remains important to this work: it provides intuition about sources, mode matching, loss, detection, and locality constraints, and helps distinguish mathematically valid proposals from designs that are physically informative and realistically testable.
+
 ## Current focus
 
 - high-dimensional and multipartite photonic entanglement
@@ -31,4 +35,4 @@ My research in quantum optics is grounded in extensive experimental work on phot
 
 ## Experimental foundations
 
-My earlier experimental research provides practical insight into how quantum optical concepts, sources, measurements, and laboratory constraints shape physically meaningful designs.
+My earlier experimental research includes multipartite entanglement and nonlocality tests under strict locality conditions, structured-light interference, and photonic implementations of quantum-information protocols. This work provides practical insight into how sources, measurements, and laboratory constraints shape physically meaningful designs.

@@ -24,6 +24,10 @@ related_repositories:
 
 I develop computational methods that design physical experiments from desired phenomena, states, or operational goals. The aim is to move beyond manual trial and error toward systems that can explore large experimental spaces, propose unexpected solutions, and reveal the physical principles behind them.
 
+The central challenge is not merely to generate a valid optical circuit. A useful discovery should also be compact, experimentally meaningful, and understandable to a researcher. I therefore treat interpretability, physical constraints, and experimental simplicity as integral parts of the design objective.
+
+This research combines graph-based representations, inverse design, generative models, and AI-guided search. The resulting systems can connect a target quantum state or task to candidate components and arrangements, while helping identify the mechanisms that make a proposed experiment work.
+
 ## Current research
 
 - inverse and de novo design of quantum optical experiments
