@@ -1,13 +1,13 @@
 # Xuemei Gu website
 
-Personal academic website for sharing research, publications, talks, service, news, and contact information.
+Personal academic website for sharing research, publications, outreach, news, and contact information.
 
 ## Common updates
 
 Most routine edits are made in the data files:
 
 - Publications: `content/data/publications.yml`
-- Talks and posters: `content/data/talks.yml`
+- Outreach talks and posters: `content/data/talks.yml`
 - Home page news: `content/data/news.yml`
 - Navigation: `content/data/navigation.yml`
 
