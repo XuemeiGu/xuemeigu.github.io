@@ -704,8 +704,8 @@ ul {
 
 .project-figure {
   width: 100%;
-  max-width: none;
-  margin: 1.2rem 0 1rem;
+  max-width: 760px;
+  margin: 1.2rem auto 1rem;
 }
 
 .project-hero-image {
