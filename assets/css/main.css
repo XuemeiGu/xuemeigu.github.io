@@ -1317,9 +1317,13 @@ ul {
   margin-bottom: 0.35rem;
 }
 
-.publication-card .authors,
-.publication-card .publication-venue {
+.publication-card .authors {
   margin-top: 0.35rem;
+  margin-bottom: 0;
+}
+
+.publication-card .publication-venue {
+  margin-top: 0.05rem;
   margin-bottom: 0;
 }
 
@@ -1759,7 +1763,7 @@ ul {
 }
 
 .authors {
-  margin-bottom: 0.12rem;
+  margin-bottom: 0.05rem;
   color: var(--muted-strong) !important;
 }
 
