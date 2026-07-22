@@ -236,8 +236,7 @@ ul {
 
 .profile-links,
 .link-row,
-.footer-links,
-.filter-buttons {
+.footer-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -1162,7 +1161,6 @@ ul {
 }
 
 .button,
-.filter-button,
 .pagination-button {
   display: inline-flex;
   align-items: center;
@@ -1180,8 +1178,6 @@ ul {
 }
 
 .button:hover,
-.filter-button:hover,
-.filter-button.active,
 .pagination-button:hover,
 .pagination-button.active {
   background: var(--accent-soft);
@@ -1601,26 +1597,90 @@ ul {
 
 .filter-panel {
   display: grid;
-  gap: 0.65rem;
-  margin: 1rem 0;
-  padding: 0.9rem;
+  grid-template-columns: minmax(16rem, 1fr) minmax(14rem, 0.82fr) minmax(9rem, 0.38fr);
+  gap: 1.15rem;
+  margin: 1.35rem 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
-.filter-panel label {
-  color: var(--muted-strong);
-  font-weight: 700;
-  font-size: 1.02rem;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-.filter-panel input {
+.filter-panel input,
+.filter-panel select {
   width: 100%;
-  padding: 0.62rem 0.72rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
+  min-height: 3.65rem;
+  padding: 0.72rem 1rem;
+  border: 2px solid color-mix(in srgb, var(--muted-strong) 82%, transparent);
+  border-radius: 0.55rem;
   background: var(--surface-strong);
   color: var(--text);
   font: inherit;
-  font-size: 1rem;
+  font-size: 1.14rem;
+  line-height: 1.2;
+  transition: border-color 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.filter-panel input::placeholder {
+  color: var(--text);
+  opacity: 0.92;
+}
+
+.filter-panel input:hover,
+.filter-panel select:hover {
+  border-color: var(--text);
+}
+
+.filter-panel input:focus,
+.filter-panel select:focus {
+  border-color: var(--accent);
+  outline: 0;
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.filter-select {
+  position: relative;
+  min-width: 0;
+}
+
+.filter-select select {
+  appearance: none;
+  padding-right: 3rem;
+  cursor: pointer;
+}
+
+.filter-select::before,
+.filter-select::after {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-right: 2px solid var(--text);
+  border-bottom: 2px solid var(--text);
+  pointer-events: none;
+}
+
+.filter-select::before {
+  top: calc(50% - 0.48rem);
+  transform: rotate(225deg);
+}
+
+.filter-select::after {
+  top: calc(50% + 0.02rem);
+  transform: rotate(45deg);
 }
 
 .site-footer {
@@ -1673,6 +1733,14 @@ ul {
 
   .github-stats {
     justify-content: flex-start;
+  }
+
+  .filter-panel {
+    grid-template-columns: minmax(0, 1fr) minmax(13rem, 0.8fr);
+  }
+
+  .filter-panel > input {
+    grid-column: 1 / -1;
   }
 
   .repo-list {
@@ -1746,6 +1814,15 @@ ul {
 
   .news-item {
     grid-template-columns: 1fr;
+  }
+
+  .filter-panel {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .filter-panel > input {
+    grid-column: auto;
   }
 
   .publication-card-actions {

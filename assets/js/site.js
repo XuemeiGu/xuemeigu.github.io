@@ -33,7 +33,8 @@
   }
 
   const searchInput = document.querySelector('#publication-search');
-  const filterButtons = document.querySelectorAll('.filter-button');
+  const typeSelect = document.querySelector('#publication-type');
+  const sortSelect = document.querySelector('#publication-sort');
   const publicationList = document.querySelector('.publication-list');
   const cards = Array.from(document.querySelectorAll('.publication-card'));
   const publicationControls = document.querySelector('.publication-controls');
@@ -44,7 +45,6 @@
   const prevButtons = Array.from(document.querySelectorAll('[data-pagination="prev"]'));
   const nextButtons = Array.from(document.querySelectorAll('[data-pagination="next"]'));
   const pageSize = publicationList ? Number(publicationList.dataset.pageSize) || 5 : 5;
-  let activeFilter = 'all';
   let currentPage = 1;
 
   function sortPublicationCards() {
@@ -52,11 +52,18 @@
       return;
     }
 
+    const sortMode = sortSelect ? sortSelect.value : 'date-desc';
+
     cards.sort((firstCard, secondCard) => {
       const firstYear = Number(firstCard.dataset.year) || 0;
       const secondYear = Number(secondCard.dataset.year) || 0;
+
+      if (sortMode === 'title-asc') {
+        return (firstCard.dataset.title || '').localeCompare(secondCard.dataset.title || '');
+      }
+
       if (firstYear !== secondYear) {
-        return secondYear - firstYear;
+        return sortMode === 'date-asc' ? firstYear - secondYear : secondYear - firstYear;
       }
 
       return (firstCard.dataset.title || '').localeCompare(secondCard.dataset.title || '');
@@ -69,6 +76,7 @@
 
   function getMatchingPublicationCards() {
     const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    const activeFilter = typeSelect ? typeSelect.value : 'all';
     return cards.filter((card) => {
       const text = (card.dataset.search || card.textContent).toLowerCase();
       const type = card.dataset.type || '';
@@ -151,14 +159,16 @@
     searchInput.addEventListener('input', resetPublicationPage);
   }
 
-  filterButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      filterButtons.forEach((item) => item.classList.remove('active'));
-      button.classList.add('active');
-      activeFilter = button.dataset.filter || 'all';
+  if (typeSelect) {
+    typeSelect.addEventListener('change', resetPublicationPage);
+  }
+
+  if (sortSelect) {
+    sortSelect.addEventListener('change', () => {
+      sortPublicationCards();
       resetPublicationPage();
     });
-  });
+  }
 
   prevButtons.forEach((button) => {
     button.addEventListener('click', () => {
