@@ -1710,6 +1710,19 @@ ul {
   margin-left: 0;
 }
 
+.outreach-teaching-list p,
+.outreach-supervision-list p {
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  column-gap: 0.85rem;
+  align-items: baseline;
+}
+
+.outreach-teaching-list .outreach-line-text,
+.outreach-supervision-list .outreach-line-text {
+  margin-left: 0;
+}
+
 .outreach-text-list a {
   display: inline-block;
   margin-left: 0.4rem;
@@ -2183,6 +2196,12 @@ ul {
   }
 
   .outreach-service-list p {
+    grid-template-columns: 1fr;
+    gap: 0.08rem;
+  }
+
+  .outreach-teaching-list p,
+  .outreach-supervision-list p {
     grid-template-columns: 1fr;
     gap: 0.08rem;
   }
