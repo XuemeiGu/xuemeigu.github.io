@@ -1,13 +1,6 @@
 ---
 # Add talks, posters, workshops, and session-chair activities here.
 # Optional fields: kind, location, slides_url, description.
-- title: Telescope, esQueranto, and the Sloane machine
-  event: Seminar, Tübingen
-  kind: Seminar
-  location: Tübingen, Germany
-  date: "2026-02-23"
-  slides_url: ''
-
 - title: Keynote
   event: DoKDoK 2025
   kind: Keynote

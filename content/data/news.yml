@@ -1,9 +1,4 @@
 # Demo news items. Replace or revise these as new highlights arise.
-- date: "2026-02-23"
-  published: true
-  title: "Seminar in Tübingen"
-  text: "Presented recent work on telescope, esQueranto, and the Sloane machine at a seminar in Tübingen."
-
 - date: "2025-08-29"
   published: true
   title: "DoKDoK keynote"
@@ -18,6 +13,11 @@
   published: true
   title: "NeurIPS 2024"
   text: "Presented three workshop posters across ML4PS and IAI at NeurIPS 2024 in Vancouver."
+
+- date: "2024-09-22"
+  published: true
+  title: "Vienna Quantum Foundations 2024"
+  text: "Presented a flash talk and poster on full network nonlocality at Vienna Quantum Foundations 2024."
 
 - date: "2024-07-26"
   published: true

@@ -1604,11 +1604,9 @@ ul {
   font-weight: 650;
 }
 
-.outreach-list-detail {
+.outreach-talk-list li,
+.outreach-teaching-list li {
   display: block;
-  margin-top: 0.06rem;
-  color: color-mix(in srgb, var(--muted) 82%, transparent);
-  font-size: 0.82rem;
 }
 
 .outreach-text-list a {
