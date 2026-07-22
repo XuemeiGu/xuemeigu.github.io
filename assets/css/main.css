@@ -1584,15 +1584,11 @@ ul {
   border-bottom: 0;
 }
 
-.outreach-intro .eyebrow {
-  margin-bottom: 0.25rem;
-}
-
 .outreach-intro .service-note {
   max-width: 66ch;
   margin: 0;
   color: var(--muted);
-  font-size: 1.04rem;
+  font-size: 1.14rem;
 }
 
 .outreach-jump-links {

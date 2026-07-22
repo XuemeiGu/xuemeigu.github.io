@@ -4,7 +4,7 @@ permalink: /research/
 ---
 
 <p class="research-note">
-  My research is organized around three connected directions: AI for science and autonomous discovery, de novo design of physics experiments, and quantum science and photonic technologies. See also the <a href="{{ '/code/' | relative_url }}">code and repositories</a>.
+  My work brings together artificial intelligence, quantum science, and scientific discovery. See also the <a href="{{ '/code/' | relative_url }}">code and repositories</a>.
 </p>
 
 <section class="project-showcase" aria-label="Research projects">

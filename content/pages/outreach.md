@@ -6,9 +6,8 @@ permalink: /outreach/
 <div class="outreach-page">
   <header class="outreach-intro">
     <div>
-      <p class="eyebrow">Academic engagement</p>
       <p class="service-note">
-        Selected talks and posters, teaching, supervision, reviewing, and academic service.
+        Selected talks and posters, teaching, supervision, and academic service.
       </p>
     </div>
     <nav class="outreach-jump-links" aria-label="Outreach sections">
